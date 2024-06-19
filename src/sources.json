@@ -1,0 +1,148 @@
+{
+  "businessclub": [
+    {
+      "name": "NewYorkPizza",
+      "url": "NewYorkPizza.png"
+    },
+    {
+      "name": "urker",
+      "url": "urker.png"
+    }
+  ],
+  "fivestars": [
+    {
+      "name": "FarmerHouseProducts",
+      "url": "FarmerHouseProducts.png"
+    },
+    {
+      "name": "MajoTrading",
+      "url": "MajoTrading.png"
+    },
+    {
+      "name": "Niveau",
+      "url": "Niveau.png"
+    },
+    {
+      "name": "P_Kaal",
+      "url": "P_Kaal.jpg"
+    }
+  ],
+  "fourstars": [
+    {
+      "name": "FarmerHouseProducts - kopie (2)",
+      "url": "FarmerHouseProducts - kopie (2).png"
+    },
+    {
+      "name": "FarmerHouseProducts - kopie",
+      "url": "FarmerHouseProducts - kopie.png"
+    },
+    {
+      "name": "FarmerHouseProducts",
+      "url": "FarmerHouseProducts.png"
+    },
+    {
+      "name": "MajoTrading - kopie (2)",
+      "url": "MajoTrading - kopie (2).png"
+    },
+    {
+      "name": "MajoTrading - kopie",
+      "url": "MajoTrading - kopie.png"
+    },
+    {
+      "name": "MajoTrading",
+      "url": "MajoTrading.png"
+    },
+    {
+      "name": "Niveau - kopie (2)",
+      "url": "Niveau - kopie (2).png"
+    },
+    {
+      "name": "Niveau - kopie",
+      "url": "Niveau - kopie.png"
+    },
+    {
+      "name": "Niveau",
+      "url": "Niveau.png"
+    },
+    {
+      "name": "P_Kaal - kopie (2)",
+      "url": "P_Kaal - kopie (2).jpg"
+    },
+    {
+      "name": "P_Kaal - kopie",
+      "url": "P_Kaal - kopie.jpg"
+    },
+    {
+      "name": "P_Kaal",
+      "url": "P_Kaal.jpg"
+    }
+  ],
+  "threestars": [
+    {
+      "name": "FarmerHouseProducts - kopie (2)",
+      "url": "FarmerHouseProducts - kopie (2).png"
+    },
+    {
+      "name": "FarmerHouseProducts - kopie",
+      "url": "FarmerHouseProducts - kopie.png"
+    },
+    {
+      "name": "FarmerHouseProducts",
+      "url": "FarmerHouseProducts.png"
+    },
+    {
+      "name": "MajoTrading - kopie (2)",
+      "url": "MajoTrading - kopie (2).png"
+    },
+    {
+      "name": "MajoTrading - kopie",
+      "url": "MajoTrading - kopie.png"
+    },
+    {
+      "name": "MajoTrading",
+      "url": "MajoTrading.png"
+    },
+    {
+      "name": "Niveau - kopie (2)",
+      "url": "Niveau - kopie (2).png"
+    },
+    {
+      "name": "Niveau - kopie",
+      "url": "Niveau - kopie.png"
+    },
+    {
+      "name": "Niveau",
+      "url": "Niveau.png"
+    },
+    {
+      "name": "P_Kaal - kopie (2)",
+      "url": "P_Kaal - kopie (2).jpg"
+    },
+    {
+      "name": "P_Kaal - kopie",
+      "url": "P_Kaal - kopie.jpg"
+    },
+    {
+      "name": "P_Kaal",
+      "url": "P_Kaal.jpg"
+    }
+  ],
+  "advertisements": [
+    {
+      "name": "gerrits-1 assurantien",
+      "url": "gerrits-1 assurantien.png"
+    },
+    {
+      "name": "NewYorkPizza",
+      "url": "NewYorkPizza.png"
+    },
+    {
+      "name": "NIKKELEN Reclame beeldscherm kantine",
+      "url": "NIKKELEN Reclame beeldscherm kantine.jpg"
+    },
+    {
+      "name": "TV scherm - sponsoring 0504",
+      "url": "TV scherm - sponsoring 0504.mp4"
+    }
+  ]
+}
