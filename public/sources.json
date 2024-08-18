@@ -1,14 +1,5 @@
 {
-  "businessclub": [
-    {
-      "name": "NewYorkPizza",
-      "url": "NewYorkPizza.png"
-    },
-    {
-      "name": "urker",
-      "url": "urker.png"
-    }
-  ],
+  "businessclub": [],
   "fivestars": [
     {
       "name": "FarmerHouseProducts",
@@ -29,102 +20,110 @@
   ],
   "fourstars": [
     {
-      "name": "FarmerHouseProducts - kopie (2)",
-      "url": "FarmerHouseProducts - kopie (2).png"
+      "name": "Cornelion",
+      "url": "Cornelion.png"
     },
     {
-      "name": "FarmerHouseProducts - kopie",
-      "url": "FarmerHouseProducts - kopie.png"
+      "name": "DMG",
+      "url": "DMG.png"
     },
     {
-      "name": "FarmerHouseProducts",
-      "url": "FarmerHouseProducts.png"
+      "name": "Drips",
+      "url": "Drips.png"
     },
     {
-      "name": "MajoTrading - kopie (2)",
-      "url": "MajoTrading - kopie (2).png"
+      "name": "IhreKuche",
+      "url": "IhreKuche.jpg"
     },
     {
-      "name": "MajoTrading - kopie",
-      "url": "MajoTrading - kopie.png"
+      "name": "KegroDeuren",
+      "url": "KegroDeuren.png"
     },
     {
-      "name": "MajoTrading",
-      "url": "MajoTrading.png"
+      "name": "MGMook",
+      "url": "MGMook.jpg"
     },
     {
-      "name": "Niveau - kopie (2)",
-      "url": "Niveau - kopie (2).png"
+      "name": "PNG-Conceptical",
+      "url": "PNG-Conceptical.png"
     },
     {
-      "name": "Niveau - kopie",
-      "url": "Niveau - kopie.png"
+      "name": "RienWeijers",
+      "url": "RienWeijers.png"
     },
     {
-      "name": "Niveau",
-      "url": "Niveau.png"
+      "name": "Slaapsfeer",
+      "url": "Slaapsfeer.png"
     },
     {
-      "name": "P_Kaal - kopie (2)",
-      "url": "P_Kaal - kopie (2).jpg"
-    },
-    {
-      "name": "P_Kaal - kopie",
-      "url": "P_Kaal - kopie.jpg"
-    },
-    {
-      "name": "P_Kaal",
-      "url": "P_Kaal.jpg"
+      "name": "WoutersSchoonmaak",
+      "url": "WoutersSchoonmaak.png"
     }
   ],
   "threestars": [
     {
-      "name": "FarmerHouseProducts - kopie (2)",
-      "url": "FarmerHouseProducts - kopie (2).png"
+      "name": "Adco",
+      "url": "Adco.png"
     },
     {
-      "name": "FarmerHouseProducts - kopie",
-      "url": "FarmerHouseProducts - kopie.png"
+      "name": "BeMark",
+      "url": "BeMark.png"
     },
     {
-      "name": "FarmerHouseProducts",
-      "url": "FarmerHouseProducts.png"
+      "name": "Brandsfit",
+      "url": "Brandsfit.png"
     },
     {
-      "name": "MajoTrading - kopie (2)",
-      "url": "MajoTrading - kopie (2).png"
+      "name": "byondis",
+      "url": "byondis.png"
     },
     {
-      "name": "MajoTrading - kopie",
-      "url": "MajoTrading - kopie.png"
+      "name": "Casino-scout",
+      "url": "Casino-scout.png"
     },
     {
-      "name": "MajoTrading",
-      "url": "MajoTrading.png"
+      "name": "De Spil",
+      "url": "De Spil.png"
     },
     {
-      "name": "Niveau - kopie (2)",
-      "url": "Niveau - kopie (2).png"
+      "name": "De Veer Montage",
+      "url": "De Veer Montage.png"
     },
     {
-      "name": "Niveau - kopie",
-      "url": "Niveau - kopie.png"
+      "name": "EskesPartners",
+      "url": "EskesPartners.jpg"
     },
     {
-      "name": "Niveau",
-      "url": "Niveau.png"
+      "name": "HofmansAtHome",
+      "url": "HofmansAtHome.png"
     },
     {
-      "name": "P_Kaal - kopie (2)",
-      "url": "P_Kaal - kopie (2).jpg"
+      "name": "JanKooij",
+      "url": "JanKooij.png"
     },
     {
-      "name": "P_Kaal - kopie",
-      "url": "P_Kaal - kopie.jpg"
+      "name": "Jobs4Work",
+      "url": "Jobs4Work.png"
     },
     {
-      "name": "P_Kaal",
-      "url": "P_Kaal.jpg"
+      "name": "Lumar",
+      "url": "Lumar.png"
+    },
+    {
+      "name": "OostendorpAuto",
+      "url": "OostendorpAuto.png"
+    },
+    {
+      "name": "Rikjo Ebbers",
+      "url": "Rikjo Ebbers.JPG"
+    },
+    {
+      "name": "Sienn",
+      "url": "Sienn.png"
+    },
+    {
+      "name": "Toonen",
+      "url": "Toonen.jpg"
     }
   ],
   "advertisements": [
@@ -147,54 +146,58 @@
   ],
   "wedstrijdsponsor": [
     {
-      "name": "NewYorkPizza",
-      "url": "NewYorkPizza.png"
+      "name": "PNG-Conceptical",
+      "url": "PNG-Conceptical.png"
     }
   ],
   "balsponsor": [
     {
-      "name": "NewYorkPizza",
-      "url": "NewYorkPizza.png"
+      "name": "PNG-Conceptical",
+      "url": "PNG-Conceptical.png"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "eikholt",
-      "url": ":txt:Janssen Groesbeek Kozijnen Installaties B.V."
+      "name": "onbekend",
+      "url": ":txt:Onbekend B.V."
     }
   ],
   "overige": [
     {
-      "name": "eikholt copy 2",
-      "url": ":txt:JG B.V."
+      "name": "1voice",
+      "url": "1voice.jpg"
     },
     {
-      "name": "eikholt copy 3",
-      "url": ":txt:Eikholt Kwekerijen B.V."
+      "name": "3aAdvies",
+      "url": "3aAdvies.png"
     },
     {
-      "name": "eikholt copy",
-      "url": ":txt:Janssen Groesbeek Kozijnen Installaties B.V."
+      "name": "BRGMetaal",
+      "url": "BRGMetaal.png"
     },
     {
-      "name": "eikholt",
-      "url": ":txt:BRG B.V."
+      "name": "Hagemann",
+      "url": "Hagemann.jpg"
     },
     {
-      "name": "FarmerHouseProducts",
-      "url": "FarmerHouseProducts.png"
+      "name": "HalduGroep",
+      "url": "HalduGroep.png"
     },
     {
-      "name": "MajoTrading",
-      "url": "MajoTrading.png"
+      "name": "HoogstratenInstallaties",
+      "url": "HoogstratenInstallaties.jpeg"
     },
     {
-      "name": "Niveau",
-      "url": "Niveau.png"
+      "name": "LaHeij",
+      "url": "LaHeij.jpeg"
     },
     {
-      "name": "P_Kaal",
-      "url": "P_Kaal.jpg"
+      "name": "Lemmers",
+      "url": "Lemmers.png"
+    },
+    {
+      "name": "Rutolux",
+      "url": "Rutolux.jpeg"
     }
   ]
 }
