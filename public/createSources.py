@@ -2,7 +2,7 @@ import os
 import json
 
 # List of directories to scan
-directories = ["businessclub", "fivestars", "fourstars", "threestars", "advertisements"]
+directories = ["businessclub", "fivestars", "fourstars", "threestars", "advertisements", "wedstrijdsponsor", "balsponsor", "buffetsponsor", "overige"]
 
 # Empty dictionary to hold our data
 data = {}
@@ -13,11 +13,18 @@ for directory in directories:
     files = os.listdir(directory)
     
     # Create a list of dictionaries for each file
-    file_dicts = [{"name": os.path.splitext(file)[0], "url": file} for file in files]
+    file_dicts = []
+    for file in files:
+        if file.endswith('.txt'):
+            with open(directory + "/" + file, 'r') as f:
+                content = f.read()
+            file_dicts.append({"name": os.path.splitext(file)[0], "url": ":txt:" + content})
+        else:
+            file_dicts.append({"name": os.path.splitext(file)[0], "url": file})
     
     # Add this list to our data dictionary
     data[directory] = file_dicts
 
 # Write our data dictionary to a JSON file in the parent directory's src folder
-with open(os.path.join("..", "src", "sources.json"), "w") as f:
+with open(os.path.join("..", "public", "sources.json"), "w") as f:
     json.dump(data, f, indent=2)

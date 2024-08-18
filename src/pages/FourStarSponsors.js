@@ -1,20 +1,25 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import FourBlocks from "../components/FourBlocks";
-import sources from "../sources.json";
 
-const FourStarSponsors = ({ updateSourceCounts }) => {
+const FourStarSponsors = ({ updateSourceCounts, sources }) => {
   const divStyle = {
-    backgroundImage: `url(/4-STERREN.jpg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/4-STERREN.jpg)`,
     backgroundSize: "cover", // this will ensure the image covers the whole div
     height: "100vh", // this will make the div take the full height of the viewport
   };
 
-  const baseURL = "/fourstars/";
+  const [sourcesURLs, setSourcesURLs] = useState([]);
 
-  const sourcesURLs = sources.fourstars.map((source) => {
-    return baseURL + source.url;
-  });
+  useEffect(() => {
+    const baseURL = `${process.env.PUBLIC_URL}/fourstars/`;
+    if (!sources) return;
+    const sourcesURLs = sources.fourstars.map((source) => {
+      return baseURL + source.url;
+    });
+
+    setSourcesURLs(sourcesURLs);
+  }, [sources]);
 
   const [randomizedSources, setRandomizedSources] = useState([]);
 
@@ -30,7 +35,7 @@ const FourStarSponsors = ({ updateSourceCounts }) => {
     };
 
     setRandomizedSources(pickFourRandomSources(sourcesURLs));
-  }, []);
+  }, [sourcesURLs]);
 
   return (
     <div style={divStyle}>

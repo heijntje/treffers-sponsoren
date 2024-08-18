@@ -1,10 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import TwoBlocks from "../components/TwoBlocks";
+import EightBlocks from "../components/EightBlocks";
 
-const FiveStarSponsors = ({ updateSourceCounts, sources }) => {
+const OverigeSponsors = ({ updateSourceCounts, sources }) => {
   const divStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/5-STERREN.jpg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/scherm_sponsoren.jpg)`,
     backgroundSize: "cover", // this will ensure the image covers the whole div
     height: "100vh", // this will make the div take the full height of the viewport
   };
@@ -12,9 +12,9 @@ const FiveStarSponsors = ({ updateSourceCounts, sources }) => {
   const [sourcesURLs, setSourcesURLs] = useState([]);
 
   useEffect(() => {
-    const baseURL = `${process.env.PUBLIC_URL}/fivestars/`;
+    const baseURL = `${process.env.PUBLIC_URL}/overige/`;
     if (!sources) return;
-    const sourcesURLs = sources.fivestars.map((source) => {
+    const sourcesURLs = sources.overige.map((source) => {
       return baseURL + source.url;
     });
 
@@ -24,24 +24,23 @@ const FiveStarSponsors = ({ updateSourceCounts, sources }) => {
   const [randomizedSources, setRandomizedSources] = useState([]);
 
   useEffect(() => {
-    const pickTwoRandomSources = (sources) => {
+    const pickEightandomSources = (sources) => {
       let shuffled = [...sources].sort(() => 0.5 - Math.random());
-      let picked = shuffled.slice(0, 2);
+      let picked = shuffled.slice(0, 8);
 
       // Update the source counts
-      updateSourceCounts("fivestars", picked);
-
+      updateSourceCounts("overige", picked);
       return picked;
     };
 
-    setRandomizedSources(pickTwoRandomSources(sourcesURLs));
+    setRandomizedSources(pickEightandomSources(sourcesURLs));
   }, [sourcesURLs]);
 
   return (
     <div style={divStyle}>
-      <TwoBlocks sources={randomizedSources} />
+      <EightBlocks sources={randomizedSources} />
     </div>
   );
 };
 
-export default FiveStarSponsors;
+export default OverigeSponsors;

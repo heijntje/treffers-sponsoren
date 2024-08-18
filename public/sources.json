@@ -144,5 +144,57 @@
       "name": "TV scherm - sponsoring 0504",
       "url": "TV scherm - sponsoring 0504.mp4"
     }
+  ],
+  "wedstrijdsponsor": [
+    {
+      "name": "NewYorkPizza",
+      "url": "NewYorkPizza.png"
+    }
+  ],
+  "balsponsor": [
+    {
+      "name": "NewYorkPizza",
+      "url": "NewYorkPizza.png"
+    }
+  ],
+  "buffetsponsor": [
+    {
+      "name": "eikholt",
+      "url": ":txt:Janssen Groesbeek Kozijnen Installaties B.V."
+    }
+  ],
+  "overige": [
+    {
+      "name": "eikholt copy 2",
+      "url": ":txt:JG B.V."
+    },
+    {
+      "name": "eikholt copy 3",
+      "url": ":txt:Eikholt Kwekerijen B.V."
+    },
+    {
+      "name": "eikholt copy",
+      "url": ":txt:Janssen Groesbeek Kozijnen Installaties B.V."
+    },
+    {
+      "name": "eikholt",
+      "url": ":txt:BRG B.V."
+    },
+    {
+      "name": "FarmerHouseProducts",
+      "url": "FarmerHouseProducts.png"
+    },
+    {
+      "name": "MajoTrading",
+      "url": "MajoTrading.png"
+    },
+    {
+      "name": "Niveau",
+      "url": "Niveau.png"
+    },
+    {
+      "name": "P_Kaal",
+      "url": "P_Kaal.jpg"
+    }
   ]
 }

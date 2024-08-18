@@ -2,9 +2,9 @@ import React from "react";
 import { useEffect, useState } from "react";
 import OneBlock from "../components/OneBlock";
 
-const BalSponsor = ({ sources }) => {
+const WedstrijdSponsor = ({ sources }) => {
   const divStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/scherm_balsponsor.jpg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/scherm_wedstrijdsponsor.jpg)`,
     backgroundSize: "cover", // this will ensure the image covers the whole div
     height: "100vh", // this will make the div take the full height of the viewport
   };
@@ -12,12 +12,12 @@ const BalSponsor = ({ sources }) => {
   const [sourcesURLs, setSourcesURLs] = useState([]);
 
   useEffect(() => {
-    const baseURL = `${process.env.PUBLIC_URL}/balsponsor/`;
+    const baseURL = `${process.env.PUBLIC_URL}/wedstrijdsponsor/`;
     if (!sources) return;
-    const sourcesURLs = sources.balsponsor.map((source) => {
+    const sourcesURLs = sources.wedstrijdsponsor.map((source) => {
       return baseURL + source.url;
     });
-    console.log(sourcesURLs);
+
     setSourcesURLs(sourcesURLs);
   }, [sources]);
 
@@ -28,4 +28,4 @@ const BalSponsor = ({ sources }) => {
   );
 };
 
-export default BalSponsor;
+export default WedstrijdSponsor;

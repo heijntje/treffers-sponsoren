@@ -5,8 +5,13 @@ import "./SponsorScreenRotator.css"; // Import the CSS file
 import FiveStarSponsors from "./pages/FiveStarSponsors";
 import FourStarSponsors from "./pages/FourStarSponsors";
 import ThreeStarSponsors from "./pages/ThreeStarSponsors";
+import HoofdSponsor from "./pages/HoofdSponsor";
+import PupilvdWeek from "./pages/PupilvdWeek";
+import WedstrijdSponsor from "./pages/WedstrijdSponsor";
 import BalSponsor from "./pages/BalSponsor";
+import BuffetSponsor from "./pages/BuffetSponsor";
 import Advertisement from "./pages/Advertisement";
+import OverigeSponsors from "./pages/OverigeSponsors";
 
 const SponsorScreenRotator = () => {
   const [currentScreen, setCurrentScreen] = useState(0);
@@ -15,7 +20,17 @@ const SponsorScreenRotator = () => {
     fourstars: {},
     threestars: {},
     advertisements: {},
+    overige: {},
   });
+
+  const [sources, setSources] = useState(null);
+
+  useEffect(() => {
+    console.log("trying to fetch sources.json");
+    fetch(process.env.PUBLIC_URL + "/sources.json")
+      .then((response) => response.json())
+      .then((data) => setSources(data));
+  }, []);
 
   // a handle function to update the sourceCounts, this function will be passed to the child components
   const updateSourceCounts = (sourceType, sources) => {
@@ -33,11 +48,36 @@ const SponsorScreenRotator = () => {
   };
 
   const sponsors = [
-    <FiveStarSponsors key={0} updateSourceCounts={updateSourceCounts} />,
-    <FourStarSponsors key={1} updateSourceCounts={updateSourceCounts} />,
-    <ThreeStarSponsors key={2} updateSourceCounts={updateSourceCounts} />,
-    // <BalSponsor key={4} />,
-    <Advertisement key={5} updateSourceCounts={updateSourceCounts} />,
+    <FiveStarSponsors
+      key={0}
+      sources={sources}
+      updateSourceCounts={updateSourceCounts}
+    />,
+    <FourStarSponsors
+      key={1}
+      sources={sources}
+      updateSourceCounts={updateSourceCounts}
+    />,
+    <ThreeStarSponsors
+      key={2}
+      sources={sources}
+      updateSourceCounts={updateSourceCounts}
+    />,
+    <HoofdSponsor key={3} />,
+    <PupilvdWeek key={4} />,
+    <WedstrijdSponsor key={5} sources={sources} />,
+    <BalSponsor key={6} sources={sources} />,
+    <BuffetSponsor key={7} sources={sources} />,
+    <Advertisement
+      key={8}
+      sources={sources}
+      updateSourceCounts={updateSourceCounts}
+    />,
+    <OverigeSponsors
+      key={9}
+      sources={sources}
+      updateSourceCounts={updateSourceCounts}
+    />,
   ];
 
   useEffect(() => {
@@ -49,11 +89,14 @@ const SponsorScreenRotator = () => {
   }, [sponsors.length]);
 
   return (
-    <SwitchTransition>
-      <CSSTransition key={currentScreen} timeout={1000} classNames="fade">
-        <div>{sponsors[currentScreen]}</div>
-      </CSSTransition>
-    </SwitchTransition>
+    <>
+      {sources === null || sources === undefined ? <div>Loading...</div> : null}
+      <SwitchTransition>
+        <CSSTransition key={currentScreen} timeout={1000} classNames="fade">
+          <div>{sponsors[currentScreen]}</div>
+        </CSSTransition>
+      </SwitchTransition>
+    </>
   );
 };
 

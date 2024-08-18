@@ -3,7 +3,7 @@ import SponsorScreenRotator from "./SponsorScreenRotator";
 
 function App() {
   const divStyle = {
-    backgroundImage: `url(/background.jpg)`,
+    backgroundImage: `url(./treffers-sponsoren/background.jpg)`,
     backgroundSize: "cover", // this will ensure the image covers the whole div
     height: "100vh", // this will make the div take the full height of the viewport
   };
