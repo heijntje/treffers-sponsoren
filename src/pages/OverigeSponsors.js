@@ -4,7 +4,7 @@ import EightBlocks from "../components/EightBlocks";
 
 const OverigeSponsors = ({ updateSourceCounts, sources }) => {
   const divStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/scherm_sponsoren.jpg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/scherm_bc.jpg)`,
     backgroundSize: "cover", // this will ensure the image covers the whole div
     height: "100vh", // this will make the div take the full height of the viewport
   };

@@ -32,6 +32,10 @@
       "url": "Drips.png"
     },
     {
+      "name": "EskesPartners",
+      "url": "EskesPartners.png"
+    },
+    {
       "name": "IhreKuche",
       "url": "IhreKuche.jpg"
     },
@@ -44,10 +48,6 @@
       "url": "MGMook.jpg"
     },
     {
-      "name": "PNG-Conceptical",
-      "url": "PNG-Conceptical.png"
-    },
-    {
       "name": "RienWeijers",
       "url": "RienWeijers.png"
     },
@@ -58,6 +58,10 @@
     {
       "name": "WoutersSchoonmaak",
       "url": "WoutersSchoonmaak.png"
+    },
+    {
+      "name": "WSP",
+      "url": "WSP.png"
     }
   ],
   "threestars": [
@@ -90,8 +94,8 @@
       "url": "De Veer Montage.png"
     },
     {
-      "name": "EskesPartners",
-      "url": "EskesPartners.jpg"
+      "name": "demulderkeukens",
+      "url": "demulderkeukens.jpg"
     },
     {
       "name": "HofmansAtHome",
@@ -102,12 +106,16 @@
       "url": "JanKooij.png"
     },
     {
-      "name": "Jobs4Work",
-      "url": "Jobs4Work.png"
+      "name": "LargeFood",
+      "url": "LargeFood.png"
     },
     {
       "name": "Lumar",
       "url": "Lumar.png"
+    },
+    {
+      "name": "NikkelenElektro60jaar",
+      "url": "NikkelenElektro60jaar.png"
     },
     {
       "name": "OostendorpAuto",
@@ -124,6 +132,10 @@
     {
       "name": "Toonen",
       "url": "Toonen.jpg"
+    },
+    {
+      "name": "VloerenbedrijfLelie",
+      "url": "VloerenbedrijfLelie.png"
     }
   ],
   "advertisements": [
@@ -158,8 +170,8 @@
   ],
   "buffetsponsor": [
     {
-      "name": "onbekend",
-      "url": ":txt:Onbekend B.V."
+      "name": "DeBurenGennep",
+      "url": "DeBurenGennep.png"
     }
   ],
   "overige": [
@@ -172,8 +184,92 @@
       "url": "3aAdvies.png"
     },
     {
+      "name": "Adco",
+      "url": "Adco.png"
+    },
+    {
+      "name": "BakkerijHenkCoopmans",
+      "url": "BakkerijHenkCoopmans.png"
+    },
+    {
+      "name": "Bank ten Cate en Cie",
+      "url": "Bank ten Cate en Cie.png"
+    },
+    {
+      "name": "BastyleReclame",
+      "url": "BastyleReclame.jpg"
+    },
+    {
+      "name": "Bekla Nijmegen",
+      "url": ":txt:Bekla Nijmegen"
+    },
+    {
+      "name": "Beleggingsmaatschappij Hendriks Groesbeek BV",
+      "url": ":txt:Beleggingsmaatschappij Hendriks Groesbeek BV"
+    },
+    {
+      "name": "Belegginsmij Hendriks Groesbeek BV",
+      "url": ":txt:Beleggingsmaatschappij Hendriks Groesbeek BV"
+    },
+    {
+      "name": "BeMark",
+      "url": "BeMark.png"
+    },
+    {
+      "name": "bijons",
+      "url": "bijons.png"
+    },
+    {
+      "name": "BlueAccountants",
+      "url": "BlueAccountants.jpg"
+    },
+    {
       "name": "BRGMetaal",
       "url": "BRGMetaal.png"
+    },
+    {
+      "name": "bundeling",
+      "url": "bundeling.png"
+    },
+    {
+      "name": "censo",
+      "url": "censo.png"
+    },
+    {
+      "name": "Continyou",
+      "url": "Continyou.jpg"
+    },
+    {
+      "name": "DakdekkersRikkenDak",
+      "url": "DakdekkersRikkenDak.png"
+    },
+    {
+      "name": "EijkhoutPartners",
+      "url": "EijkhoutPartners.png"
+    },
+    {
+      "name": "Fakro",
+      "url": "Fakro.png"
+    },
+    {
+      "name": "FeestpakketOpMaat",
+      "url": "FeestpakketOpMaat.jpg"
+    },
+    {
+      "name": "FotoVerbeeten",
+      "url": "FotoVerbeeten.jpg"
+    },
+    {
+      "name": "Frans Langeveld",
+      "url": ":txt:Frans Langeveld"
+    },
+    {
+      "name": "Gekro BV",
+      "url": ":txt:Gekro BV"
+    },
+    {
+      "name": "Goemans Holding",
+      "url": ":txt:Goemans Holding"
     },
     {
       "name": "Hagemann",
@@ -188,6 +284,50 @@
       "url": "HoogstratenInstallaties.jpeg"
     },
     {
+      "name": "Hoogwegt",
+      "url": "Hoogwegt.jpg"
+    },
+    {
+      "name": "HotelWolfsberg",
+      "url": "HotelWolfsberg.png"
+    },
+    {
+      "name": "Houzing",
+      "url": "Houzing.png"
+    },
+    {
+      "name": "HRMeetEnRegeltechniek",
+      "url": "HRMeetEnRegeltechniek.jpg"
+    },
+    {
+      "name": "ITVoordeZaak",
+      "url": "ITVoordeZaak.png"
+    },
+    {
+      "name": "Jac Bongers",
+      "url": "Jac Bongers.png"
+    },
+    {
+      "name": "Jacques Biessels",
+      "url": ":txt:Jacques Biessels"
+    },
+    {
+      "name": "Joficon",
+      "url": "Joficon.png"
+    },
+    {
+      "name": "Kompas",
+      "url": "Kompas.png"
+    },
+    {
+      "name": "KoningsMaters",
+      "url": "KoningsMaters.jpg"
+    },
+    {
+      "name": "Koshelmus BV",
+      "url": ":txt:Koshelmus BV"
+    },
+    {
       "name": "LaHeij",
       "url": "LaHeij.jpeg"
     },
@@ -196,8 +336,180 @@
       "url": "Lemmers.png"
     },
     {
+      "name": "LHPackaging",
+      "url": "LHPackaging.jpg"
+    },
+    {
+      "name": "Megens",
+      "url": "Megens.png"
+    },
+    {
+      "name": "Meglio",
+      "url": "Meglio.png"
+    },
+    {
+      "name": "melco-totaalafbouw",
+      "url": "melco-totaalafbouw.jpg"
+    },
+    {
+      "name": "Melkveebedrijf Overenk BV",
+      "url": ":txt:Melkveebedrijf Overenk BV"
+    },
+    {
+      "name": "MenMSecurity",
+      "url": "MenMSecurity.png"
+    },
+    {
+      "name": "MilkConnect",
+      "url": "MilkConnect.png"
+    },
+    {
+      "name": "MountainResidences",
+      "url": "MountainResidences.jpg"
+    },
+    {
+      "name": "ParcBuitengewoon",
+      "url": "ParcBuitengewoon.jpg"
+    },
+    {
+      "name": "PeterGraat",
+      "url": "PeterGraat.jpg"
+    },
+    {
+      "name": "PHPlusSolution",
+      "url": "PHPlusSolution.jpg"
+    },
+    {
+      "name": "pluryn",
+      "url": "pluryn.jpeg"
+    },
+    {
+      "name": "RestaurantDeSpil",
+      "url": "RestaurantDeSpil.png"
+    },
+    {
+      "name": "RestaurantVurrukkulluk",
+      "url": "RestaurantVurrukkulluk.png"
+    },
+    {
+      "name": "RHMA",
+      "url": "RHMA.png"
+    },
+    {
+      "name": "Ricoh",
+      "url": "Ricoh.png"
+    },
+    {
+      "name": "Rikken-PNG-Conceptical",
+      "url": "Rikken-PNG-Conceptical.png"
+    },
+    {
+      "name": "RoelWoutersInstallatie",
+      "url": "RoelWoutersInstallatie.jpg"
+    },
+    {
+      "name": "Ronald van de Ven",
+      "url": ":txt:Ronald van de Ven"
+    },
+    {
+      "name": "RoverWood",
+      "url": "RoverWood.jpg"
+    },
+    {
       "name": "Rutolux",
       "url": "Rutolux.jpeg"
+    },
+    {
+      "name": "Rutolux",
+      "url": "Rutolux.png"
+    },
+    {
+      "name": "Sanavit",
+      "url": "Sanavit.jpg"
+    },
+    {
+      "name": "ScotchWhiskyInvestments",
+      "url": "ScotchWhiskyInvestments.jpg"
+    },
+    {
+      "name": "Spiertz",
+      "url": "Spiertz.jpg"
+    },
+    {
+      "name": "StadsherbergGennep",
+      "url": "StadsherbergGennep.png"
+    },
+    {
+      "name": "teezz",
+      "url": "teezz.jpg"
+    },
+    {
+      "name": "Theuma",
+      "url": "Theuma.jpg"
+    },
+    {
+      "name": "Thibacs",
+      "url": "Thibacs.jpg"
+    },
+    {
+      "name": "Topic",
+      "url": "Topic.jpg"
+    },
+    {
+      "name": "TribEvents",
+      "url": "TribEvents.png"
+    },
+    {
+      "name": "ValleiAutoGroep",
+      "url": "ValleiAutoGroep.png"
+    },
+    {
+      "name": "Van Bakel Groep",
+      "url": ":txt:Van Bakel Groep"
+    },
+    {
+      "name": "VanAltenaWijchen",
+      "url": "VanAltenaWijchen.png"
+    },
+    {
+      "name": "vanBergenTweewielers",
+      "url": "vanBergenTweewielers.jpg"
+    },
+    {
+      "name": "vanderhamglas",
+      "url": "vanderhamglas.jpg"
+    },
+    {
+      "name": "voergroepZuid",
+      "url": "voergroepZuid.jpeg"
+    },
+    {
+      "name": "VOF Bloemers Orlova",
+      "url": ":txt:VOF Bloemers Orlova"
+    },
+    {
+      "name": "W Zwitserloot BV",
+      "url": ":txt:W Zwitserloot BV"
+    },
+    {
+      "name": "WeldOnMetaal",
+      "url": "WeldOnMetaal.png"
+    },
+    {
+      "name": "WerkbedrijfRijkvNijmegen",
+      "url": "WerkbedrijfRijkvNijmegen.png"
+    },
+    {
+      "name": "WijnhovenHubers",
+      "url": "WijnhovenHubers.png"
+    },
+    {
+      "name": "WijnhuisRanke",
+      "url": "WijnhuisRanke.png"
+    },
+    {
+      "name": "Wouters Sanitair en tegelshop",
+      "url": "Wouters Sanitair en tegelshop.png"
     }
   ]
 }
