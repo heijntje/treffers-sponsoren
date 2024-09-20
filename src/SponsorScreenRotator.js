@@ -64,7 +64,7 @@ const SponsorScreenRotator = () => {
       updateSourceCounts={updateSourceCounts}
     />,
     <HoofdSponsor key={3} />,
-    <PupilvdWeek key={4} />,
+    // <PupilvdWeek key={4} />,
     <WedstrijdSponsor key={5} sources={sources} />,
     <BalSponsor key={6} sources={sources} />,
     <BuffetSponsor key={7} sources={sources} />,
