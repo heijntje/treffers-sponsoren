@@ -158,20 +158,20 @@
   ],
   "wedstrijdsponsor": [
     {
-      "name": "Cafetaria Domino Groesbeek",
-      "url": ":txt:Cafetaria Domino Groesbeek"
+      "name": "coopmans",
+      "url": "coopmans.png"
     }
   ],
   "balsponsor": [
     {
-      "name": "verspeek_logo",
-      "url": "verspeek_logo.png"
+      "name": "coopmans",
+      "url": "coopmans.png"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "DeSpil",
-      "url": "DeSpil.png"
+      "name": "Kantine De Treffers",
+      "url": ":txt:Kantine\nDe Treffers"
     }
   ],
   "overige": [
