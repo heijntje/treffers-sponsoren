@@ -158,20 +158,20 @@
   ],
   "wedstrijdsponsor": [
     {
-      "name": "coopmans",
-      "url": "coopmans.png"
+      "name": "rikjoebbers",
+      "url": "rikjoebbers.png"
     }
   ],
   "balsponsor": [
     {
-      "name": "coopmans",
-      "url": "coopmans.png"
+      "name": "urker",
+      "url": "urker.png"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "Kantine De Treffers",
-      "url": ":txt:Kantine\nDe Treffers"
+      "name": "bijons-logo",
+      "url": "bijons-logo.svg"
     }
   ],
   "overige": [
