@@ -158,22 +158,17 @@
   ],
   "wedstrijdsponsor": [
     {
-      "name": "HERTOG JAN 0.0 LOGO",
-      "url": "HERTOG JAN 0.0 LOGO.jpg"
+      "name": "kosman",
+      "url": "kosman.jpg"
     }
   ],
   "balsponsor": [
     {
-      "name": "HERTOG JAN 0.0 LOGO",
-      "url": "HERTOG JAN 0.0 LOGO.jpg"
+      "name": "michelpoelen",
+      "url": "michelpoelen.jpg"
     }
   ],
-  "buffetsponsor": [
-    {
-      "name": "de-oude-molen",
-      "url": "de-oude-molen.png"
-    }
-  ],
+  "buffetsponsor": [],
   "overige": [
     {
       "name": "1voice",
