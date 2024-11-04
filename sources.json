@@ -158,17 +158,22 @@
   ],
   "wedstrijdsponsor": [
     {
-      "name": "kosman",
-      "url": "kosman.jpg"
+      "name": "logo ASG",
+      "url": "logo ASG.png"
     }
   ],
   "balsponsor": [
     {
-      "name": "michelpoelen",
-      "url": "michelpoelen.jpg"
+      "name": "logo Thijssen",
+      "url": "logo Thijssen.jpg"
     }
   ],
-  "buffetsponsor": [],
+  "buffetsponsor": [
+    {
+      "name": "pruufut",
+      "url": "pruufut.jpg"
+    }
+  ],
   "overige": [
     {
       "name": "1voice",
