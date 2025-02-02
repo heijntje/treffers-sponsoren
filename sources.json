@@ -158,20 +158,20 @@
   ],
   "wedstrijdsponsor": [
     {
-      "name": "foto",
-      "url": "foto.png"
+      "name": "numblees",
+      "url": "numblees.jpeg"
     }
   ],
   "balsponsor": [
     {
-      "name": "gymgroesbeek",
-      "url": "gymgroesbeek.png"
+      "name": "brozuslogo",
+      "url": "brozuslogo.jpg"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "bijons-logo",
-      "url": "bijons-logo.png"
+      "name": "kantine",
+      "url": ":txt:Treffers Kantine"
     }
   ],
   "overige": [
