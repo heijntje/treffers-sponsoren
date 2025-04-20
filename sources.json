@@ -140,10 +140,6 @@
   ],
   "advertisements": [
     {
-      "name": "gerrits-1 assurantien",
-      "url": "gerrits-1 assurantien.png"
-    },
-    {
       "name": "NewYorkPizza",
       "url": "NewYorkPizza.png"
     },
@@ -158,14 +154,14 @@
   ],
   "wedstrijdsponsor": [
     {
-      "name": "IMG_5981",
-      "url": "IMG_5981.png"
+      "name": "numblees",
+      "url": "numblees.jpeg"
     }
   ],
   "balsponsor": [
     {
-      "name": "IMG_5981",
-      "url": "IMG_5981.png"
+      "name": "LOGO_VAN_ZUIJLEN_metadres",
+      "url": "LOGO_VAN_ZUIJLEN_metadres.png"
     }
   ],
   "buffetsponsor": [
