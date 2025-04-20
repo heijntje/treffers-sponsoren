@@ -24,8 +24,8 @@
       "url": "Cornelion.png"
     },
     {
-      "name": "DMG",
-      "url": "DMG.png"
+      "name": "dmg",
+      "url": "dmg.png"
     },
     {
       "name": "Drips",
@@ -140,10 +140,6 @@
   ],
   "advertisements": [
     {
-      "name": "gerrits-1 assurantien",
-      "url": "gerrits-1 assurantien.png"
-    },
-    {
       "name": "NewYorkPizza",
       "url": "NewYorkPizza.png"
     },
@@ -158,20 +154,20 @@
   ],
   "wedstrijdsponsor": [
     {
-      "name": "Cafetaria Domino Groesbeek",
-      "url": ":txt:Cafetaria Domino Groesbeek"
+      "name": "numblees",
+      "url": "numblees.jpeg"
     }
   ],
   "balsponsor": [
     {
-      "name": "verspeek_logo",
-      "url": "verspeek_logo.png"
+      "name": "LOGO_VAN_ZUIJLEN_metadres",
+      "url": "LOGO_VAN_ZUIJLEN_metadres.png"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "DeSpil",
-      "url": "DeSpil.png"
+      "name": "buren",
+      "url": "buren.png"
     }
   ],
   "overige": [

@@ -6,6 +6,7 @@ import FiveStarSponsors from "./pages/FiveStarSponsors";
 import FourStarSponsors from "./pages/FourStarSponsors";
 import ThreeStarSponsors from "./pages/ThreeStarSponsors";
 import HoofdSponsor from "./pages/HoofdSponsor";
+import Aankondigingen from "./pages/Aankondigingen";
 import PupilvdWeek from "./pages/PupilvdWeek";
 import WedstrijdSponsor from "./pages/WedstrijdSponsor";
 import BalSponsor from "./pages/BalSponsor";
@@ -65,16 +66,16 @@ const SponsorScreenRotator = () => {
     />,
     <HoofdSponsor key={3} />,
     // <PupilvdWeek key={4} />,
-    <WedstrijdSponsor key={5} sources={sources} />,
-    <BalSponsor key={6} sources={sources} />,
-    <BuffetSponsor key={7} sources={sources} />,
+    <WedstrijdSponsor key={7} sources={sources} />,
+    <BalSponsor key={8} sources={sources} />,
+    // <BuffetSponsor key={9} sources={sources} />,
     <Advertisement
-      key={8}
+      key={10}
       sources={sources}
       updateSourceCounts={updateSourceCounts}
     />,
     <OverigeSponsors
-      key={9}
+      key={11}
       sources={sources}
       updateSourceCounts={updateSourceCounts}
     />,

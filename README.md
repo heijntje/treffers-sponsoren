@@ -1,3 +1,8 @@
+`npm run deploy` to deploy to gh pages and make the changes live
+`npm start` to see the changes locally
+
+Not entirely sure as I have never checked it, but I think it is necessary to synchronize the mediaplayers of sportlink as well (can be done on https://app.cms-ds.com/ )
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
