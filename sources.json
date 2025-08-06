@@ -2,6 +2,10 @@
   "businessclub": [],
   "fivestars": [
     {
+      "name": "dedicated",
+      "url": "dedicated.png"
+    },
+    {
       "name": "FarmerHouseProducts",
       "url": "FarmerHouseProducts.png"
     },
@@ -40,12 +44,12 @@
       "url": "IhreKuche.jpg"
     },
     {
-      "name": "KegroDeuren",
-      "url": "KegroDeuren.png"
-    },
-    {
       "name": "MGMook",
       "url": "MGMook.jpg"
+    },
+    {
+      "name": "OostendorpAuto",
+      "url": "OostendorpAuto.png"
     },
     {
       "name": "RienWeijers",
@@ -82,10 +86,6 @@
       "url": "byondis.png"
     },
     {
-      "name": "Casino-scout",
-      "url": "Casino-scout.png"
-    },
-    {
       "name": "De Spil",
       "url": "De Spil.png"
     },
@@ -106,8 +106,8 @@
       "url": "JanKooij.png"
     },
     {
-      "name": "LargeFood",
-      "url": "LargeFood.png"
+      "name": "Kenonz",
+      "url": "Kenonz.png"
     },
     {
       "name": "Lumar",
@@ -118,16 +118,20 @@
       "url": "NikkelenElektro60jaar.png"
     },
     {
-      "name": "OostendorpAuto",
-      "url": "OostendorpAuto.png"
-    },
-    {
       "name": "Rikjo Ebbers",
       "url": "Rikjo Ebbers.JPG"
     },
     {
       "name": "Sienn",
       "url": "Sienn.png"
+    },
+    {
+      "name": "studius",
+      "url": "studius.png"
+    },
+    {
+      "name": "TinQ",
+      "url": "TinQ.png"
     },
     {
       "name": "Toonen",
@@ -154,14 +158,14 @@
   ],
   "wedstrijdsponsor": [
     {
-      "name": "protoga_beveiliging",
-      "url": "protoga_beveiliging.png"
+      "name": "PNG-Conceptical",
+      "url": "PNG-Conceptical.png"
     }
   ],
   "balsponsor": [
     {
-      "name": "LOGOLisette kleur",
-      "url": "LOGOLisette kleur.png"
+      "name": "PNG-Conceptical",
+      "url": "PNG-Conceptical.png"
     }
   ],
   "buffetsponsor": [
@@ -190,10 +194,6 @@
     {
       "name": "Bank ten Cate en Cie",
       "url": "Bank ten Cate en Cie.png"
-    },
-    {
-      "name": "BastyleReclame",
-      "url": "BastyleReclame.jpg"
     },
     {
       "name": "Bekla Nijmegen",
@@ -236,8 +236,20 @@
       "url": "Continyou.jpg"
     },
     {
+      "name": "dagro",
+      "url": "dagro.png"
+    },
+    {
       "name": "DakdekkersRikkenDak",
       "url": "DakdekkersRikkenDak.png"
+    },
+    {
+      "name": "de-buren-logo-zwart",
+      "url": "de-buren-logo-zwart.png"
+    },
+    {
+      "name": "Dhomus",
+      "url": ":txt:Dhomus"
     },
     {
       "name": "EijkhoutPartners",
@@ -310,6 +322,10 @@
     {
       "name": "Joficon",
       "url": "Joficon.png"
+    },
+    {
+      "name": "jrwoodz",
+      "url": "jrwoodz.jpeg"
     },
     {
       "name": "Kompas",
