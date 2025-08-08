@@ -10,6 +10,10 @@
       "url": "FarmerHouseProducts.png"
     },
     {
+      "name": "HofmansAtHome",
+      "url": "HofmansAtHome.png"
+    },
+    {
       "name": "MajoTrading",
       "url": "MajoTrading.png"
     },
@@ -96,10 +100,6 @@
     {
       "name": "demulderkeukens",
       "url": "demulderkeukens.jpg"
-    },
-    {
-      "name": "HofmansAtHome",
-      "url": "HofmansAtHome.png"
     },
     {
       "name": "JanKooij",
@@ -370,6 +370,10 @@
     {
       "name": "MilkConnect",
       "url": "MilkConnect.png"
+    },
+    {
+      "name": "MonikaSasInterieur",
+      "url": "MonikaSasInterieur.png"
     },
     {
       "name": "MountainResidences",
