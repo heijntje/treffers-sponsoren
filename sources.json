@@ -130,10 +130,6 @@
       "url": "studius.png"
     },
     {
-      "name": "TinQ",
-      "url": "TinQ.png"
-    },
-    {
       "name": "Toonen",
       "url": "Toonen.jpg"
     },
@@ -462,6 +458,10 @@
     {
       "name": "Thibacs",
       "url": "Thibacs.jpg"
+    },
+    {
+      "name": "TinQ",
+      "url": "TinQ.png"
     },
     {
       "name": "Topic",
