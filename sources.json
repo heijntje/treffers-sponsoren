@@ -292,6 +292,10 @@
       "url": "HalduGroep.png"
     },
     {
+      "name": "Het Rijk van Nijmegen Logo_RGB",
+      "url": "Het Rijk van Nijmegen Logo_RGB.jpg"
+    },
+    {
       "name": "HoogstratenInstallaties",
       "url": "HoogstratenInstallaties.jpeg"
     },
@@ -526,6 +530,10 @@
     {
       "name": "Wouters Sanitair en tegelshop",
       "url": "Wouters Sanitair en tegelshop.png"
+    },
+    {
+      "name": "wve",
+      "url": "wve.png"
     }
   ]
 }
