@@ -160,28 +160,23 @@
       "url": "TV scherm - sponsoring 0504.mp4"
     }
   ],
-  "announcements": [
-    {
-      "name": "Tasty Taartjes",
-      "url": "Tasty Taartjes.jpg"
-    }
-  ],
+  "announcements": [],
   "wedstrijdsponsor": [
     {
-      "name": "protoga_beveiliging-1",
-      "url": "protoga_beveiliging-1.png"
+      "name": "jelleschilderwerken",
+      "url": "jelleschilderwerken.png"
     }
   ],
   "balsponsor": [
     {
-      "name": "DKC-totaaltechniek-logo-20cm",
-      "url": "DKC-totaaltechniek-logo-20cm.jpg"
+      "name": "michelpoelendak",
+      "url": "michelpoelendak.jpg"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "campingbijons",
-      "url": "campingbijons.png"
+      "name": "eetcafe de oude molen",
+      "url": "eetcafe de oude molen.png"
     }
   ],
   "overige": [
