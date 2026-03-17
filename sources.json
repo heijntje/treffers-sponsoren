@@ -148,6 +148,10 @@
   ],
   "advertisements": [
     {
+      "name": "LV_ADV_1_8_03",
+      "url": "LV_ADV_1_8_03.jpg"
+    },
+    {
       "name": "NewYorkPizza",
       "url": "NewYorkPizza.png"
     },
@@ -163,20 +167,20 @@
   "announcements": [],
   "wedstrijdsponsor": [
     {
-      "name": "patrick kramer autorijschool logo",
-      "url": "patrick kramer autorijschool logo.png"
+      "name": "Peter_Graat-JPG-Conceptical-1",
+      "url": "Peter_Graat-JPG-Conceptical-1.jpg"
     }
   ],
   "balsponsor": [
     {
-      "name": "gymgroesbeek",
-      "url": "gymgroesbeek.png"
+      "name": "lema-vloeren-logo-968-CAX_r7Vc",
+      "url": "lema-vloeren-logo-968-CAX_r7Vc.png"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "bijons-logo",
-      "url": "bijons-logo.png"
+      "name": "Volledige logo De oude molen",
+      "url": "Volledige logo De oude molen.jpg"
     }
   ],
   "overige": [
