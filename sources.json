@@ -14,6 +14,10 @@
       "url": "HofmansAtHome.png"
     },
     {
+      "name": "ihrekuche",
+      "url": "ihrekuche.png"
+    },
+    {
       "name": "MajoTrading",
       "url": "MajoTrading.png"
     },
@@ -42,10 +46,6 @@
     {
       "name": "EskesPartners",
       "url": "EskesPartners.png"
-    },
-    {
-      "name": "IhreKuche",
-      "url": "IhreKuche.jpg"
     },
     {
       "name": "MGMook",
@@ -102,8 +102,8 @@
       "url": "De Veer Montage.png"
     },
     {
-      "name": "demulderkeukens",
-      "url": "demulderkeukens.jpg"
+      "name": "de-mulder-keukens",
+      "url": "de-mulder-keukens.jpg"
     },
     {
       "name": "JanKooij",
@@ -167,20 +167,28 @@
   "announcements": [],
   "wedstrijdsponsor": [
     {
-      "name": "numblees-768x212",
-      "url": "numblees-768x212.jpeg"
+      "name": "kompas-300x79",
+      "url": "kompas-300x79.jpeg"
     }
   ],
   "balsponsor": [
     {
-      "name": "UrkerLogo2 (2)",
-      "url": "UrkerLogo2 (2).png"
+      "name": "logo_images_0_1755759212367684555",
+      "url": "logo_images_0_1755759212367684555.png"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "buren",
-      "url": "buren.png"
+      "name": "272966973_111884691400774_1322056068823337682_n",
+      "url": "272966973_111884691400774_1322056068823337682_n.jpg"
+    },
+    {
+      "name": "272966973_111884691400774_1322056068823337682_n",
+      "url": "272966973_111884691400774_1322056068823337682_n.png"
+    },
+    {
+      "name": "UrkerLogo2 (2)",
+      "url": "UrkerLogo2 (2).png"
     }
   ],
   "overige": [
