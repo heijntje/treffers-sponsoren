@@ -14,6 +14,10 @@
       "url": "HofmansAtHome.png"
     },
     {
+      "name": "ihrekuche",
+      "url": "ihrekuche.png"
+    },
+    {
       "name": "MajoTrading",
       "url": "MajoTrading.png"
     },
@@ -42,10 +46,6 @@
     {
       "name": "EskesPartners",
       "url": "EskesPartners.png"
-    },
-    {
-      "name": "IhreKuche",
-      "url": "IhreKuche.jpg"
     },
     {
       "name": "MGMook",
@@ -102,8 +102,8 @@
       "url": "De Veer Montage.png"
     },
     {
-      "name": "demulderkeukens",
-      "url": "demulderkeukens.jpg"
+      "name": "de-mulder-keukens",
+      "url": "de-mulder-keukens.jpg"
     },
     {
       "name": "JanKooij",
@@ -148,6 +148,10 @@
   ],
   "advertisements": [
     {
+      "name": "LV_ADV_1_8_03",
+      "url": "LV_ADV_1_8_03.jpg"
+    },
+    {
       "name": "NewYorkPizza",
       "url": "NewYorkPizza.png"
     },
@@ -160,22 +164,23 @@
       "url": "TV scherm - sponsoring 0504.mp4"
     }
   ],
+  "announcements": [],
   "wedstrijdsponsor": [
     {
-      "name": "numblees-768x212",
-      "url": "numblees-768x212.jpeg"
+      "name": "Niveau",
+      "url": "Niveau.png"
     }
   ],
   "balsponsor": [
     {
-      "name": "weijerspd",
-      "url": "weijerspd.png"
+      "name": "Niveau",
+      "url": "Niveau.png"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "PNG-Conceptical",
-      "url": "PNG-Conceptical.png"
+      "name": "De Treffers banner - Daan",
+      "url": "De Treffers banner - Daan.png"
     }
   ],
   "overige": [
