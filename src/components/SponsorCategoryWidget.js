@@ -1,0 +1,186 @@
+import React, { useState, useEffect, useRef, useCallback } from "react";
+import { Textfit } from "react-textfit";
+
+const CATEGORY_META = {
+  fivestars: { title: "5 sterrensponsor" },
+  fourstars: { title: "4 sterrensponsor" },
+  threestars: { title: "3 sterrensponsor" },
+  businessclub: { title: "Businessclub" },
+  overige: { title: "Overige sponsoren" },
+  wedstrijdsponsor: { title: "Wedstrijdsponsor" },
+  balsponsor: { title: "Balsponsor" },
+  buffetsponsor: { title: "Buffetsponsor" },
+};
+
+const NORMALIZE_MAP = {
+  "5star": "fivestars",
+  "5stars": "fivestars",
+  "5": "fivestars",
+  "fivestar": "fivestars",
+  "fivestars": "fivestars",
+
+  "4star": "fourstars",
+  "4stars": "fourstars",
+  "4": "fourstars",
+  "fourstar": "fourstars",
+  "fourstars": "fourstars",
+
+  "3star": "threestars",
+  "3stars": "threestars",
+  "3": "threestars",
+  "threestar": "threestars",
+  "threestars": "threestars",
+
+  "businessclub": "businessclub",
+  "bc": "businessclub",
+
+  "overige": "overige",
+  "other": "overige",
+
+  "wedstrijdsponsor": "wedstrijdsponsor",
+  "balsponsor": "balsponsor",
+  "buffetsponsor": "buffetsponsor",
+};
+
+const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "white" }) => {
+  const [sources, setSources] = useState(null);
+  const containerRef = useRef(null);
+
+  // Normalize category parameter
+  const rawParam = (categoryParam || "4star").toLowerCase();
+  const isAllMode = rawParam === "all";
+  const normalizedCategory = NORMALIZE_MAP[rawParam] || "fourstars";
+
+  useEffect(() => {
+    fetch(process.env.PUBLIC_URL + "/sources.json")
+      .then((res) => res.json())
+      .then((data) => setSources(data))
+      .catch((err) => console.error("Failed to load sources.json", err));
+  }, []);
+
+  // PostMessage for iframe auto-resizing
+  const postHeightToParent = useCallback(() => {
+    if (containerRef.current) {
+      const height = Math.ceil(containerRef.current.getBoundingClientRect().height);
+      window.parent.postMessage(
+        {
+          type: "treffers-iframe-resize",
+          height,
+          category: rawParam,
+        },
+        "*"
+      );
+    }
+  }, [rawParam]);
+
+  useEffect(() => {
+    postHeightToParent();
+
+    const handleResize = () => postHeightToParent();
+    window.addEventListener("resize", handleResize);
+
+    // Setup ResizeObserver for layout shifts (e.g. image loads, text reflow)
+    let observer;
+    if (containerRef.current && window.ResizeObserver) {
+      observer = new ResizeObserver(() => {
+        postHeightToParent();
+      });
+      observer.observe(containerRef.current);
+    }
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      if (observer) observer.disconnect();
+    };
+  }, [sources, postHeightToParent]);
+
+  if (!sources) {
+    return (
+      <div className="w-full p-8 text-center text-gray-500 font-sans">
+        Laden van sponsoren...
+      </div>
+    );
+  }
+
+  const renderCategoryGrid = (catKey) => {
+    const items = sources[catKey] || [];
+    const meta = CATEGORY_META[catKey] || { title: catKey };
+
+    if (items.length === 0) return null;
+
+    return (
+      <div key={catKey} className="mb-10 last:mb-0">
+        {!hideHeader && (
+          <h1 className="text-[#e30613] font-bold text-2xl sm:text-3xl mb-6 tracking-tight font-sans">
+            {meta.title}
+          </h1>
+        )}
+
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 items-center justify-items-center">
+          {items.map((item, idx) => {
+            const isTxt = item.url?.includes(":txt:");
+            const imgSrc = `${process.env.PUBLIC_URL}/${catKey}/${item.url}`;
+            const website = item.website;
+
+            const cardContent = isTxt ? (
+              <Textfit
+                mode="multi"
+                className="font-bold text-center flex items-center justify-center text-gray-800 w-full h-full p-1"
+              >
+                {item.url.split(":txt:")[1]}
+              </Textfit>
+            ) : (
+              <img
+                src={imgSrc}
+                alt={item.name || "Sponsor"}
+                className="max-w-full max-h-full object-contain transition-transform duration-200 group-hover:scale-[1.04]"
+                onLoad={postHeightToParent}
+              />
+            );
+
+            if (website) {
+              return (
+                <a
+                  key={idx}
+                  href={website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={`Bezoek ${item.name || "sponsor"}`}
+                  className="group w-full h-28 sm:h-36 md:h-40 flex items-center justify-center p-3 sm:p-4 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md hover:border-red-200 transition-all duration-200 cursor-pointer"
+                >
+                  {cardContent}
+                </a>
+              );
+            }
+
+            return (
+              <div
+                key={idx}
+                className="w-full h-28 sm:h-36 md:h-40 flex items-center justify-center p-3 sm:p-4 rounded-lg bg-white shadow-sm border border-gray-100"
+              >
+                {cardContent}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  };
+
+  const categoriesToRender = isAllMode
+    ? Object.keys(CATEGORY_META)
+    : [normalizedCategory];
+
+  const bgColorClass = theme === "transparent" ? "bg-transparent" : "bg-white";
+
+  return (
+    <div
+      ref={containerRef}
+      className={`w-full min-h-screen p-4 sm:p-8 font-sans ${bgColorClass}`}
+    >
+      {categoriesToRender.map((cat) => renderCategoryGrid(cat))}
+    </div>
+  );
+};
+
+export default SponsorCategoryWidget;
