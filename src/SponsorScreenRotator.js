@@ -13,7 +13,7 @@ import BalSponsor from "./pages/BalSponsor";
 import BuffetSponsor from "./pages/BuffetSponsor";
 import Advertisement from "./pages/Advertisement";
 import Announcements from "./pages/Announcements";
-import OverigeSponsors from "./pages/OverigeSponsors";
+import BusinessClubSponsors from "./pages/BusinessClubSponsors";
 
 const SponsorScreenRotator = () => {
   const [currentScreen, setCurrentScreen] = useState(0);
@@ -23,7 +23,7 @@ const SponsorScreenRotator = () => {
     threestars: {},
     advertisements: {},
     announcements: {},
-    overige: {},
+    businessclub: {},
   });
 
   const [sources, setSources] = useState(null);
@@ -118,7 +118,7 @@ const SponsorScreenRotator = () => {
       // />,
       //     ]
       //   : []),
-      <OverigeSponsors
+      <BusinessClubSponsors
         key={12}
         sources={sources}
         updateSourceCounts={updateSourceCounts}

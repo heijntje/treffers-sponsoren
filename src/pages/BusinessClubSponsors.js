@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import EightBlocks from "../components/EightBlocks";
 
-const OverigeSponsors = ({ updateSourceCounts, sources }) => {
+const BusinessClubSponsors = ({ updateSourceCounts, sources }) => {
   const divStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/scherm_bc.jpg)`,
     backgroundSize: "cover", // this will ensure the image covers the whole div
@@ -12,9 +12,9 @@ const OverigeSponsors = ({ updateSourceCounts, sources }) => {
   const [sourcesURLs, setSourcesURLs] = useState([]);
 
   useEffect(() => {
-    const baseURL = `${process.env.PUBLIC_URL}/overige/`;
-    if (!sources) return;
-    const sourcesURLs = sources.overige.map((source) => {
+    const baseURL = `${process.env.PUBLIC_URL}/businessclub/`;
+    if (!sources || !sources.businessclub) return;
+    const sourcesURLs = sources.businessclub.map((source) => {
       return baseURL + source.url;
     });
 
@@ -24,16 +24,16 @@ const OverigeSponsors = ({ updateSourceCounts, sources }) => {
   const [randomizedSources, setRandomizedSources] = useState([]);
 
   useEffect(() => {
-    const pickEightandomSources = (sources) => {
+    const pickEightRandomSources = (sources) => {
       let shuffled = [...sources].sort(() => 0.5 - Math.random());
       let picked = shuffled.slice(0, 8);
 
       // Update the source counts
-      updateSourceCounts("overige", picked);
+      updateSourceCounts("businessclub", picked);
       return picked;
     };
 
-    setRandomizedSources(pickEightandomSources(sourcesURLs));
+    setRandomizedSources(pickEightRandomSources(sourcesURLs));
   }, [sourcesURLs]);
 
   return (
@@ -43,4 +43,4 @@ const OverigeSponsors = ({ updateSourceCounts, sources }) => {
   );
 };
 
-export default OverigeSponsors;
+export default BusinessClubSponsors;
