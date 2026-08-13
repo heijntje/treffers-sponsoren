@@ -12,6 +12,46 @@ const CATEGORY_META = {
   buffetsponsor: { title: "Buffetsponsor" },
 };
 
+const CATEGORY_STYLES = {
+  fivestars: {
+    gridCols: "grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2",
+    gap: "gap-6 sm:gap-10",
+    cardHeight: "h-44 sm:h-56 md:h-64",
+    cardPadding: "p-6 sm:p-8",
+  },
+  fourstars: {
+    gridCols: "grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4",
+    gap: "gap-5 sm:gap-8",
+    cardHeight: "h-28 sm:h-36 md:h-40",
+    cardPadding: "p-4 sm:p-5",
+  },
+  threestars: {
+    gridCols: "grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5",
+    gap: "gap-4 sm:gap-6",
+    cardHeight: "h-20 sm:h-24 md:h-28",
+    cardPadding: "p-2 sm:p-3",
+  },
+  businessclub: {
+    gridCols: "grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5",
+    gap: "gap-4 sm:gap-6",
+    cardHeight: "h-20 sm:h-24 md:h-28",
+    cardPadding: "p-2 sm:p-3",
+  },
+  overige: {
+    gridCols: "grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5",
+    gap: "gap-4 sm:gap-6",
+    cardHeight: "h-20 sm:h-24 md:h-28",
+    cardPadding: "p-2 sm:p-3",
+  },
+};
+
+const DEFAULT_STYLE = {
+  gridCols: "grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5",
+  gap: "gap-4 sm:gap-6",
+  cardHeight: "h-20 sm:h-24 md:h-28",
+  cardPadding: "p-2 sm:p-3",
+};
+
 const NORMALIZE_MAP = {
   "5star": "fivestars",
   "5stars": "fivestars",
@@ -105,18 +145,19 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
   const renderCategoryGrid = (catKey) => {
     const items = sources[catKey] || [];
     const meta = CATEGORY_META[catKey] || { title: catKey };
+    const styles = CATEGORY_STYLES[catKey] || DEFAULT_STYLE;
 
     if (items.length === 0) return null;
 
     return (
-      <div key={catKey} className="mb-10 last:mb-0">
+      <div key={catKey} className="mb-12 last:mb-0">
         {!hideHeader && (
           <h1 className="text-[#e30613] font-bold text-2xl sm:text-3xl mb-6 tracking-tight font-sans">
             {meta.title}
           </h1>
         )}
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 items-center justify-items-center">
+        <div className={`grid ${styles.gridCols} ${styles.gap} items-center justify-items-center`}>
           {items.map((item, idx) => {
             const isTxt = item.url?.includes(":txt:");
             const imgSrc = `${process.env.PUBLIC_URL}/${catKey}/${item.url}`;
@@ -138,6 +179,8 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
               />
             );
 
+            const cardClasses = `group w-full ${styles.cardHeight} flex items-center justify-center ${styles.cardPadding} rounded-lg bg-white shadow-sm border border-gray-100 transition-all duration-200`;
+
             if (website) {
               return (
                 <a
@@ -146,7 +189,7 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
                   target="_blank"
                   rel="noopener noreferrer"
                   title={`Bezoek ${item.name || "sponsor"}`}
-                  className="group w-full h-28 sm:h-36 md:h-40 flex items-center justify-center p-3 sm:p-4 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md hover:border-red-200 transition-all duration-200 cursor-pointer"
+                  className={`${cardClasses} hover:shadow-md hover:border-red-200 cursor-pointer`}
                 >
                   {cardContent}
                 </a>
@@ -154,10 +197,7 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
             }
 
             return (
-              <div
-                key={idx}
-                className="w-full h-28 sm:h-36 md:h-40 flex items-center justify-center p-3 sm:p-4 rounded-lg bg-white shadow-sm border border-gray-100"
-              >
+              <div key={idx} className={cardClasses}>
                 {cardContent}
               </div>
             );
