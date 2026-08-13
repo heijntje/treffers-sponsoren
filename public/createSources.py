@@ -5,6 +5,7 @@ print("Creating sources.json...")
 
 # List of directories to scan
 directories = [
+    "hoofdsponsor",
     "businessclub",
     "fivestars",
     "fourstars",

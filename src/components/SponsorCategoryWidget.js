@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Textfit } from "react-textfit";
 
 const CATEGORY_META = {
+  hoofdsponsor: { title: "Trotse Hoofdsponsor" },
   fivestars: { title: "5 sterrensponsor" },
   fourstars: { title: "4 sterrensponsor" },
   threestars: { title: "3 sterrensponsor" },
@@ -13,6 +14,12 @@ const CATEGORY_META = {
 };
 
 const CATEGORY_STYLES = {
+  hoofdsponsor: {
+    gridCols: "grid-cols-1 max-w-xl mx-auto",
+    gap: "gap-6",
+    cardHeight: "h-48 sm:h-60 md:h-72",
+    cardPadding: "p-6 sm:p-10",
+  },
   fivestars: {
     gridCols: "grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2",
     gap: "gap-6 sm:gap-10",
@@ -53,6 +60,12 @@ const DEFAULT_STYLE = {
 };
 
 const NORMALIZE_MAP = {
+  "hoofdsponsor": "hoofdsponsor",
+  "hoofd": "hoofdsponsor",
+  "main": "hoofdsponsor",
+  "niveau": "hoofdsponsor",
+  "trotse-hoofdsponsor": "hoofdsponsor",
+
   "5star": "fivestars",
   "5stars": "fivestars",
   "5": "fivestars",
@@ -211,7 +224,7 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
   const categoriesToRender = isAllMode
     ? Object.keys(CATEGORY_META)
     : isStarsMode
-    ? ["fivestars", "fourstars", "threestars"]
+    ? ["hoofdsponsor", "fivestars", "fourstars", "threestars"]
     : [normalizedCategory];
 
   const bgColorClass = theme === "transparent" ? "bg-transparent" : "bg-white";
