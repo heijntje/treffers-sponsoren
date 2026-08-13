@@ -89,6 +89,7 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
   // Normalize category parameter
   const rawParam = (categoryParam || "4star").toLowerCase();
   const isAllMode = rawParam === "all";
+  const isStarsMode = rawParam === "stars" || rawParam === "sponsoren" || rawParam === "star";
   const normalizedCategory = NORMALIZE_MAP[rawParam] || "fourstars";
 
   useEffect(() => {
@@ -209,6 +210,8 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
 
   const categoriesToRender = isAllMode
     ? Object.keys(CATEGORY_META)
+    : isStarsMode
+    ? ["fivestars", "fourstars", "threestars"]
     : [normalizedCategory];
 
   const bgColorClass = theme === "transparent" ? "bg-transparent" : "bg-white";
