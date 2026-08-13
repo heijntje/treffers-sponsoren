@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/treffers-sponsoren/static/css/main.a93285a5.css",
-    "main.js": "/treffers-sponsoren/static/js/main.026b36c9.js",
+    "main.js": "/treffers-sponsoren/static/js/main.64811f94.js",
     "static/js/453.bc003189.chunk.js": "/treffers-sponsoren/static/js/453.bc003189.chunk.js",
     "index.html": "/treffers-sponsoren/index.html",
     "main.a93285a5.css.map": "/treffers-sponsoren/static/css/main.a93285a5.css.map",
-    "main.026b36c9.js.map": "/treffers-sponsoren/static/js/main.026b36c9.js.map",
+    "main.64811f94.js.map": "/treffers-sponsoren/static/js/main.64811f94.js.map",
     "453.bc003189.chunk.js.map": "/treffers-sponsoren/static/js/453.bc003189.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a93285a5.css",
-    "static/js/main.026b36c9.js"
+    "static/js/main.64811f94.js"
   ]
 }
