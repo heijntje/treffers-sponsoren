@@ -46,18 +46,46 @@ for directory in directories:
         if file.endswith(".link") or file.endswith(".url") or file.endswith(".website"):
             continue
 
+        file_path = os.path.join(dir_path, file)
+
+        if file.endswith(".json"):
+            try:
+                with open(file_path, "r", encoding="utf-8") as f:
+                    content_data = json.load(f)
+                if isinstance(content_data, list):
+                    for j_item in content_data:
+                        if isinstance(j_item, dict) and "name" in j_item:
+                            sponsor_entry = {
+                                "name": j_item["name"],
+                                "url": j_item.get("url", ":txt:" + j_item["name"])
+                            }
+                            if "website" in j_item:
+                                sponsor_entry["website"] = j_item["website"]
+                            # Carry over any extra fields for future compatibility
+                            for k, v in j_item.items():
+                                if k not in sponsor_entry:
+                                    sponsor_entry[k] = v
+                            file_dicts.append(sponsor_entry)
+                    continue
+            except Exception as e:
+                print(f"Warning: could not parse json file {file}: {e}")
+
         name = os.path.splitext(file)[0]
+
+        # If a .txt file exists alongside a .json list with the same base name, skip the .txt to avoid duplicates
+        if file.endswith(".txt") and os.path.exists(os.path.join(dir_path, name + ".json")):
+            continue
+
         item = {"name": name}
 
         if file.endswith(".txt"):
-            with open(os.path.join(dir_path, file), "r", encoding="utf-8") as f:
+            with open(file_path, "r", encoding="utf-8") as f:
                 content = f.read().strip()
             item["url"] = ":txt:" + content
         else:
             item["url"] = file
 
         # Check for website link:
-        # 1) Check sidecar file (e.g. Cornelion.link or Cornelion.png.link)
         website = None
         for sidecar_name in [f"{name}.link", f"{file}.link", f"{name}.url", f"{file}.url"]:
             sidecar_path = os.path.join(dir_path, sidecar_name)
@@ -66,7 +94,6 @@ for directory in directories:
                     website = sf.read().strip()
                 break
 
-        # 2) Fallback to links.json lookup by name or filename
         if not website:
             website = links.get(name) or links.get(file)
 

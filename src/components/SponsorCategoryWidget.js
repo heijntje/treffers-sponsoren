@@ -45,10 +45,10 @@ const CATEGORY_STYLES = {
     cardPadding: "p-2 sm:p-3",
   },
   overige: {
-    gridCols: "grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5",
-    gap: "gap-4 sm:gap-6",
-    cardHeight: "h-20 sm:h-24 md:h-28",
-    cardPadding: "p-2 sm:p-3",
+    gridCols: "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4",
+    gap: "gap-3 sm:gap-4",
+    cardHeight: "h-16 sm:h-20 md:h-22",
+    cardPadding: "p-3 sm:p-4",
   },
 };
 
@@ -88,6 +88,8 @@ const NORMALIZE_MAP = {
   "bc": "businessclub",
 
   "overige": "overige",
+  "overigesponsoren": "overige",
+  "overige-sponsoren": "overige",
   "other": "overige",
 
   "wedstrijdsponsor": "wedstrijdsponsor",
@@ -106,7 +108,9 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
   const normalizedCategory = NORMALIZE_MAP[rawParam] || "fourstars";
 
   useEffect(() => {
-    fetch(process.env.PUBLIC_URL + "/sources.json")
+    fetch(process.env.PUBLIC_URL + "/sources.json?v=" + Date.now(), {
+      cache: "no-cache",
+    })
       .then((res) => res.json())
       .then((data) => setSources(data))
       .catch((err) => console.error("Failed to load sources.json", err));
@@ -174,16 +178,36 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
         <div className={`grid ${styles.gridCols} ${styles.gap} items-center justify-items-center`}>
           {items.map((item, idx) => {
             const isTxt = item.url?.includes(":txt:");
+            const textContent = isTxt ? item.url.split(":txt:")[1] : item.name;
             const imgSrc = `${process.env.PUBLIC_URL}/${catKey}/${item.url}`;
             const website = item.website;
 
             const cardContent = isTxt ? (
-              <Textfit
-                mode="multi"
-                className="font-bold text-center flex items-center justify-center text-gray-800 w-full h-full p-1"
-              >
-                {item.url.split(":txt:")[1]}
-              </Textfit>
+              <div className="relative w-full h-full flex items-center justify-center">
+                <Textfit
+                  mode="multi"
+                  max={18}
+                  min={10}
+                  className="font-semibold text-center flex items-center justify-center text-gray-800 group-hover:text-[#e30613] w-full h-full p-1 transition-colors duration-200"
+                >
+                  {textContent}
+                </Textfit>
+                {website && (
+                  <svg
+                    className="absolute top-0 right-0 w-3 h-3 text-gray-300 group-hover:text-[#e30613] transition-colors duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                )}
+              </div>
             ) : (
               <img
                 src={imgSrc}
@@ -193,7 +217,7 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
               />
             );
 
-            const cardClasses = `group w-full ${styles.cardHeight} flex items-center justify-center ${styles.cardPadding} rounded-lg bg-white shadow-sm border border-gray-100 transition-all duration-200`;
+            const cardClasses = `group relative w-full ${styles.cardHeight} flex items-center justify-center ${styles.cardPadding} rounded-lg bg-white shadow-sm border border-gray-100 transition-all duration-200`;
 
             if (website) {
               return (
@@ -203,7 +227,7 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
                   target="_blank"
                   rel="noopener noreferrer"
                   title={`Bezoek ${item.name || "sponsor"}`}
-                  className={`${cardClasses} hover:shadow-md hover:border-red-200 cursor-pointer`}
+                  className={`${cardClasses} hover:shadow-md hover:border-red-300 cursor-pointer`}
                 >
                   {cardContent}
                 </a>
@@ -224,7 +248,7 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
   const categoriesToRender = isAllMode
     ? Object.keys(CATEGORY_META)
     : isStarsMode
-    ? ["hoofdsponsor", "fivestars", "fourstars", "threestars"]
+    ? ["hoofdsponsor", "fivestars", "fourstars", "threestars", "overige"]
     : [normalizedCategory];
 
   const bgColorClass = theme === "transparent" ? "bg-transparent" : "bg-white";

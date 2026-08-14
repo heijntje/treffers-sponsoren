@@ -31,7 +31,9 @@ const SponsorScreenRotator = () => {
 
   useEffect(() => {
     console.log("trying to fetch sources.json");
-    fetch(process.env.PUBLIC_URL + "/sources.json")
+    fetch(process.env.PUBLIC_URL + "/sources.json?v=" + Date.now(), {
+      cache: "no-cache",
+    })
       .then((response) => response.json())
       .then((data) => setSources(data));
   }, []);
