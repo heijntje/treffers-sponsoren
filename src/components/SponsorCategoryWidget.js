@@ -209,12 +209,17 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
                 )}
               </div>
             ) : (
-              <img
-                src={imgSrc}
-                alt={item.name || "Sponsor"}
-                className="max-w-full max-h-full object-contain transition-transform duration-200 group-hover:scale-[1.04]"
-                onLoad={postHeightToParent}
-              />
+              <div className="relative w-full h-full flex items-center justify-center">
+                <img
+                  src={imgSrc}
+                  alt={item.name || "Sponsor"}
+                  className="max-w-full max-h-full object-contain transition-transform duration-200 group-hover:scale-[1.04]"
+                  onLoad={postHeightToParent}
+                />
+                <span className="sr-only opacity-0 select-none pointer-events-none absolute text-[1px] overflow-hidden w-px h-px">
+                  {item.name}
+                </span>
+              </div>
             );
 
             const cardClasses = `group relative w-full ${styles.cardHeight} flex items-center justify-center ${styles.cardPadding} rounded-lg bg-white shadow-sm border border-gray-100 transition-all duration-200`;

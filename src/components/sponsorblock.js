@@ -3,7 +3,6 @@ import "tailwindcss/tailwind.css"; // make sure to import tailwind css
 import { Textfit } from "react-textfit";
 
 const SponsorBlock = ({ width, height, src }) => {
-  // /treffers-sponsoren/buffetsponsor/Eikholt Kwekerijen.txt
   return (
     <div
       className="rounded-lg flex items-center justify-center"
