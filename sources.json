@@ -36,7 +36,7 @@
     },
     {
       "name": "Belegginsmij Hendriks Groesbeek BV",
-      "url": ":txt:Beleggingsmaatschappij Hendriks Groesbeek BV"
+      "url": ":txt:Hendriks Groesbeek BV"
     },
     {
       "name": "BeMark",
@@ -460,6 +460,11 @@
       "url": "van-Eldijk-logo.svg"
     },
     {
+      "name": "VanAltenaWijchen",
+      "url": "VanAltenaWijchen.png",
+      "website": "https://www.vanaltenawijchen.nl/"
+    },
+    {
       "name": "vanbakelgroep",
       "url": "vanbakelgroep.png"
     },
@@ -471,6 +476,11 @@
       "name": "VloerenbedrijfLelie",
       "url": "VloerenbedrijfLelie.png",
       "website": "https://www.vloerenbedrijflelie.nl/"
+    },
+    {
+      "name": "voergroepZuid",
+      "url": "voergroepZuid.jpeg",
+      "website": "https://www.voergroepzuid.nl/"
     },
     {
       "name": "wdsign",
@@ -605,6 +615,10 @@
       "name": "Adco",
       "url": "Adco.png",
       "website": "https://www.adcogroesbeek.nl/"
+    },
+    {
+      "name": "Brandsfit",
+      "url": "Brandsfit.png"
     },
     {
       "name": "byondis",
