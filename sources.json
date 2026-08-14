@@ -714,108 +714,430 @@
   ],
   "overige": [
     {
-      "name": "Adco",
-      "url": "Adco.png",
-      "website": "https://www.adcogroesbeek.nl/"
+      "name": "Aannemersbedrijf Joey Smits",
+      "url": ":txt:Aannemersbedrijf Joey Smits"
     },
     {
-      "name": "Bank ten Cate en Cie",
-      "url": "Bank ten Cate en Cie.png",
-      "website": "http://www.banktencate.nl"
+      "name": "Aannemingsbedrijf Janssen-Groesbeek B.V.",
+      "url": ":txt:Aannemingsbedrijf Janssen-Groesbeek B.V.",
+      "website": "https://www.janssen-groesbeek.nl/"
     },
     {
-      "name": "censo",
-      "url": "censo.png",
-      "website": "http://www.censo.nl"
+      "name": "Afbouwbedrijf Looman",
+      "url": ":txt:Afbouwbedrijf Looman"
     },
     {
-      "name": "FeestpakketOpMaat",
-      "url": "FeestpakketOpMaat.jpg",
-      "website": "https://feestpakketopmaat.nl/"
+      "name": "Agile Welzijn B.V.",
+      "url": ":txt:Agile Welzijn B.V.",
+      "website": "https://agilewelzijn.nl/"
     },
     {
-      "name": "FotoVerbeeten",
-      "url": "FotoVerbeeten.jpg",
-      "website": "https://fotoverbeeten.nl/"
+      "name": "ALBO B.V.",
+      "url": ":txt:ALBO B.V.",
+      "website": "https://albomilsbeek.nl/"
     },
     {
-      "name": "Hoogwegt",
-      "url": "Hoogwegt.jpg",
-      "website": "https://hoogwegt.com/"
+      "name": "Alles voor de Afbouw",
+      "url": ":txt:Alles voor de Afbouw"
     },
     {
-      "name": "HotelWolfsberg",
-      "url": "HotelWolfsberg.png"
+      "name": "Automobiliteit Groesbeek",
+      "url": ":txt:Automobiliteit Groesbeek"
     },
     {
-      "name": "Houzing",
-      "url": "Houzing.png"
+      "name": "Barbershop Groesbeek",
+      "url": ":txt:Barbershop Groesbeek"
     },
     {
-      "name": "Jac Bongers",
-      "url": "Jac Bongers.png"
+      "name": "Bert Story Nijmegen",
+      "url": ":txt:Bert Story Nijmegen"
     },
     {
-      "name": "Joficon",
-      "url": "Joficon.png",
-      "website": "https://joficon.nl/"
+      "name": "BGM Infra B.V.",
+      "url": ":txt:BGM Infra B.V."
     },
     {
-      "name": "Meglio",
-      "url": "Meglio.png",
-      "website": "http://www.wijzijnmeglio.nl"
+      "name": "Bloem Direct",
+      "url": ":txt:Bloem Direct"
     },
     {
-      "name": "MilkConnect",
-      "url": "MilkConnect.png",
-      "website": "http://www.milkconnect.nl"
+      "name": "Burghouwt Bouwbeslag",
+      "url": ":txt:Burghouwt Bouwbeslag"
     },
     {
-      "name": "RestaurantVurrukkulluk",
-      "url": "RestaurantVurrukkulluk.jpg",
-      "website": "https://www.vurrukkulluk.nl"
+      "name": "Caf\u00e9 Y Mas",
+      "url": ":txt:Caf\u00e9 Y Mas",
+      "website": "https://cafeymas.nl/"
     },
     {
-      "name": "RoverWood",
-      "url": "RoverWood.jpg",
+      "name": "Chef in Huis",
+      "url": ":txt:Chef in Huis"
+    },
+    {
+      "name": "Chem-Dry Wouters",
+      "url": ":txt:Chem-Dry Wouters"
+    },
+    {
+      "name": "Dakramen Groesbeek",
+      "url": ":txt:Dakramen Groesbeek"
+    },
+    {
+      "name": "Daktechniek Nederland",
+      "url": ":txt:Daktechniek Nederland"
+    },
+    {
+      "name": "De Wolfsberg B.V.",
+      "url": ":txt:De Wolfsberg B.V.",
+      "website": "https://www.wolfsberg.nl/"
+    },
+    {
+      "name": "Destil",
+      "url": ":txt:Destil"
+    },
+    {
+      "name": "DHD Drukkerij",
+      "url": ":txt:DHD Drukkerij",
+      "website": "https://www.dhddrukkerij.nl/"
+    },
+    {
+      "name": "El Toro Restaurant & Steakhouse e.K.",
+      "url": ":txt:El Toro Restaurant & Steakhouse e.K.",
+      "website": "https://www.restaurant-el-toro.de/"
+    },
+    {
+      "name": "EP: Heinz van Benthum",
+      "url": ":txt:EP: Heinz van Benthum",
+      "website": "https://www.epheinzvanbenthum.nl/"
+    },
+    {
+      "name": "Era Delicatessen",
+      "url": ":txt:Era Delicatessen"
+    },
+    {
+      "name": "Financieringsgilde Nijmegen",
+      "url": ":txt:Financieringsgilde Nijmegen",
+      "website": "https://www.financieringsgilde.nl/nijmegen/"
+    },
+    {
+      "name": "FlexOnYou",
+      "url": ":txt:FlexOnYou"
+    },
+    {
+      "name": "Frank Lemmers Bouw",
+      "url": ":txt:Frank Lemmers Bouw",
+      "website": "https://franklemmersbouw.nl/"
+    },
+    {
+      "name": "Frank van de Ven Timmerwerken",
+      "url": ":txt:Frank van de Ven Timmerwerken"
+    },
+    {
+      "name": "Garage De Ren",
+      "url": ":txt:Garage De Ren",
+      "website": "https://www.garagederen.nl/"
+    },
+    {
+      "name": "GM Tuin & Bouw",
+      "url": ":txt:GM Tuin & Bouw"
+    },
+    {
+      "name": "Grodak",
+      "url": ":txt:Grodak"
+    },
+    {
+      "name": "Hagemans Verf",
+      "url": ":txt:Hagemans Verf",
+      "website": "https://www.hagemansverf.nl/"
+    },
+    {
+      "name": "Handelsonderneming Coenen B.V.",
+      "url": ":txt:Handelsonderneming Coenen B.V.",
+      "website": "https://www.coenen-groesbeek.nl/"
+    },
+    {
+      "name": "Hans de Echte Bakker",
+      "url": ":txt:Hans de Echte Bakker"
+    },
+    {
+      "name": "Hans Klein Markthandel in AGF",
+      "url": ":txt:Hans Klein Markthandel in AGF"
+    },
+    {
+      "name": "Hans Lamers B.V.",
+      "url": ":txt:Hans Lamers B.V."
+    },
+    {
+      "name": "Herberg - Restaurant 't Zwaantje",
+      "url": ":txt:Herberg - Restaurant 't Zwaantje",
+      "website": "https://www.t-zwaantje.nl/"
+    },
+    {
+      "name": "Hout & Kozijn B.V.",
+      "url": ":txt:Hout & Kozijn B.V.",
+      "website": "https://www.hout-en-kozijn.nl/"
+    },
+    {
+      "name": "Houzing Vloer & Interieur",
+      "url": ":txt:Houzing Vloer & Interieur"
+    },
+    {
+      "name": "HV Makelaardij",
+      "url": ":txt:HV Makelaardij",
+      "website": "https://www.hv.nl/"
+    },
+    {
+      "name": "J&S Elektrotechniek",
+      "url": ":txt:J&S Elektrotechniek"
+    },
+    {
+      "name": "Jan Kooij 2-Wielers Groesbeek",
+      "url": ":txt:Jan Kooij 2-Wielers Groesbeek"
+    },
+    {
+      "name": "JK Party Verhuur",
+      "url": ":txt:JK Party Verhuur"
+    },
+    {
+      "name": "Jumbo Groesbeek",
+      "url": ":txt:Jumbo Groesbeek",
+      "website": "https://www.jumbo.com/winkel/groesbeek/jumbo-groesbeek-de-meent"
+    },
+    {
+      "name": "K&J Timmerwerken",
+      "url": ":txt:K&J Timmerwerken"
+    },
+    {
+      "name": "Kaltec Compressoren",
+      "url": ":txt:Kaltec Compressoren"
+    },
+    {
+      "name": "Kerkhoff Installatiebedrijf",
+      "url": ":txt:Kerkhoff Installatiebedrijf",
+      "website": "https://www.kerkhoff-bredeweg.nl/"
+    },
+    {
+      "name": "Konbanwa B.V.",
+      "url": ":txt:Konbanwa B.V.",
+      "website": "https://www.konbanwa.nl/"
+    },
+    {
+      "name": "Krol Pompoenen",
+      "url": ":txt:Krol Pompoenen"
+    },
+    {
+      "name": "Langeveld Dak B.V.",
+      "url": ":txt:Langeveld Dak B.V."
+    },
+    {
+      "name": "Leenders Vastgoedonderhoud",
+      "url": ":txt:Leenders Vastgoedonderhoud"
+    },
+    {
+      "name": "Lema Vloeren",
+      "url": ":txt:Lema Vloeren"
+    },
+    {
+      "name": "MARV Websolutions",
+      "url": ":txt:MARV Websolutions"
+    },
+    {
+      "name": "Megens Installaties",
+      "url": ":txt:Megens Installaties"
+    },
+    {
+      "name": "Mulders Koeltechniek",
+      "url": ":txt:Mulders Koeltechniek"
+    },
+    {
+      "name": "Mystery Voetbal Box",
+      "url": ":txt:Mystery Voetbal Box"
+    },
+    {
+      "name": "New York Pizza",
+      "url": ":txt:New York Pizza",
+      "website": "https://www.newyorkpizza.nl/vestigingen/pizza-bestellen-groesbeek-bellevue"
+    },
+    {
+      "name": "Nijenkamp Dak- en Timmerwerken",
+      "url": ":txt:Nijenkamp Dak- en Timmerwerken"
+    },
+    {
+      "name": "Nijmeegse Cab",
+      "url": ":txt:Nijmeegse Cab"
+    },
+    {
+      "name": "Niveau Glas",
+      "url": ":txt:Niveau Glas",
+      "website": "https://www.niveaugroep.nl/glas/"
+    },
+    {
+      "name": "Numblees Corporate Finance",
+      "url": ":txt:Numblees Corporate Finance",
+      "website": "https://numblees.nl/"
+    },
+    {
+      "name": "Onderhoudsbedrijf All Care",
+      "url": ":txt:Onderhoudsbedrijf All Care"
+    },
+    {
+      "name": "Optiek Groesbeek",
+      "url": ":txt:Optiek Groesbeek",
+      "website": "https://www.optiekgroesbeek.nl/"
+    },
+    {
+      "name": "Patron Metaal",
+      "url": ":txt:Patron Metaal"
+    },
+    {
+      "name": "Q-air International",
+      "url": ":txt:Q-air International"
+    },
+    {
+      "name": "Quickseal Applicatie B.V.",
+      "url": ":txt:Quickseal Applicatie B.V."
+    },
+    {
+      "name": "Reclame Ellen",
+      "url": ":txt:Reclame Ellen"
+    },
+    {
+      "name": "Rici's Garage",
+      "url": ":txt:Rici's Garage"
+    },
+    {
+      "name": "Rikken Reclame",
+      "url": ":txt:Rikken Reclame",
+      "website": "https://www.rikkenreclame.nl/"
+    },
+    {
+      "name": "Roverwood",
+      "url": ":txt:Roverwood",
       "website": "http://www.roverwood.nl"
     },
     {
-      "name": "Sanavit",
-      "url": "Sanavit.jpg"
+      "name": "Rozijn Parketvloeren",
+      "url": ":txt:Rozijn Parketvloeren"
     },
     {
-      "name": "ScotchWhiskyInvestments",
-      "url": "ScotchWhiskyInvestments.jpg",
-      "website": "https://scotchwhiskyinvestments.com/contact"
+      "name": "Sanders Tweewielers",
+      "url": ":txt:Sanders Tweewielers",
+      "website": "https://www.sanderstweewielers.nl/home.html"
     },
     {
-      "name": "StadsherbergGennep",
-      "url": "StadsherbergGennep.png",
-      "website": "http://www.stadsherberggennep.nl"
+      "name": "Sann Concept Store",
+      "url": ":txt:Sann Concept Store"
     },
     {
-      "name": "Van Bakel Groep",
-      "url": ":txt:Van Bakel Groep"
+      "name": "Schuurmans Interieur & Montage",
+      "url": ":txt:Schuurmans Interieur & Montage"
     },
     {
-      "name": "VanAltenaWijchen",
-      "url": "VanAltenaWijchen.png",
+      "name": "Sieppie Kozijnen",
+      "url": ":txt:Sieppie Kozijnen"
+    },
+    {
+      "name": "Slagerij Tim Janssen",
+      "url": ":txt:Slagerij Tim Janssen"
+    },
+    {
+      "name": "Slikweid B.V.",
+      "url": ":txt:Slikweid B.V."
+    },
+    {
+      "name": "STABA Maatwerk",
+      "url": ":txt:STABA Maatwerk",
+      "website": "https://stabamaatwerk.nl/"
+    },
+    {
+      "name": "Stadsherberg Gennep",
+      "url": ":txt:Stadsherberg Gennep",
+      "website": "https://www.stadsherberggennep.nl/"
+    },
+    {
+      "name": "Suselbeek Deuren",
+      "url": ":txt:Suselbeek Deuren",
+      "website": "https://www.suselbeek.nl/"
+    },
+    {
+      "name": "'t Soetrijck",
+      "url": ":txt:'t Soetrijck",
+      "website": "https://soetrijck.nl/"
+    },
+    {
+      "name": "Theunissen Timmerfabriek",
+      "url": ":txt:Theunissen Timmerfabriek"
+    },
+    {
+      "name": "Top Auto's B.V.",
+      "url": ":txt:Top Auto's B.V."
+    },
+    {
+      "name": "Trofee Paleis",
+      "url": ":txt:Trofee Paleis"
+    },
+    {
+      "name": "TSSN",
+      "url": ":txt:TSSN"
+    },
+    {
+      "name": "Twan Janssen Schilderwerken",
+      "url": ":txt:Twan Janssen Schilderwerken"
+    },
+    {
+      "name": "Univ\u00e9 Stad en Land B.V.",
+      "url": ":txt:Univ\u00e9 Stad en Land B.V."
+    },
+    {
+      "name": "Valeres Industriebouw B.V.",
+      "url": ":txt:Valeres Industriebouw B.V.",
+      "website": "https://www.valeres.nl/home/"
+    },
+    {
+      "name": "Van Altena Groothandel",
+      "url": ":txt:Van Altena Groothandel",
       "website": "https://www.vanaltenawijchen.nl/"
     },
     {
-      "name": "voergroepZuid",
-      "url": "voergroepZuid.jpeg",
-      "website": "https://www.voergroepzuid.nl/"
+      "name": "Van Kesteren Holding B.V.",
+      "url": ":txt:Van Kesteren Holding B.V.",
+      "website": "https://www.vankesterenbv.nl/"
     },
     {
-      "name": "WijnhovenHubers",
-      "url": "WijnhovenHubers.png"
+      "name": "Van Vuuren",
+      "url": ":txt:Van Vuuren"
     },
     {
-      "name": "Wouters Sanitair en tegelshop",
-      "url": "Wouters Sanitair en tegelshop.png",
-      "website": "http://www.marcwouters.nl"
+      "name": "Van Zuijlen Auto's",
+      "url": ":txt:Van Zuijlen Auto's"
+    },
+    {
+      "name": "Visser Keukens & Zo",
+      "url": ":txt:Visser Keukens & Zo"
+    },
+    {
+      "name": "Vissers Bouw & Daktechniek B.V.",
+      "url": ":txt:Vissers Bouw & Daktechniek B.V."
+    },
+    {
+      "name": "Voetbalschool Groesbeek",
+      "url": ":txt:Voetbalschool Groesbeek"
+    },
+    {
+      "name": "Weijerseikhout B.V.",
+      "url": ":txt:Weijerseikhout B.V.",
+      "website": "https://www.weijerseikhout.nl/"
+    },
+    {
+      "name": "Wennekers Wonen",
+      "url": ":txt:Wennekers Wonen"
+    },
+    {
+      "name": "Wijnhoven Hout Techniek",
+      "url": ":txt:Wijnhoven Hout Techniek"
+    },
+    {
+      "name": "Wouters Schoonmaakorganisatie",
+      "url": ":txt:Wouters Schoonmaakorganisatie"
     }
   ]
 }
