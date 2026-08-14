@@ -102,7 +102,7 @@ const SponsorScreenRotator = () => {
       // <PupilvdWeek key={4} />,
       <WedstrijdSponsor key={7} sources={sources} />,
       <BalSponsor key={8} sources={sources} />,
-      // <BuffetSponsor key={9} sources={sources} />,
+      <BuffetSponsor key={9} sources={sources} />,
       <Advertisement
         key={10}
         sources={sources}
