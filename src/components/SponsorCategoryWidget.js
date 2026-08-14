@@ -251,10 +251,10 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
   };
 
   const categoriesToRender = isAllMode
-    ? Object.keys(CATEGORY_META)
+    ? ['hoofdsponsor', 'fivestars', 'fourstars', 'threestars', "businessclub", "overige"]
     : isStarsMode
-    ? ["hoofdsponsor", "fivestars", "fourstars", "threestars", "overige"]
-    : [normalizedCategory];
+      ? ["hoofdsponsor", "fivestars", "fourstars", "threestars"]
+      : [normalizedCategory];
 
   const bgColorClass = theme === "transparent" ? "bg-transparent" : "bg-white";
 
