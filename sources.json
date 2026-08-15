@@ -684,10 +684,6 @@
   ],
   "advertisements": [
     {
-      "name": "LV_ADV_1_8_03",
-      "url": "LV_ADV_1_8_03.jpg"
-    },
-    {
       "name": "NewYorkPizza",
       "url": "NewYorkPizza.png",
       "website": "https://www.newyorkpizza.nl/vestigingen/pizza-bestellen-groesbeek-bellevue"
@@ -701,7 +697,12 @@
       "url": "TV scherm - sponsoring 0504.mp4"
     }
   ],
-  "announcements": [],
+  "announcements": [
+    {
+      "name": "De Treffers Niveau Deuren Preview",
+      "url": "De Treffers Niveau Deuren Preview.mp4"
+    }
+  ],
   "wedstrijdsponsor": [
     {
       "name": "Niveau",
