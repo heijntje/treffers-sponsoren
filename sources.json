@@ -701,22 +701,20 @@
   ],
   "wedstrijdsponsor": [
     {
-      "name": "Niveau",
-      "url": "Niveau.png",
-      "website": "https://niveaugroep.nl/"
+      "name": "NYP_LOGO_THE_ORIGINAL_L_RGB",
+      "url": "NYP_LOGO_THE_ORIGINAL_L_RGB.jpeg"
     }
   ],
   "balsponsor": [
     {
-      "name": "Niveau",
-      "url": "Niveau.png",
-      "website": "https://niveaugroep.nl/"
+      "name": "cafetariaDomino-768x235",
+      "url": "cafetariaDomino-768x235.png"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "De Treffers banner - Daan",
-      "url": "De Treffers banner - Daan.png"
+      "name": "PNG-Conceptical (1)",
+      "url": "PNG-Conceptical (1).png"
     }
   ],
   "overige": [
