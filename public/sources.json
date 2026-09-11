@@ -55,7 +55,8 @@
     },
     {
       "name": "Briljant logo",
-      "url": "Briljant logo.jpg"
+      "url": "Briljant logo.jpg",
+      "website": "https://www.briljant-schoonmaak.nl/"
     },
     {
       "name": "bundeling",
@@ -111,7 +112,8 @@
     },
     {
       "name": "dewaalautogroep",
-      "url": "dewaalautogroep.png"
+      "url": "dewaalautogroep.png",
+      "website": "https://www.dewaalautogroep.nl/"
     },
     {
       "name": "Dhomus",
@@ -380,6 +382,11 @@
       "url": "Rikken-PNG-Conceptical.png"
     },
     {
+      "name": "RN7",
+      "url": "RN7.png",
+      "website": "https://www.rn7.nl/"
+    },
+    {
       "name": "Robert Hijmans",
       "url": ":txt:Robert Hijmans"
     },
@@ -561,8 +568,8 @@
   ],
   "fourstars": [
     {
-      "name": "Briljant logo",
-      "url": "Briljant logo.jpg"
+      "name": "briljant",
+      "url": "briljant.png"
     },
     {
       "name": "Cornelion",
@@ -594,6 +601,11 @@
     {
       "name": "Rikken-PNG-Conceptical",
       "url": "Rikken-PNG-Conceptical.png"
+    },
+    {
+      "name": "RN7",
+      "url": "RN7.png",
+      "website": "https://www.rn7.nl/"
     },
     {
       "name": "Slaapsfeer",
@@ -683,10 +695,6 @@
   ],
   "advertisements": [
     {
-      "name": "LV_ADV_1_8_03",
-      "url": "LV_ADV_1_8_03.jpg"
-    },
-    {
       "name": "NewYorkPizza",
       "url": "NewYorkPizza.png",
       "website": "https://www.newyorkpizza.nl/vestigingen/pizza-bestellen-groesbeek-bellevue"
@@ -694,31 +702,30 @@
     {
       "name": "NIKKELEN Reclame beeldscherm kantine",
       "url": "NIKKELEN Reclame beeldscherm kantine.jpg"
-    },
-    {
-      "name": "TV scherm - sponsoring 0504",
-      "url": "TV scherm - sponsoring 0504.mp4"
     }
   ],
-  "announcements": [],
+  "announcements": [
+    {
+      "name": "Uitnodiging",
+      "url": "Uitnodiging.png"
+    }
+  ],
   "wedstrijdsponsor": [
     {
-      "name": "Niveau",
-      "url": "Niveau.png",
-      "website": "https://niveaugroep.nl/"
+      "name": "coopmans-768x207",
+      "url": "coopmans-768x207.png"
     }
   ],
   "balsponsor": [
     {
-      "name": "Niveau",
-      "url": "Niveau.png",
-      "website": "https://niveaugroep.nl/"
+      "name": "coopmans-768x207",
+      "url": "coopmans-768x207.png"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "De Treffers banner - Daan",
-      "url": "De Treffers banner - Daan.png"
+      "name": "ParcBoul\u00e9e-logo+tagline-digitaal (3)",
+      "url": "ParcBoul\u00e9e-logo+tagline-digitaal (3).png"
     }
   ],
   "overige": [

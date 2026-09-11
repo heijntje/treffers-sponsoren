@@ -50,8 +50,8 @@ const SponsorScreenRotator = () => {
     const currentHour = parseInt(amsterdamTime.format(now), 10);
     // Check if time is between 16:00 (4 PM) and 19:00 (7 PM)
     console.log("currentHour (Amsterdam)", currentHour);
-    console.log("isAnnouncementTime", currentHour >= 16 && currentHour < 19);
-    return currentHour >= 16 && currentHour < 19;
+    console.log("isAnnouncementTime", currentHour >= 15 && currentHour < 23);
+    return currentHour >= 15 && currentHour < 23;
   };
 
   // Periodically check if we're in the announcement time window
@@ -113,11 +113,11 @@ const SponsorScreenRotator = () => {
       // // Only include Announcements if we're in the time window (4 PM - 7 PM)
       // ...(isAnnouncementTime
       //   ? [
-      // <Announcements
-      //   key={11}
-      //   sources={sources}
-      //   updateSourceCounts={updateSourceCounts}
-      // />,
+      <Announcements
+        key={11}
+        sources={sources}
+        updateSourceCounts={updateSourceCounts}
+      />,
       //     ]
       //   : []),
       <BusinessClubSponsors
@@ -138,22 +138,36 @@ const SponsorScreenRotator = () => {
       return prevScreen;
     });
 
-    const interval = setInterval(() => {
-      setCurrentScreen((prevScreen) => (prevScreen + 1) % sponsors.length);
-    }, 10000);
+    const activeElement = sponsors[currentScreen];
+    const isAnnouncement = activeElement?.type === Announcements;
+    const duration = isAnnouncement ? 30000 : 10000;
 
-    return () => clearInterval(interval); // This is important to clear the interval when the component unmounts
-  }, [sponsors]);
+    const timer = setTimeout(() => {
+      setCurrentScreen((prevScreen) => (prevScreen + 1) % sponsors.length);
+    }, duration);
+
+    return () => clearTimeout(timer);
+  }, [currentScreen, sponsors]);
+
+  const handleScreenClick = (e) => {
+    const clickX = e.clientX;
+    const halfWidth = window.innerWidth / 2;
+    if (clickX < halfWidth) {
+      setCurrentScreen((prevScreen) => (prevScreen - 1 + sponsors.length) % sponsors.length);
+    } else {
+      setCurrentScreen((prevScreen) => (prevScreen + 1) % sponsors.length);
+    }
+  };
 
   return (
-    <>
+    <div onClick={handleScreenClick}>
       {sources === null || sources === undefined ? <div>Loading...</div> : null}
       <SwitchTransition>
         <CSSTransition key={currentScreen} timeout={1000} classNames="fade">
           <div>{sponsors[currentScreen]}</div>
         </CSSTransition>
       </SwitchTransition>
-    </>
+    </div>
   );
 };
 

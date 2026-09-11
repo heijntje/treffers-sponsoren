@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Textfit } from "react-textfit";
+import SponsorCarousel from "./SponsorCarousel";
 
 const CATEGORY_META = {
   hoofdsponsor: { title: "Trotse Hoofdsponsor" },
@@ -103,6 +104,7 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
 
   // Normalize category parameter
   const rawParam = (categoryParam || "4star").toLowerCase();
+  const isCarouselMode = rawParam === "carousel" || rawParam === "slider";
   const isAllMode = rawParam === "all";
   const isStarsMode = rawParam === "stars" || rawParam === "sponsoren" || rawParam === "star";
   const normalizedCategory = NORMALIZE_MAP[rawParam] || "fourstars";
@@ -257,6 +259,19 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
       : [normalizedCategory];
 
   const bgColorClass = theme === "transparent" ? "bg-transparent" : "bg-white";
+
+  if (isCarouselMode) {
+    return (
+      <div ref={containerRef} className={`w-full font-sans ${bgColorClass}`}>
+        <SponsorCarousel
+          sources={sources}
+          hideHeader={true}
+          theme={theme}
+          onContentResize={postHeightToParent}
+        />
+      </div>
+    );
+  }
 
   return (
     <div
