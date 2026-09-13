@@ -704,28 +704,23 @@
       "url": "NIKKELEN Reclame beeldscherm kantine.jpg"
     }
   ],
-  "announcements": [
-    {
-      "name": "Uitnodiging",
-      "url": "Uitnodiging.png"
-    }
-  ],
+  "announcements": [],
   "wedstrijdsponsor": [
     {
-      "name": "coopmans-768x207",
-      "url": "coopmans-768x207.png"
+      "name": "numblees-768x212",
+      "url": "numblees-768x212.jpeg"
     }
   ],
   "balsponsor": [
     {
-      "name": "coopmans-768x207",
-      "url": "coopmans-768x207.png"
+      "name": "vanzuijlen",
+      "url": "vanzuijlen.png"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "ParcBoul\u00e9e-logo+tagline-digitaal (3)",
-      "url": "ParcBoul\u00e9e-logo+tagline-digitaal (3).png"
+      "name": "deburen (2)",
+      "url": "deburen (2).png"
     }
   ],
   "overige": [
