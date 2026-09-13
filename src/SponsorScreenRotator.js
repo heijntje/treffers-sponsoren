@@ -1,3 +1,9 @@
+/**
+ * @file SponsorScreenRotator.js
+ * @description Core component responsible for cycling through different sponsor category screens.
+ * Uses transitions to smoothly fade between screens on a set timer, and allows manual cycling via clicks.
+ */
+
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import "./SponsorScreenRotator.css"; // Import the CSS file
@@ -15,6 +21,13 @@ import Advertisement from "./pages/Advertisement";
 import Announcements from "./pages/Announcements";
 import BusinessClubSponsors from "./pages/BusinessClubSponsors";
 
+/**
+ * SponsorScreenRotator component.
+ * Manages the state and timing for displaying different sponsor pages.
+ * Fetches dynamic source definitions to configure which sponsors appear where.
+ *
+ * @returns {JSX.Element} The rendered rotator component.
+ */
 const SponsorScreenRotator = () => {
   const [currentScreen, setCurrentScreen] = useState(0);
   const [sourceCounts, setSourceCounts] = useState({
@@ -39,6 +52,12 @@ const SponsorScreenRotator = () => {
   }, []);
 
   // Check if current time is within announcement window (4 PM - 7 PM) in Amsterdam timezone
+  /**
+   * Checks whether the current time in the Europe/Amsterdam timezone falls
+   * within the predefined announcement window (15:00 - 22:59).
+   *
+   * @returns {boolean} True if within announcement time, false otherwise.
+   */
   const checkAnnouncementTime = () => {
     const now = new Date();
     // Get the hour in Amsterdam timezone using Intl API
@@ -68,6 +87,13 @@ const SponsorScreenRotator = () => {
   }, []);
 
   // a handle function to update the sourceCounts, this function will be passed to the child components
+  /**
+   * Updates the displayed source counts for specific sponsor types.
+   * Useful for tracking or balancing which sponsors have been shown.
+   *
+   * @param {string} sourceType - The category of the sponsor (e.g., 'fivestars').
+   * @param {Array<string|number>} sources - Array of source indices or IDs to increment.
+   */
   const updateSourceCounts = useCallback((sourceType, sources) => {
     setSourceCounts((prevSourceCounts) => {
       const newSourceCounts = { ...prevSourceCounts };
@@ -149,6 +175,12 @@ const SponsorScreenRotator = () => {
     return () => clearTimeout(timer);
   }, [currentScreen, sponsors]);
 
+  /**
+   * Handles user click events on the screen to manually cycle forward or backward.
+   * Clicking on the left half of the screen goes back, right half goes forward.
+   *
+   * @param {React.MouseEvent} e - The mouse click event.
+   */
   const handleScreenClick = (e) => {
     const clickX = e.clientX;
     const halfWidth = window.innerWidth / 2;

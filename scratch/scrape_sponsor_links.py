@@ -1,8 +1,20 @@
+"""
+scrape_sponsor_links.py
+
+This script scrapes the official De Treffers website (detreffers.nl/sponsoren/)
+to extract all sponsor names and their associated website URLs.
+The results are saved to `scratch/scraped_links.json` for further processing.
+"""
+
 import urllib.request
 from html.parser import HTMLParser
 import json
 
 class SponsorLinkParser(HTMLParser):
+    """
+    Custom HTML Parser to extract sponsor names and links from the sponsor page.
+    It looks for <a> tags containing either text or an <img> with an alt attribute.
+    """
     def __init__(self):
         super().__init__()
         self.links = []

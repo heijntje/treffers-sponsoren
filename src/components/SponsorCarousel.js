@@ -1,6 +1,22 @@
+/**
+ * @file SponsorCarousel.js
+ * @description A horizontal, infinitely looping carousel for displaying sponsor cards.
+ * Supports touch/mouse dragging, pausing on hover, and custom theme/sizing.
+ */
+
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Textfit } from "react-textfit";
 
+/**
+ * SponsorCarousel component.
+ *
+ * @param {Object} props - The component props.
+ * @param {Object} props.sources - Dictionary of sponsor objects grouped by category.
+ * @param {boolean} [props.hideHeader=true] - Whether to hide the 'SPONSOREN' header.
+ * @param {string} [props.theme="white"] - Theme color string ("transparent" or "white").
+ * @param {Function} [props.onContentResize] - Callback fired when image content finishes loading.
+ * @returns {JSX.Element|null} The rendered carousel or null if no sources.
+ */
 const SponsorCarousel = ({ sources, hideHeader = true, theme = "white", onContentResize }) => {
   const containerRef = useRef(null);
   const trackRef = useRef(null);

@@ -1,8 +1,22 @@
+/**
+ * @file App.js
+ * @description Main application component for the Treffers Sponsoren app.
+ * It handles the routing logic based on URL parameters, switching between
+ * a specific widget view or the main rotating digital signage view.
+ */
+
 import React, { useMemo } from "react";
 import "./App.css";
 import SponsorScreenRotator from "./SponsorScreenRotator";
 import SponsorCategoryWidget from "./components/SponsorCategoryWidget";
 
+/**
+ * App component.
+ * Parses URL search parameters to determine if a specific category widget should be shown,
+ * otherwise renders the main screen rotator for the digital signage.
+ *
+ * @returns {JSX.Element} The rendered application component.
+ */
 function App() {
   const searchParams = useMemo(
     () => new URLSearchParams(window.location.search),

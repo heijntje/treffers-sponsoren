@@ -1,6 +1,19 @@
+/**
+ * @file FourBlocks.js
+ * @description Layout component for displaying 4 sponsor logos in a 2x2 grid format.
+ */
+
 import React from "react";
 import SponsorBlock from "./sponsorblock";
 
+/**
+ * FourBlocks component.
+ * Renders a 4-block layout for sponsor logos.
+ *
+ * @param {Object} props - The component props.
+ * @param {Array<string>} props.sources - Array of 4 image source URLs for the blocks.
+ * @returns {JSX.Element} The rendered layout.
+ */
 const FourBlocks = (sources) => {
   const [src1, src2, src3, src4] = sources.sources;
 

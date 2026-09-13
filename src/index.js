@@ -1,3 +1,8 @@
+/**
+ * @file index.js
+ * @description Entry point for the React application. Mounts the root component to the DOM.
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

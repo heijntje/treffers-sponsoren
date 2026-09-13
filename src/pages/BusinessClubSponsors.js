@@ -1,7 +1,21 @@
+/**
+ * @file BusinessClubSponsors.js
+ * @description Page component for displaying up to 8 random business club sponsors.
+ */
+
 import React from "react";
 import { useState, useEffect } from "react";
 import EightBlocks from "../components/EightBlocks";
 
+/**
+ * BusinessClubSponsors component.
+ * Selects 8 random business club sponsors and displays them using the EightBlocks layout.
+ *
+ * @param {Object} props - The component props.
+ * @param {Function} props.updateSourceCounts - Callback to update the displayed count of the sources.
+ * @param {Object} props.sources - Global data sources object containing business club sponsors.
+ * @returns {JSX.Element} The rendered business club sponsors page.
+ */
 const BusinessClubSponsors = ({ updateSourceCounts, sources }) => {
   const divStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/scherm_bc.jpg)`,

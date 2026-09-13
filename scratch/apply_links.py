@@ -1,5 +1,12 @@
-import json
+"""
+apply_links.py
 
+This script takes a hardcoded dictionary of matched sponsor websites and updates
+both the `overigesponsoren.json` data file and the central `links.json` database.
+It ensures that the frontend has the latest URLs for the "Overige Sponsoren" category.
+"""
+
+import json
 # Load scraped matches
 with open("public/overige/overigesponsoren.json", "r", encoding="utf-8") as f:
     overige_sponsors = json.load(f)

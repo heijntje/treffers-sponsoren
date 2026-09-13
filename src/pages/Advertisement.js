@@ -1,6 +1,21 @@
+/**
+ * @file Advertisement.js
+ * @description Page component for displaying a random advertisement (image or video) from the advertisements source.
+ */
+
 import React from "react";
 import { useState, useEffect } from "react";
 
+/**
+ * Advertisement component.
+ * Randomly picks an advertisement source (which can be mp4 video or image) and displays it.
+ * Calls `updateSourceCounts` to track which advertisement was shown.
+ *
+ * @param {Object} props - The component props.
+ * @param {Function} props.updateSourceCounts - Callback to update the displayed count of the source.
+ * @param {Object} props.sources - The global sources object containing advertisement definitions.
+ * @returns {JSX.Element} The rendered advertisement page.
+ */
 const Advertisement = ({ updateSourceCounts, sources }) => {
   const divStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/background.jpg)`,

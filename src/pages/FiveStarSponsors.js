@@ -1,7 +1,21 @@
+/**
+ * @file FiveStarSponsors.js
+ * @description Page component for displaying 2 random 5-star sponsors.
+ */
+
 import React from "react";
 import { useState, useEffect } from "react";
 import TwoBlocks from "../components/TwoBlocks";
 
+/**
+ * FiveStarSponsors component.
+ * Selects 2 random 5-star sponsors and displays them using the TwoBlocks layout.
+ *
+ * @param {Object} props - The component props.
+ * @param {Function} props.updateSourceCounts - Callback to track displayed sponsors.
+ * @param {Object} props.sources - Global sources object containing fivestars data.
+ * @returns {JSX.Element} The rendered 5-star sponsors page.
+ */
 const FiveStarSponsors = ({ updateSourceCounts, sources }) => {
   const divStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/5-STERREN.jpg)`,

@@ -1,6 +1,19 @@
+/**
+ * @file EightBlocks.js
+ * @description Layout component for displaying 8 sponsor logos in a specific grid format.
+ */
+
 import React from "react";
 import SponsorBlock from "./sponsorblock";
 
+/**
+ * EightBlocks component.
+ * Renders an 8-block layout for sponsor logos.
+ *
+ * @param {Object} props - The component props.
+ * @param {Array<string>} props.sources - Array of 8 image source URLs for the blocks.
+ * @returns {JSX.Element} The rendered layout.
+ */
 const EightBlocks = (sources) => {
   const [src1, src2, src3, src4, src5, src6, src7, src8] = sources.sources;
 

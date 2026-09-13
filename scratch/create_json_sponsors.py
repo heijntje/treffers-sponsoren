@@ -1,5 +1,12 @@
-import json
+"""
+create_json_sponsors.py
 
+This script takes a hardcoded list of sponsor names and generates the necessary JSON
+and TXT files used by the application to render the "Overige Sponsoren" (Other Sponsors) category.
+It writes the output directly to the `public/overige/` directory.
+"""
+
+import json
 sponsors_data = [
     {"name": "Aannemersbedrijf Joey Smits"},
     {"name": "Aannemingsbedrijf Janssen-Groesbeek B.V."},

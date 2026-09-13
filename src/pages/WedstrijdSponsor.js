@@ -1,7 +1,20 @@
+/**
+ * @file WedstrijdSponsor.js
+ * @description Page component for displaying the match sponsor (wedstrijdsponsor).
+ */
+
 import React from "react";
 import { useEffect, useState } from "react";
 import OneBlock from "../components/OneBlock";
 
+/**
+ * WedstrijdSponsor component.
+ * Displays the specific wedstrijdsponsor logo on top of a custom background.
+ *
+ * @param {Object} props - The component props.
+ * @param {Object} props.sources - Global sources object containing wedstrijdsponsor data.
+ * @returns {JSX.Element} The rendered match sponsor page.
+ */
 const WedstrijdSponsor = ({ sources }) => {
   const divStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/scherm_wedstrijdsponsor.jpg)`,

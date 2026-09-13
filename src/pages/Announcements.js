@@ -1,6 +1,22 @@
+/**
+ * @file Announcements.js
+ * @description Page component for displaying randomized club announcements.
+ * Supports both image and video formats.
+ */
+
 import React from "react";
 import { useState, useEffect } from "react";
 
+/**
+ * Announcements component.
+ * Randomly picks an announcement source and displays it full screen.
+ * Tracks display counts via `updateSourceCounts`.
+ *
+ * @param {Object} props - The component props.
+ * @param {Function} props.updateSourceCounts - Callback to track displayed announcements.
+ * @param {Object} props.sources - Global data sources object containing announcements.
+ * @returns {JSX.Element} The rendered announcements page.
+ */
 const Announcements = ({ updateSourceCounts, sources }) => {
   const divStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/background.jpg)`,

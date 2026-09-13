@@ -1,7 +1,16 @@
+/**
+ * @file SponsorCategoryWidget.js
+ * @description Widget component for displaying specific sponsor categories (e.g., in an iframe).
+ * Handles flexible grid layouts and multiple category combinations.
+ */
+
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Textfit } from "react-textfit";
 import SponsorCarousel from "./SponsorCarousel";
 
+/**
+ * Metadata and display titles for different sponsor categories.
+ */
 const CATEGORY_META = {
   hoofdsponsor: { title: "Trotse Hoofdsponsor" },
   fivestars: { title: "5 sterrensponsor" },
@@ -95,9 +104,21 @@ const NORMALIZE_MAP = {
 
   "wedstrijdsponsor": "wedstrijdsponsor",
   "balsponsor": "balsponsor",
+  "balsponsor": "balsponsor",
   "buffetsponsor": "buffetsponsor",
 };
 
+/**
+ * SponsorCategoryWidget component.
+ * Acts as a standalone widget to render a specific category (or combinations) based on URL parameters.
+ * Automatically posts its height to the parent window for iframe resizing.
+ *
+ * @param {Object} props - The component props.
+ * @param {string} props.categoryParam - The category requested (e.g., '4star', 'all', 'carousel').
+ * @param {boolean} [props.hideHeader=false] - Whether to hide the category headers.
+ * @param {string} [props.theme="white"] - Theme styling class or color.
+ * @returns {JSX.Element} The rendered widget.
+ */
 const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "white" }) => {
   const [sources, setSources] = useState(null);
   const containerRef = useRef(null);

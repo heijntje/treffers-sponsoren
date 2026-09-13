@@ -1,6 +1,13 @@
+"""
+match_links.py
+
+This script attempts to automatically match scraped URLs (from scraped_links.json)
+to the list of "Overige Sponsoren" (from overigesponsoren.json). It uses string normalization
+and substring matching to find the most likely website for each sponsor.
+"""
+
 import json
 import re
-
 # Load scraped links
 with open("scratch/scraped_links.json", "r", encoding="utf-8") as f:
     scraped_links = json.load(f)
@@ -14,6 +21,17 @@ with open("public/links.json", "r", encoding="utf-8") as f:
     links_db = json.load(f)
 
 def normalize(name):
+    """
+    Normalizes a sponsor name by making it lowercase, removing punctuation,
+    and stripping out common corporate suffixes (like B.V., Holding, etc.)
+    to improve matching accuracy against the scraped links.
+    
+    Args:
+        name (str): The raw sponsor name.
+    
+    Returns:
+        str: The normalized name string.
+    """
     s = name.lower()
     s = re.sub(r"[’']", "", s)
     s = re.sub(r"\b(bv|b\.v\.|e\.k\.|groep|holding|corporate finance|groothandel|restaurant|steakhouse)\b", "", s)

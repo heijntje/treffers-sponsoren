@@ -1,7 +1,21 @@
+/**
+ * @file FourStarSponsors.js
+ * @description Page component for displaying 4 random 4-star sponsors.
+ */
+
 import React from "react";
 import { useState, useEffect } from "react";
 import FourBlocks from "../components/FourBlocks";
 
+/**
+ * FourStarSponsors component.
+ * Selects 4 random 4-star sponsors and displays them using the FourBlocks layout.
+ *
+ * @param {Object} props - The component props.
+ * @param {Function} props.updateSourceCounts - Callback to track displayed sponsors.
+ * @param {Object} props.sources - Global sources object containing fourstars data.
+ * @returns {JSX.Element} The rendered 4-star sponsors page.
+ */
 const FourStarSponsors = ({ updateSourceCounts, sources }) => {
   const divStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/4-STERREN.jpg)`,
