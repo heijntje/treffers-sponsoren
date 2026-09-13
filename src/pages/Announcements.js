@@ -4,9 +4,13 @@ import { useState, useEffect } from "react";
 const Announcements = ({ updateSourceCounts, sources }) => {
   const divStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/background.jpg)`,
-    backgroundSize: "cover", // this will ensure the image covers the whole div
-    height: "100vh", // this will make the div take the full height of the viewport
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "100vh",
     width: "100vw",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   };
 
   const [sourcesURLs, setSourcesURLs] = useState([]);
@@ -42,14 +46,32 @@ const Announcements = ({ updateSourceCounts, sources }) => {
     setRandomizedSource(pickRandomSource(sourcesURLs));
   }, [sourcesURLs]);
 
+  const isVideo =
+    randomizedSource &&
+    /\.(mp4|mov|webm)$/i.test(randomizedSource);
+
+  const mediaStyle = {
+    maxWidth: "100vw",
+    maxHeight: "100vh",
+    width: "100%",
+    height: "100%",
+    objectFit: "contain",
+  };
+
   return (
     <div style={divStyle}>
-      {randomizedSource && randomizedSource.includes("mp4") ? (
-        <video autoPlay loop muted>
-          <source src={randomizedSource} type="video/mp4" />
-        </video>
+      {isVideo ? (
+        <video
+          key={randomizedSource}
+          src={randomizedSource}
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={mediaStyle}
+        />
       ) : randomizedSource ? (
-        <img src={randomizedSource} alt="announcement" />
+        <img src={randomizedSource} alt="announcement" style={mediaStyle} />
       ) : null}
     </div>
   );

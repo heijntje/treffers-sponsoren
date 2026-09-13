@@ -1,192 +1,16 @@
 {
-  "businessclub": [],
-  "fivestars": [
-    {
-      "name": "dedicated",
-      "url": "dedicated.png"
-    },
-    {
-      "name": "FarmerHouseProducts",
-      "url": "FarmerHouseProducts.png"
-    },
-    {
-      "name": "HofmansAtHome",
-      "url": "HofmansAtHome.png"
-    },
-    {
-      "name": "ihrekuche",
-      "url": "ihrekuche.png"
-    },
-    {
-      "name": "MajoTrading",
-      "url": "MajoTrading.png"
-    },
+  "hoofdsponsor": [
     {
       "name": "Niveau",
-      "url": "Niveau.png"
-    },
-    {
-      "name": "P_Kaal",
-      "url": "P_Kaal.jpg"
+      "url": "Niveau.png",
+      "website": "https://niveaugroep.nl/"
     }
   ],
-  "fourstars": [
-    {
-      "name": "Cornelion",
-      "url": "Cornelion.png"
-    },
-    {
-      "name": "dmg",
-      "url": "dmg.png"
-    },
-    {
-      "name": "Drips",
-      "url": "Drips.png"
-    },
-    {
-      "name": "EskesPartners",
-      "url": "EskesPartners.png"
-    },
-    {
-      "name": "MGMook",
-      "url": "MGMook.jpg"
-    },
-    {
-      "name": "OostendorpAuto",
-      "url": "OostendorpAuto.png"
-    },
-    {
-      "name": "Ricoh",
-      "url": "Ricoh.png"
-    },
-    {
-      "name": "RienWeijers",
-      "url": "RienWeijers.png"
-    },
-    {
-      "name": "Slaapsfeer",
-      "url": "Slaapsfeer.png"
-    },
-    {
-      "name": "WoutersSchoonmaak",
-      "url": "WoutersSchoonmaak.png"
-    },
-    {
-      "name": "WSP",
-      "url": "WSP.png"
-    }
-  ],
-  "threestars": [
-    {
-      "name": "Adco",
-      "url": "Adco.png"
-    },
-    {
-      "name": "BeMark",
-      "url": "BeMark.png"
-    },
-    {
-      "name": "Brandsfit",
-      "url": "Brandsfit.png"
-    },
-    {
-      "name": "byondis",
-      "url": "byondis.png"
-    },
-    {
-      "name": "De Spil",
-      "url": "De Spil.png"
-    },
-    {
-      "name": "De Veer Montage",
-      "url": "De Veer Montage.png"
-    },
-    {
-      "name": "de-mulder-keukens",
-      "url": "de-mulder-keukens.jpg"
-    },
-    {
-      "name": "JanKooij",
-      "url": "JanKooij.png"
-    },
-    {
-      "name": "Kenonz",
-      "url": "Kenonz.png"
-    },
-    {
-      "name": "Lumar",
-      "url": "Lumar.png"
-    },
-    {
-      "name": "NikkelenElektro60jaar",
-      "url": "NikkelenElektro60jaar.png"
-    },
-    {
-      "name": "Rikjo Ebbers",
-      "url": "Rikjo Ebbers.JPG"
-    },
-    {
-      "name": "Rikken-PNG-Conceptical",
-      "url": "Rikken-PNG-Conceptical.png"
-    },
-    {
-      "name": "Sienn",
-      "url": "Sienn.png"
-    },
-    {
-      "name": "studius",
-      "url": "studius.png"
-    },
-    {
-      "name": "Toonen",
-      "url": "Toonen.jpg"
-    },
-    {
-      "name": "VloerenbedrijfLelie",
-      "url": "VloerenbedrijfLelie.png"
-    }
-  ],
-  "advertisements": [
-    {
-      "name": "LV_ADV_1_8_03",
-      "url": "LV_ADV_1_8_03.jpg"
-    },
-    {
-      "name": "NewYorkPizza",
-      "url": "NewYorkPizza.png"
-    },
-    {
-      "name": "NIKKELEN Reclame beeldscherm kantine",
-      "url": "NIKKELEN Reclame beeldscherm kantine.jpg"
-    },
-    {
-      "name": "TV scherm - sponsoring 0504",
-      "url": "TV scherm - sponsoring 0504.mp4"
-    }
-  ],
-  "announcements": [],
-  "wedstrijdsponsor": [
-    {
-      "name": "Niveau",
-      "url": "Niveau.png"
-    }
-  ],
-  "balsponsor": [
-    {
-      "name": "Niveau",
-      "url": "Niveau.png"
-    }
-  ],
-  "buffetsponsor": [
-    {
-      "name": "De Treffers banner - Daan",
-      "url": "De Treffers banner - Daan.png"
-    }
-  ],
-  "overige": [
+  "businessclub": [
     {
       "name": "1voice",
-      "url": "1voice.jpg"
+      "url": "1voice.jpg",
+      "website": "http://www.1voice.nl"
     },
     {
       "name": "3aAdvies",
@@ -194,87 +18,142 @@
     },
     {
       "name": "Adco",
-      "url": "Adco.png"
+      "url": "Adco.png",
+      "website": "https://www.adcogroesbeek.nl/"
+    },
+    {
+      "name": "ariensenergie",
+      "url": "ariensenergie.png"
     },
     {
       "name": "BakkerijHenkCoopmans",
-      "url": "BakkerijHenkCoopmans.png"
-    },
-    {
-      "name": "Bank ten Cate en Cie",
-      "url": "Bank ten Cate en Cie.png"
+      "url": "BakkerijHenkCoopmans.png",
+      "website": "https://www.detelefoongids.nl/coopmans-bakkerij-h-j-j/11350114/5-1/"
     },
     {
       "name": "Bekla Nijmegen",
       "url": ":txt:Bekla Nijmegen"
     },
     {
-      "name": "Beleggingsmaatschappij Hendriks Groesbeek BV",
-      "url": ":txt:Beleggingsmaatschappij Hendriks Groesbeek BV"
-    },
-    {
       "name": "Belegginsmij Hendriks Groesbeek BV",
-      "url": ":txt:Beleggingsmaatschappij Hendriks Groesbeek BV"
+      "url": ":txt:Hendriks Groesbeek BV"
     },
     {
       "name": "BeMark",
-      "url": "BeMark.png"
-    },
-    {
-      "name": "bijons",
-      "url": "bijons.png"
+      "url": "BeMark.png",
+      "website": "http://bemark.nl"
     },
     {
       "name": "BlueAccountants",
-      "url": "BlueAccountants.jpg"
+      "url": "BlueAccountants.jpg",
+      "website": "http://www.blueaccountants.nl"
     },
     {
       "name": "BRGMetaal",
-      "url": "BRGMetaal.png"
+      "url": "BRGMetaal.png",
+      "website": "http://www.brgmetaal.nl"
+    },
+    {
+      "name": "Briljant logo",
+      "url": "Briljant logo.jpg",
+      "website": "https://www.briljant-schoonmaak.nl/"
     },
     {
       "name": "bundeling",
-      "url": "bundeling.png"
+      "url": "bundeling.png",
+      "website": "https://bundeling.com"
     },
     {
-      "name": "censo",
-      "url": "censo.png"
+      "name": "byondis",
+      "url": "byondis.png",
+      "website": "https://byondis.com/"
+    },
+    {
+      "name": "campingbijons",
+      "url": "campingbijons.png",
+      "website": "https://bijonsingroesbeek.nl"
+    },
+    {
+      "name": "coffeeatwork",
+      "url": "coffeeatwork.jpg"
     },
     {
       "name": "Continyou",
       "url": "Continyou.jpg"
     },
     {
+      "name": "Cornelion",
+      "url": "Cornelion.png",
+      "website": "https://www.cornelion.com"
+    },
+    {
       "name": "dagro",
-      "url": "dagro.png"
+      "url": "dagro.png",
+      "website": "https://www.dagrobv.nl/"
     },
     {
       "name": "DakdekkersRikkenDak",
       "url": "DakdekkersRikkenDak.png"
     },
     {
-      "name": "de-buren-logo-zwart",
-      "url": "de-buren-logo-zwart.png"
+      "name": "De Veer Montage",
+      "url": "De Veer Montage.png",
+      "website": "http://www.deveermontage.nl/"
+    },
+    {
+      "name": "de-mulder-keukens",
+      "url": "de-mulder-keukens.jpg",
+      "website": "https://demulderkeukens.nl/"
+    },
+    {
+      "name": "dedicated",
+      "url": "dedicated.png",
+      "website": "https://dedicatedfashion.nl/"
+    },
+    {
+      "name": "dewaalautogroep",
+      "url": "dewaalautogroep.png",
+      "website": "https://www.dewaalautogroep.nl/"
     },
     {
       "name": "Dhomus",
       "url": ":txt:Dhomus"
     },
     {
+      "name": "DirecteZorgNijmegen",
+      "url": "DirecteZorgNijmegen.png"
+    },
+    {
+      "name": "dmg",
+      "url": "dmg.png",
+      "website": "https://dmggroesbeek.nl/"
+    },
+    {
+      "name": "Eetcafe De oude molen",
+      "url": "Eetcafe De oude molen.jpg"
+    },
+    {
       "name": "EijkhoutPartners",
-      "url": "EijkhoutPartners.png"
+      "url": "EijkhoutPartners.png",
+      "website": "https://www.eijkhoutenpartners.nl/"
+    },
+    {
+      "name": "Elektrotechnisch Installatiebureau Megens",
+      "url": "Elektrotechnisch Installatiebureau Megens.png"
+    },
+    {
+      "name": "Enviem - TinQ",
+      "url": "Enviem - TinQ.png"
+    },
+    {
+      "name": "EskesPartners",
+      "url": "EskesPartners.png",
+      "website": "https://eskespartners.nl/"
     },
     {
       "name": "Fakro",
-      "url": "Fakro.png"
-    },
-    {
-      "name": "FeestpakketOpMaat",
-      "url": "FeestpakketOpMaat.jpg"
-    },
-    {
-      "name": "FotoVerbeeten",
-      "url": "FotoVerbeeten.jpg"
+      "url": "Fakro.png",
+      "website": "https://www.fakro.nl/"
     },
     {
       "name": "Frans Langeveld",
@@ -289,56 +168,72 @@
       "url": ":txt:Goemans Holding"
     },
     {
-      "name": "Hagemann",
-      "url": "Hagemann.jpg"
+      "name": "Golfbaan Het Rijk van Nijmegen Logo_RGB",
+      "url": "Golfbaan Het Rijk van Nijmegen Logo_RGB.jpg",
+      "website": "https://www.golfenophetrijk.nl/nijmegen.html"
     },
     {
       "name": "HalduGroep",
       "url": "HalduGroep.png"
     },
     {
-      "name": "Het Rijk van Nijmegen Logo_RGB",
-      "url": "Het Rijk van Nijmegen Logo_RGB.jpg"
+      "name": "het_groene_leven",
+      "url": "het_groene_leven.png"
+    },
+    {
+      "name": "heudrametaalbewerking",
+      "url": "heudrametaalbewerking.png"
+    },
+    {
+      "name": "HofmansAtHome",
+      "url": "HofmansAtHome.png",
+      "website": "https://www.hofmansathome.nl"
     },
     {
       "name": "HoogstratenInstallaties",
-      "url": "HoogstratenInstallaties.jpeg"
-    },
-    {
-      "name": "Hoogwegt",
-      "url": "Hoogwegt.jpg"
-    },
-    {
-      "name": "HotelWolfsberg",
-      "url": "HotelWolfsberg.png"
-    },
-    {
-      "name": "Houzing",
-      "url": "Houzing.png"
+      "url": "HoogstratenInstallaties.jpeg",
+      "website": "https://www.hoogstrateninstallaties.nl/"
     },
     {
       "name": "HRMeetEnRegeltechniek",
-      "url": "HRMeetEnRegeltechniek.jpg"
+      "url": "HRMeetEnRegeltechniek.jpg",
+      "website": "https://www.telefoonboek.nl/bedrijven/t2435658/escharen/hr--meet--en-regeltechniek/"
+    },
+    {
+      "name": "ihrekuche",
+      "url": "ihrekuche.png",
+      "website": "https://ihrekueche.net/"
     },
     {
       "name": "ITVoordeZaak",
-      "url": "ITVoordeZaak.png"
-    },
-    {
-      "name": "Jac Bongers",
-      "url": "Jac Bongers.png"
+      "url": "ITVoordeZaak.png",
+      "website": "https://www.itvoordezaak.nl/"
     },
     {
       "name": "Jacques Biessels",
       "url": ":txt:Jacques Biessels"
     },
     {
-      "name": "Joficon",
-      "url": "Joficon.png"
+      "name": "Jan-nie Holding BV",
+      "url": ":txt:Jan-Nie Holding BV"
+    },
+    {
+      "name": "JanKooij",
+      "url": "JanKooij.png"
+    },
+    {
+      "name": "Jonkershof BV",
+      "url": ":txt:Jonkershof BV"
     },
     {
       "name": "jrwoodz",
-      "url": "jrwoodz.jpeg"
+      "url": "jrwoodz.jpeg",
+      "website": "https://www.linkedin.com/company/jr-woodz/?originalSubdomain=nl"
+    },
+    {
+      "name": "Kenonz",
+      "url": "Kenonz.png",
+      "website": "https://www.kenonz.nl/"
     },
     {
       "name": "Kompas",
@@ -362,19 +257,35 @@
     },
     {
       "name": "LHPackaging",
-      "url": "LHPackaging.jpg"
+      "url": "LHPackaging.jpg",
+      "website": "https://lhpackaging.nl/"
     },
     {
-      "name": "Megens",
-      "url": "Megens.png"
+      "name": "Lotto und Reisecenter Hagemann",
+      "url": "Lotto und Reisecenter Hagemann.jpg"
     },
     {
-      "name": "Meglio",
-      "url": "Meglio.png"
+      "name": "Louis Bloemers Management en Advies",
+      "url": ":txt:VOF Bloemers Orlova",
+      "website": "https://www.louisbloemers.nl/"
+    },
+    {
+      "name": "Lumar",
+      "url": "Lumar.png"
+    },
+    {
+      "name": "MajoTrading",
+      "url": "MajoTrading.png",
+      "website": "http://www.majotrading.nl"
+    },
+    {
+      "name": "maudlegal",
+      "url": "maudlegal.png"
     },
     {
       "name": "melco-totaalafbouw",
-      "url": "melco-totaalafbouw.jpg"
+      "url": "melco-totaalafbouw.jpg",
+      "website": "https://www.melcototaalafbouw.nl/"
     },
     {
       "name": "Melkveebedrijf Overenk BV",
@@ -382,83 +293,144 @@
     },
     {
       "name": "MenMSecurity",
-      "url": "MenMSecurity.png"
+      "url": "MenMSecurity.png",
+      "website": "http://www.mm-security.nl"
     },
     {
-      "name": "MilkConnect",
-      "url": "MilkConnect.png"
+      "name": "MGMook",
+      "url": "MGMook.jpg"
     },
     {
       "name": "MonikaSasInterieur",
-      "url": "MonikaSasInterieur.png"
+      "url": "MonikaSasInterieur.png",
+      "website": "https://www.monikasas-interieur.nl/"
     },
     {
       "name": "MountainResidences",
-      "url": "MountainResidences.jpg"
+      "url": "MountainResidences.jpg",
+      "website": "https://www.mountain-residences.com/nl/index.html"
+    },
+    {
+      "name": "NikkelenElektro60jaar",
+      "url": "NikkelenElektro60jaar.png"
+    },
+    {
+      "name": "Niveau",
+      "url": "Niveau.png",
+      "website": "https://niveaugroep.nl/"
+    },
+    {
+      "name": "OostendorpAuto",
+      "url": "OostendorpAuto.png"
     },
     {
       "name": "ParcBuitengewoon",
-      "url": "ParcBuitengewoon.jpg"
+      "url": "ParcBuitengewoon.jpg",
+      "website": "https://www.parcbuitengewoon.nl/"
     },
     {
-      "name": "PeterGraat",
-      "url": "PeterGraat.jpg"
+      "name": "pekadak",
+      "url": "pekadak.png"
     },
     {
       "name": "PHPlusSolution",
-      "url": "PHPlusSolution.jpg"
+      "url": "PHPlusSolution.jpg",
+      "website": "http://www.phplus.nl"
     },
     {
       "name": "pluryn",
-      "url": "pluryn.jpeg"
+      "url": "pluryn.jpeg",
+      "website": "https://www.pluryn.nl/"
+    },
+    {
+      "name": "P_Kaal",
+      "url": "P_Kaal.jpg",
+      "website": "https://www.aannemersbedrijfkaal.nl/"
+    },
+    {
+      "name": "qisupplies",
+      "url": "qisupplies.jpg"
+    },
+    {
+      "name": "Restaurant-de-buren-logo-zwart",
+      "url": "Restaurant-de-buren-logo-zwart.png"
     },
     {
       "name": "RestaurantDeSpil",
-      "url": "RestaurantDeSpil.png"
-    },
-    {
-      "name": "RestaurantVurrukkulluk",
-      "url": "RestaurantVurrukkulluk.jpg"
+      "url": "RestaurantDeSpil.png",
+      "website": "https://despilgroesbeek.nl"
     },
     {
       "name": "RHMA",
       "url": "RHMA.png"
     },
     {
+      "name": "Ricoh",
+      "url": "Ricoh.png",
+      "website": "https://www.ricoh-imaging.eu/nl_nl/"
+    },
+    {
+      "name": "RienWeijers",
+      "url": "RienWeijers.png"
+    },
+    {
+      "name": "Rikjo Ebbers",
+      "url": "Rikjo Ebbers.JPG"
+    },
+    {
+      "name": "Rikken-PNG-Conceptical",
+      "url": "Rikken-PNG-Conceptical.png"
+    },
+    {
+      "name": "RN7",
+      "url": "RN7.png",
+      "website": "https://www.rn7.nl/"
+    },
+    {
+      "name": "Robert Hijmans",
+      "url": ":txt:Robert Hijmans"
+    },
+    {
       "name": "RoelWoutersInstallatie",
-      "url": "RoelWoutersInstallatie.jpg"
+      "url": "RoelWoutersInstallatie.jpg",
+      "website": "https://www.facebook.com/profile.php?id=100083210053217"
     },
     {
       "name": "Ronald van de Ven",
       "url": ":txt:Ronald van de Ven"
     },
     {
-      "name": "RoverWood",
-      "url": "RoverWood.jpg"
-    },
-    {
       "name": "Rutolux",
-      "url": "Rutolux.jpeg"
+      "url": "Rutolux.png",
+      "website": "https://www.rutolux-zonwering.nl/"
     },
     {
-      "name": "Rutolux",
-      "url": "Rutolux.png"
+      "name": "RVB Media Topic",
+      "url": "RVB Media Topic.jpg"
     },
     {
-      "name": "Sanavit",
-      "url": "Sanavit.jpg"
+      "name": "Sienn",
+      "url": "Sienn.png",
+      "website": "https://www.sienn.com/nl/"
     },
     {
-      "name": "ScotchWhiskyInvestments",
-      "url": "ScotchWhiskyInvestments.jpg"
+      "name": "Slaapsfeer",
+      "url": "Slaapsfeer.png",
+      "website": "https://www.slaapsfeer.nl"
     },
     {
       "name": "Spiertz",
       "url": "Spiertz.jpg"
     },
     {
-      "name": "StadsherbergGennep",
-      "url": "StadsherbergGennep.png"
+      "name": "studius",
+      "url": "studius.png",
+      "website": "https://studius.nl/"
+    },
+    {
+      "name": "Suselbeek",
+      "url": "Suselbeek.png",
+      "website": "https://www.suselbeek.nl/"
     },
     {
       "name": "teezz",
@@ -473,72 +445,710 @@
       "url": "Thibacs.jpg"
     },
     {
-      "name": "TinQ",
-      "url": "TinQ.png"
-    },
-    {
-      "name": "Topic",
-      "url": "Topic.jpg"
+      "name": "Toonen",
+      "url": "Toonen.jpg"
     },
     {
       "name": "TribEvents",
-      "url": "TribEvents.png"
+      "url": "TribEvents.png",
+      "website": "http://www.tribevents.nl"
     },
     {
-      "name": "ValleiAutoGroep",
-      "url": "ValleiAutoGroep.png"
+      "name": "Tuinontwerp- en advies PeterGraat",
+      "url": "Tuinontwerp- en advies PeterGraat.jpg",
+      "website": "https://www.petergraat.nl"
     },
     {
-      "name": "Van Bakel Groep",
-      "url": ":txt:Van Bakel Groep"
+      "name": "van Putten Totaalonderhoud",
+      "url": ":txt:van Putten Totaalonderhoud"
+    },
+    {
+      "name": "van-Eldijk-logo",
+      "url": "van-Eldijk-logo.svg"
     },
     {
       "name": "VanAltenaWijchen",
-      "url": "VanAltenaWijchen.png"
+      "url": "VanAltenaWijchen.png",
+      "website": "https://www.vanaltenawijchen.nl/"
     },
     {
-      "name": "vanBergenTweewielers",
-      "url": "vanBergenTweewielers.jpg"
+      "name": "vanbakelgroep",
+      "url": "vanbakelgroep.png"
     },
     {
       "name": "vanderhamglas",
       "url": "vanderhamglas.jpg"
     },
     {
+      "name": "VloerenbedrijfLelie",
+      "url": "VloerenbedrijfLelie.png",
+      "website": "https://www.vloerenbedrijflelie.nl/"
+    },
+    {
       "name": "voergroepZuid",
-      "url": "voergroepZuid.jpeg"
+      "url": "voergroepZuid.jpeg",
+      "website": "https://www.voergroepzuid.nl/"
     },
     {
-      "name": "VOF Bloemers Orlova",
-      "url": ":txt:VOF Bloemers Orlova"
+      "name": "wdsign",
+      "url": "wdsign.png"
     },
     {
-      "name": "W Zwitserloot BV",
-      "url": ":txt:W Zwitserloot BV"
+      "name": "WeinhausRanke",
+      "url": "WeinhausRanke.png",
+      "website": "https://wijnhuisranke.nl/"
     },
     {
       "name": "WeldOnMetaal",
-      "url": "WeldOnMetaal.png"
+      "url": "WeldOnMetaal.png",
+      "website": "http://www.weldonmetaal.nl"
+    },
+    {
+      "name": "wellingbouw",
+      "url": "wellingbouw.png"
     },
     {
       "name": "WerkbedrijfRijkvNijmegen",
-      "url": "WerkbedrijfRijkvNijmegen.png"
+      "url": "WerkbedrijfRijkvNijmegen.png",
+      "website": "https://www.werkbedrijfrvn.nl/"
     },
     {
-      "name": "WijnhovenHubers",
-      "url": "WijnhovenHubers.png"
-    },
-    {
-      "name": "WijnhuisRanke",
-      "url": "WijnhuisRanke.png"
-    },
-    {
-      "name": "Wouters Sanitair en tegelshop",
-      "url": "Wouters Sanitair en tegelshop.png"
+      "name": "WSP",
+      "url": "WSP.png"
     },
     {
       "name": "wve",
       "url": "wve.png"
+    },
+    {
+      "name": "Zwitserloot W BV",
+      "url": ":txt:W Zwitserloot BV"
+    }
+  ],
+  "fivestars": [
+    {
+      "name": "dedicated",
+      "url": "dedicated.png",
+      "website": "https://dedicatedfashion.nl/"
+    },
+    {
+      "name": "dmg",
+      "url": "dmg.png",
+      "website": "https://dmggroesbeek.nl/"
+    },
+    {
+      "name": "HofmansAtHome",
+      "url": "HofmansAtHome.png",
+      "website": "https://www.hofmansathome.nl"
+    },
+    {
+      "name": "ihrekuche",
+      "url": "ihrekuche.png",
+      "website": "https://ihrekueche.net/"
+    },
+    {
+      "name": "MajoTrading",
+      "url": "MajoTrading.png",
+      "website": "http://www.majotrading.nl"
+    },
+    {
+      "name": "P_Kaal",
+      "url": "P_Kaal.jpg",
+      "website": "https://www.aannemersbedrijfkaal.nl/"
+    },
+    {
+      "name": "Suselbeek",
+      "url": "Suselbeek.png",
+      "website": "https://www.suselbeek.nl/"
+    },
+    {
+      "name": "vanbakelgroep",
+      "url": "vanbakelgroep.png"
+    }
+  ],
+  "fourstars": [
+    {
+      "name": "briljant",
+      "url": "briljant.png"
+    },
+    {
+      "name": "Cornelion",
+      "url": "Cornelion.png",
+      "website": "https://www.cornelion.com"
+    },
+    {
+      "name": "EskesPartners",
+      "url": "EskesPartners.png",
+      "website": "https://eskespartners.nl/"
+    },
+    {
+      "name": "MGMook",
+      "url": "MGMook.jpg"
+    },
+    {
+      "name": "OostendorpAuto",
+      "url": "OostendorpAuto.png"
+    },
+    {
+      "name": "Ricoh",
+      "url": "Ricoh.png",
+      "website": "https://www.ricoh-imaging.eu/nl_nl/"
+    },
+    {
+      "name": "RienWeijers",
+      "url": "RienWeijers.png"
+    },
+    {
+      "name": "Rikken-PNG-Conceptical",
+      "url": "Rikken-PNG-Conceptical.png"
+    },
+    {
+      "name": "RN7",
+      "url": "RN7.png",
+      "website": "https://www.rn7.nl/"
+    },
+    {
+      "name": "Slaapsfeer",
+      "url": "Slaapsfeer.png",
+      "website": "https://www.slaapsfeer.nl"
+    },
+    {
+      "name": "WSP",
+      "url": "WSP.png"
+    }
+  ],
+  "threestars": [
+    {
+      "name": "Adco",
+      "url": "Adco.png",
+      "website": "https://www.adcogroesbeek.nl/"
+    },
+    {
+      "name": "Brandsfit",
+      "url": "Brandsfit.png"
+    },
+    {
+      "name": "byondis",
+      "url": "byondis.png",
+      "website": "https://byondis.com/"
+    },
+    {
+      "name": "dagro",
+      "url": "dagro.png",
+      "website": "https://www.dagrobv.nl/"
+    },
+    {
+      "name": "De Veer Montage",
+      "url": "De Veer Montage.png",
+      "website": "http://www.deveermontage.nl/"
+    },
+    {
+      "name": "de-mulder-keukens",
+      "url": "de-mulder-keukens.jpg",
+      "website": "https://demulderkeukens.nl/"
+    },
+    {
+      "name": "JanKooij",
+      "url": "JanKooij.png"
+    },
+    {
+      "name": "Kenonz",
+      "url": "Kenonz.png",
+      "website": "https://www.kenonz.nl/"
+    },
+    {
+      "name": "Lumar",
+      "url": "Lumar.png"
+    },
+    {
+      "name": "NikkelenElektro60jaar",
+      "url": "NikkelenElektro60jaar.png"
+    },
+    {
+      "name": "Restaurant De Spil",
+      "url": "Restaurant De Spil.png",
+      "website": "https://despilgroesbeek.nl"
+    },
+    {
+      "name": "Rikjo Ebbers",
+      "url": "Rikjo Ebbers.JPG"
+    },
+    {
+      "name": "Sienn",
+      "url": "Sienn.png",
+      "website": "https://www.sienn.com/nl/"
+    },
+    {
+      "name": "studius",
+      "url": "studius.png",
+      "website": "https://studius.nl/"
+    },
+    {
+      "name": "Toonen",
+      "url": "Toonen.jpg"
+    },
+    {
+      "name": "VloerenbedrijfLelie",
+      "url": "VloerenbedrijfLelie.png",
+      "website": "https://www.vloerenbedrijflelie.nl/"
+    }
+  ],
+  "advertisements": [
+    {
+      "name": "NewYorkPizza",
+      "url": "NewYorkPizza.png",
+      "website": "https://www.newyorkpizza.nl/vestigingen/pizza-bestellen-groesbeek-bellevue"
+    },
+    {
+      "name": "NIKKELEN Reclame beeldscherm kantine",
+      "url": "NIKKELEN Reclame beeldscherm kantine.jpg"
+    }
+  ],
+  "announcements": [],
+  "wedstrijdsponsor": [
+    {
+      "name": "numblees-768x212",
+      "url": "numblees-768x212.jpeg"
+    }
+  ],
+  "balsponsor": [
+    {
+      "name": "vanzuijlen",
+      "url": "vanzuijlen.png"
+    }
+  ],
+  "buffetsponsor": [
+    {
+      "name": "deburen (2)",
+      "url": "deburen (2).png"
+    }
+  ],
+  "overige": [
+    {
+      "name": "Aannemersbedrijf Joey Smits",
+      "url": ":txt:Aannemersbedrijf Joey Smits"
+    },
+    {
+      "name": "Aannemingsbedrijf Janssen-Groesbeek B.V.",
+      "url": ":txt:Aannemingsbedrijf Janssen-Groesbeek B.V.",
+      "website": "https://www.janssen-groesbeek.nl/"
+    },
+    {
+      "name": "Afbouwbedrijf Looman",
+      "url": ":txt:Afbouwbedrijf Looman"
+    },
+    {
+      "name": "Agile Welzijn B.V.",
+      "url": ":txt:Agile Welzijn B.V.",
+      "website": "https://agilewelzijn.nl/"
+    },
+    {
+      "name": "ALBO B.V.",
+      "url": ":txt:ALBO B.V.",
+      "website": "https://albomilsbeek.nl/"
+    },
+    {
+      "name": "Alles voor de Afbouw",
+      "url": ":txt:Alles voor de Afbouw"
+    },
+    {
+      "name": "Automobiliteit Groesbeek",
+      "url": ":txt:Automobiliteit Groesbeek"
+    },
+    {
+      "name": "Barbershop Groesbeek",
+      "url": ":txt:Barbershop Groesbeek"
+    },
+    {
+      "name": "Bert Story Nijmegen",
+      "url": ":txt:Bert Story Nijmegen"
+    },
+    {
+      "name": "BGM Infra B.V.",
+      "url": ":txt:BGM Infra B.V."
+    },
+    {
+      "name": "Bloem Direct",
+      "url": ":txt:Bloem Direct"
+    },
+    {
+      "name": "Burghouwt Bouwbeslag",
+      "url": ":txt:Burghouwt Bouwbeslag"
+    },
+    {
+      "name": "Caf\u00e9 Y Mas",
+      "url": ":txt:Caf\u00e9 Y Mas",
+      "website": "https://cafeymas.nl/"
+    },
+    {
+      "name": "Chef in Huis",
+      "url": ":txt:Chef in Huis"
+    },
+    {
+      "name": "Chem-Dry Wouters",
+      "url": ":txt:Chem-Dry Wouters"
+    },
+    {
+      "name": "Dakramen Groesbeek",
+      "url": ":txt:Dakramen Groesbeek"
+    },
+    {
+      "name": "Daktechniek Nederland",
+      "url": ":txt:Daktechniek Nederland"
+    },
+    {
+      "name": "De Wolfsberg B.V.",
+      "url": ":txt:De Wolfsberg B.V.",
+      "website": "https://www.wolfsberg.nl/"
+    },
+    {
+      "name": "Destil",
+      "url": ":txt:Destil"
+    },
+    {
+      "name": "DHD Drukkerij",
+      "url": ":txt:DHD Drukkerij",
+      "website": "https://www.dhddrukkerij.nl/"
+    },
+    {
+      "name": "El Toro Restaurant & Steakhouse e.K.",
+      "url": ":txt:El Toro Restaurant & Steakhouse e.K.",
+      "website": "https://www.restaurant-el-toro.de/"
+    },
+    {
+      "name": "EP: Heinz van Benthum",
+      "url": ":txt:EP: Heinz van Benthum",
+      "website": "https://www.epheinzvanbenthum.nl/"
+    },
+    {
+      "name": "Era Delicatessen",
+      "url": ":txt:Era Delicatessen"
+    },
+    {
+      "name": "Financieringsgilde Nijmegen",
+      "url": ":txt:Financieringsgilde Nijmegen",
+      "website": "https://www.financieringsgilde.nl/nijmegen/"
+    },
+    {
+      "name": "FlexOnYou",
+      "url": ":txt:FlexOnYou"
+    },
+    {
+      "name": "Frank Lemmers Bouw",
+      "url": ":txt:Frank Lemmers Bouw",
+      "website": "https://franklemmersbouw.nl/"
+    },
+    {
+      "name": "Frank van de Ven Timmerwerken",
+      "url": ":txt:Frank van de Ven Timmerwerken"
+    },
+    {
+      "name": "Garage De Ren",
+      "url": ":txt:Garage De Ren",
+      "website": "https://www.garagederen.nl/"
+    },
+    {
+      "name": "GM Tuin & Bouw",
+      "url": ":txt:GM Tuin & Bouw"
+    },
+    {
+      "name": "Grodak",
+      "url": ":txt:Grodak"
+    },
+    {
+      "name": "Hagemans Verf",
+      "url": ":txt:Hagemans Verf",
+      "website": "https://www.hagemansverf.nl/"
+    },
+    {
+      "name": "Handelsonderneming Coenen B.V.",
+      "url": ":txt:Handelsonderneming Coenen B.V.",
+      "website": "https://www.coenen-groesbeek.nl/"
+    },
+    {
+      "name": "Hans de Echte Bakker",
+      "url": ":txt:Hans de Echte Bakker"
+    },
+    {
+      "name": "Hans Klein Markthandel in AGF",
+      "url": ":txt:Hans Klein Markthandel in AGF"
+    },
+    {
+      "name": "Hans Lamers B.V.",
+      "url": ":txt:Hans Lamers B.V."
+    },
+    {
+      "name": "Herberg - Restaurant 't Zwaantje",
+      "url": ":txt:Herberg - Restaurant 't Zwaantje",
+      "website": "https://www.t-zwaantje.nl/"
+    },
+    {
+      "name": "Hout & Kozijn B.V.",
+      "url": ":txt:Hout & Kozijn B.V.",
+      "website": "https://www.hout-en-kozijn.nl/"
+    },
+    {
+      "name": "Houzing Vloer & Interieur",
+      "url": ":txt:Houzing Vloer & Interieur"
+    },
+    {
+      "name": "HV Makelaardij",
+      "url": ":txt:HV Makelaardij",
+      "website": "https://www.hv.nl/"
+    },
+    {
+      "name": "J&S Elektrotechniek",
+      "url": ":txt:J&S Elektrotechniek"
+    },
+    {
+      "name": "Jan Kooij 2-Wielers Groesbeek",
+      "url": ":txt:Jan Kooij 2-Wielers Groesbeek"
+    },
+    {
+      "name": "JK Party Verhuur",
+      "url": ":txt:JK Party Verhuur"
+    },
+    {
+      "name": "Jumbo Groesbeek",
+      "url": ":txt:Jumbo Groesbeek",
+      "website": "https://www.jumbo.com/winkel/groesbeek/jumbo-groesbeek-de-meent"
+    },
+    {
+      "name": "K&J Timmerwerken",
+      "url": ":txt:K&J Timmerwerken"
+    },
+    {
+      "name": "Kaltec Compressoren",
+      "url": ":txt:Kaltec Compressoren"
+    },
+    {
+      "name": "Kerkhoff Installatiebedrijf",
+      "url": ":txt:Kerkhoff Installatiebedrijf",
+      "website": "https://www.kerkhoff-bredeweg.nl/"
+    },
+    {
+      "name": "Konbanwa B.V.",
+      "url": ":txt:Konbanwa B.V.",
+      "website": "https://www.konbanwa.nl/"
+    },
+    {
+      "name": "Krol Pompoenen",
+      "url": ":txt:Krol Pompoenen"
+    },
+    {
+      "name": "Langeveld Dak B.V.",
+      "url": ":txt:Langeveld Dak B.V."
+    },
+    {
+      "name": "Leenders Vastgoedonderhoud",
+      "url": ":txt:Leenders Vastgoedonderhoud"
+    },
+    {
+      "name": "Lema Vloeren",
+      "url": ":txt:Lema Vloeren"
+    },
+    {
+      "name": "MARV Websolutions",
+      "url": ":txt:MARV Websolutions"
+    },
+    {
+      "name": "Megens Installaties",
+      "url": ":txt:Megens Installaties"
+    },
+    {
+      "name": "Mulders Koeltechniek",
+      "url": ":txt:Mulders Koeltechniek"
+    },
+    {
+      "name": "Mystery Voetbal Box",
+      "url": ":txt:Mystery Voetbal Box"
+    },
+    {
+      "name": "New York Pizza",
+      "url": ":txt:New York Pizza",
+      "website": "https://www.newyorkpizza.nl/vestigingen/pizza-bestellen-groesbeek-bellevue"
+    },
+    {
+      "name": "Nijenkamp Dak- en Timmerwerken",
+      "url": ":txt:Nijenkamp Dak- en Timmerwerken"
+    },
+    {
+      "name": "Nijmeegse Cab",
+      "url": ":txt:Nijmeegse Cab"
+    },
+    {
+      "name": "Niveau Glas",
+      "url": ":txt:Niveau Glas",
+      "website": "https://www.niveaugroep.nl/glas/"
+    },
+    {
+      "name": "Numblees Corporate Finance",
+      "url": ":txt:Numblees Corporate Finance",
+      "website": "https://numblees.nl/"
+    },
+    {
+      "name": "Onderhoudsbedrijf All Care",
+      "url": ":txt:Onderhoudsbedrijf All Care"
+    },
+    {
+      "name": "Optiek Groesbeek",
+      "url": ":txt:Optiek Groesbeek",
+      "website": "https://www.optiekgroesbeek.nl/"
+    },
+    {
+      "name": "Patron Metaal",
+      "url": ":txt:Patron Metaal"
+    },
+    {
+      "name": "Q-air International",
+      "url": ":txt:Q-air International"
+    },
+    {
+      "name": "Quickseal Applicatie B.V.",
+      "url": ":txt:Quickseal Applicatie B.V."
+    },
+    {
+      "name": "Reclame Ellen",
+      "url": ":txt:Reclame Ellen"
+    },
+    {
+      "name": "Rici's Garage",
+      "url": ":txt:Rici's Garage"
+    },
+    {
+      "name": "Rikken Reclame",
+      "url": ":txt:Rikken Reclame",
+      "website": "https://www.rikkenreclame.nl/"
+    },
+    {
+      "name": "Roverwood",
+      "url": ":txt:Roverwood",
+      "website": "http://www.roverwood.nl"
+    },
+    {
+      "name": "Rozijn Parketvloeren",
+      "url": ":txt:Rozijn Parketvloeren"
+    },
+    {
+      "name": "Sanders Tweewielers",
+      "url": ":txt:Sanders Tweewielers",
+      "website": "https://www.sanderstweewielers.nl/home.html"
+    },
+    {
+      "name": "Sann Concept Store",
+      "url": ":txt:Sann Concept Store"
+    },
+    {
+      "name": "Schuurmans Interieur & Montage",
+      "url": ":txt:Schuurmans Interieur & Montage"
+    },
+    {
+      "name": "Sieppie Kozijnen",
+      "url": ":txt:Sieppie Kozijnen"
+    },
+    {
+      "name": "Slagerij Tim Janssen",
+      "url": ":txt:Slagerij Tim Janssen"
+    },
+    {
+      "name": "Slikweid B.V.",
+      "url": ":txt:Slikweid B.V."
+    },
+    {
+      "name": "STABA Maatwerk",
+      "url": ":txt:STABA Maatwerk",
+      "website": "https://stabamaatwerk.nl/"
+    },
+    {
+      "name": "Stadsherberg Gennep",
+      "url": ":txt:Stadsherberg Gennep",
+      "website": "https://www.stadsherberggennep.nl/"
+    },
+    {
+      "name": "Suselbeek Deuren",
+      "url": ":txt:Suselbeek Deuren",
+      "website": "https://www.suselbeek.nl/"
+    },
+    {
+      "name": "'t Soetrijck",
+      "url": ":txt:'t Soetrijck",
+      "website": "https://soetrijck.nl/"
+    },
+    {
+      "name": "Theunissen Timmerfabriek",
+      "url": ":txt:Theunissen Timmerfabriek"
+    },
+    {
+      "name": "Top Auto's B.V.",
+      "url": ":txt:Top Auto's B.V."
+    },
+    {
+      "name": "Trofee Paleis",
+      "url": ":txt:Trofee Paleis"
+    },
+    {
+      "name": "TSSN",
+      "url": ":txt:TSSN"
+    },
+    {
+      "name": "Twan Janssen Schilderwerken",
+      "url": ":txt:Twan Janssen Schilderwerken"
+    },
+    {
+      "name": "Univ\u00e9 Stad en Land B.V.",
+      "url": ":txt:Univ\u00e9 Stad en Land B.V."
+    },
+    {
+      "name": "Valeres Industriebouw B.V.",
+      "url": ":txt:Valeres Industriebouw B.V.",
+      "website": "https://www.valeres.nl/home/"
+    },
+    {
+      "name": "Van Altena Groothandel",
+      "url": ":txt:Van Altena Groothandel",
+      "website": "https://www.vanaltenawijchen.nl/"
+    },
+    {
+      "name": "Van Kesteren Holding B.V.",
+      "url": ":txt:Van Kesteren Holding B.V.",
+      "website": "https://www.vankesterenbv.nl/"
+    },
+    {
+      "name": "Van Vuuren",
+      "url": ":txt:Van Vuuren"
+    },
+    {
+      "name": "Van Zuijlen Auto's",
+      "url": ":txt:Van Zuijlen Auto's"
+    },
+    {
+      "name": "Visser Keukens & Zo",
+      "url": ":txt:Visser Keukens & Zo"
+    },
+    {
+      "name": "Vissers Bouw & Daktechniek B.V.",
+      "url": ":txt:Vissers Bouw & Daktechniek B.V."
+    },
+    {
+      "name": "Voetbalschool Groesbeek",
+      "url": ":txt:Voetbalschool Groesbeek"
+    },
+    {
+      "name": "Weijerseikhout B.V.",
+      "url": ":txt:Weijerseikhout B.V.",
+      "website": "https://www.weijerseikhout.nl/"
+    },
+    {
+      "name": "Wennekers Wonen",
+      "url": ":txt:Wennekers Wonen"
+    },
+    {
+      "name": "Wijnhoven Hout Techniek",
+      "url": ":txt:Wijnhoven Hout Techniek"
+    },
+    {
+      "name": "Wouters Schoonmaakorganisatie",
+      "url": ":txt:Wouters Schoonmaakorganisatie"
     }
   ]
 }
