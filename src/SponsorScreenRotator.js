@@ -113,11 +113,11 @@ const SponsorScreenRotator = () => {
       // // Only include Announcements if we're in the time window (4 PM - 7 PM)
       // ...(isAnnouncementTime
       //   ? [
-      <Announcements
-        key={11}
-        sources={sources}
-        updateSourceCounts={updateSourceCounts}
-      />,
+      // <Announcements
+      //   key={11}
+      //   sources={sources}
+      //   updateSourceCounts={updateSourceCounts}
+      // />,
       //     ]
       //   : []),
       <BusinessClubSponsors
@@ -153,7 +153,9 @@ const SponsorScreenRotator = () => {
     const clickX = e.clientX;
     const halfWidth = window.innerWidth / 2;
     if (clickX < halfWidth) {
-      setCurrentScreen((prevScreen) => (prevScreen - 1 + sponsors.length) % sponsors.length);
+      setCurrentScreen(
+        (prevScreen) => (prevScreen - 1 + sponsors.length) % sponsors.length,
+      );
     } else {
       setCurrentScreen((prevScreen) => (prevScreen + 1) % sponsors.length);
     }
