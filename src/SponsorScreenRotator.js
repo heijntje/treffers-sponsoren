@@ -139,11 +139,11 @@ const SponsorScreenRotator = () => {
       // // Only include Announcements if we're in the time window (4 PM - 7 PM)
       // ...(isAnnouncementTime
       //   ? [
-      // <Announcements
-      //   key={11}
-      //   sources={sources}
-      //   updateSourceCounts={updateSourceCounts}
-      // />,
+      <Announcements
+        key={11}
+        sources={sources}
+        updateSourceCounts={updateSourceCounts}
+      />,
       //     ]
       //   : []),
       <BusinessClubSponsors

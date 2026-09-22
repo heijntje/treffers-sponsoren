@@ -26,6 +26,10 @@
       "url": "ariensenergie.png"
     },
     {
+      "name": "Artemis1",
+      "url": "Artemis1.png"
+    },
+    {
       "name": "BakkerijHenkCoopmans",
       "url": "BakkerijHenkCoopmans.png",
       "website": "https://www.detelefoongids.nl/coopmans-bakkerij-h-j-j/11350114/5-1/"
@@ -54,9 +58,8 @@
       "website": "http://www.brgmetaal.nl"
     },
     {
-      "name": "Briljant logo",
-      "url": "Briljant logo.jpg",
-      "website": "https://www.briljant-schoonmaak.nl/"
+      "name": "briljant",
+      "url": "briljant.png"
     },
     {
       "name": "bundeling",
@@ -352,6 +355,10 @@
       "url": "qisupplies.jpg"
     },
     {
+      "name": "Rabobank",
+      "url": "Rabobank.jpg"
+    },
+    {
       "name": "Restaurant-de-buren-logo-zwart",
       "url": "Restaurant-de-buren-logo-zwart.png"
     },
@@ -526,6 +533,10 @@
     }
   ],
   "fivestars": [
+    {
+      "name": "Artemis1",
+      "url": "Artemis1.png"
+    },
     {
       "name": "dedicated",
       "url": "dedicated.png",
@@ -704,7 +715,16 @@
       "url": "NIKKELEN Reclame beeldscherm kantine.jpg"
     }
   ],
-  "announcements": [],
+  "announcements": [
+    {
+      "name": "bundesliga",
+      "url": "bundesliga.png"
+    },
+    {
+      "name": "Rene Meulensteen",
+      "url": "Rene Meulensteen.png"
+    }
+  ],
   "wedstrijdsponsor": [
     {
       "name": "numblees-768x212",
