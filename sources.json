@@ -1170,5 +1170,103 @@
       "name": "Wouters Schoonmaakorganisatie",
       "url": ":txt:Wouters Schoonmaakorganisatie"
     }
+  ],
+  "broeksponsor": [
+    {
+      "name": "briljant",
+      "url": "briljant.png"
+    }
+  ],
+  "dugoutsponsor": [
+    {
+      "name": "Artemis1",
+      "url": "Artemis1.png"
+    }
+  ],
+  "mediapartner": [
+    {
+      "name": "RN7",
+      "url": "RN7.png",
+      "website": "https://www.rn7.nl/"
+    }
+  ],
+  "rugsponsor": [
+    {
+      "name": "dmg",
+      "url": "dmg.png",
+      "website": "https://dmggroesbeek.nl/"
+    },
+    {
+      "name": "Suselbeek",
+      "url": "Suselbeek.png",
+      "website": "https://www.suselbeek.nl/"
+    }
+  ],
+  "nieuwe_bc_leden": [
+    {
+      "name": "ariensenergie",
+      "url": "ariensenergie.png"
+    },
+    {
+      "name": "Artemis1",
+      "url": "Artemis1.png"
+    },
+    {
+      "name": "coffeeatwork",
+      "url": "coffeeatwork.jpg"
+    },
+    {
+      "name": "DirecteZorgNijmegen",
+      "url": "DirecteZorgNijmegen.png"
+    },
+    {
+      "name": "Eetcafe De oude molen",
+      "url": "Eetcafe De oude molen.jpg"
+    },
+    {
+      "name": "heudrametaalbewerking",
+      "url": "heudrametaalbewerking.png"
+    },
+    {
+      "name": "Jan-nie Holding BV",
+      "url": ":txt:Jan-Nie Holding BV"
+    },
+    {
+      "name": "Jonkershof BV",
+      "url": ":txt:Jonkershof BV"
+    },
+    {
+      "name": "maudlegal",
+      "url": "maudlegal.png"
+    },
+    {
+      "name": "pekadak",
+      "url": "pekadak.png"
+    },
+    {
+      "name": "qisupplies",
+      "url": "qisupplies.jpg"
+    },
+    {
+      "name": "Rabobank",
+      "url": "Rabobank.jpg"
+    },
+    {
+      "name": "RN7",
+      "url": "RN7.png",
+      "website": "https://www.rn7.nl/"
+    },
+    {
+      "name": "van Putten Totaalonderhoud",
+      "url": ":txt:van Putten Totaalonderhoud"
+    },
+    {
+      "name": "van-Eldijk-logo",
+      "url": "van-Eldijk-logo.svg"
+    },
+    {
+      "name": "wellingbouw",
+      "url": "wellingbouw.png"
+    }
   ]
 }
