@@ -16,6 +16,11 @@ directories = [
     "balsponsor",
     "buffetsponsor",
     "overige",
+    "broeksponsor",
+    "dugoutsponsor",
+    "mediapartner",
+    "rugsponsor",
+    "nieuwe_bc_leden",
 ]
 
 # Load links.json if it exists
