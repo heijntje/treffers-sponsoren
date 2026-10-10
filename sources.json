@@ -327,9 +327,8 @@
       "url": "OostendorpAuto.png"
     },
     {
-      "name": "ParcBuitengewoon",
-      "url": "ParcBuitengewoon.jpg",
-      "website": "https://www.parcbuitengewoon.nl/"
+      "name": "parcboulee",
+      "url": "parcboulee.png"
     },
     {
       "name": "pekadak",
@@ -723,6 +722,10 @@
     {
       "name": "Rene Meulensteen",
       "url": "Rene Meulensteen.png"
+    },
+    {
+      "name": "rondje_bedrijven",
+      "url": "rondje_bedrijven.png"
     }
   ],
   "wedstrijdsponsor": [
