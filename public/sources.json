@@ -327,9 +327,8 @@
       "url": "OostendorpAuto.png"
     },
     {
-      "name": "ParcBuitengewoon",
-      "url": "ParcBuitengewoon.jpg",
-      "website": "https://www.parcbuitengewoon.nl/"
+      "name": "parcboulee",
+      "url": "parcboulee.png"
     },
     {
       "name": "pekadak",
@@ -723,24 +722,28 @@
     {
       "name": "Rene Meulensteen",
       "url": "Rene Meulensteen.png"
+    },
+    {
+      "name": "rondje_bedrijven",
+      "url": "rondje_bedrijven.png"
     }
   ],
   "wedstrijdsponsor": [
     {
-      "name": "numblees-768x212",
-      "url": "numblees-768x212.jpeg"
+      "name": "soetrijck",
+      "url": "soetrijck.png"
     }
   ],
   "balsponsor": [
     {
-      "name": "vanzuijlen",
-      "url": "vanzuijlen.png"
+      "name": "hello-kitchen-logo",
+      "url": "hello-kitchen-logo.png"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "deburen (2)",
-      "url": "deburen (2).png"
+      "name": "Eetcafe De oude molen",
+      "url": "Eetcafe De oude molen.jpg"
     }
   ],
   "overige": [
