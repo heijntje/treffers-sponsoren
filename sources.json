@@ -730,20 +730,21 @@
   ],
   "wedstrijdsponsor": [
     {
-      "name": "soetrijck",
-      "url": "soetrijck.png"
+      "name": "P_Kaal",
+      "url": "P_Kaal.jpg",
+      "website": "https://www.aannemersbedrijfkaal.nl/"
     }
   ],
   "balsponsor": [
     {
-      "name": "hello-kitchen-logo",
-      "url": "hello-kitchen-logo.png"
+      "name": "Rikjo Ebbers",
+      "url": "Rikjo Ebbers.JPG"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "Eetcafe De oude molen",
-      "url": "Eetcafe De oude molen.jpg"
+      "name": "Pruufut",
+      "url": "Pruufut.png"
     }
   ],
   "overige": [
