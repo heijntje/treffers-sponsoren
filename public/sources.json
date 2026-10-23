@@ -381,7 +381,8 @@
     },
     {
       "name": "Rikjo Ebbers",
-      "url": "Rikjo Ebbers.JPG"
+      "url": "Rikjo Ebbers.JPG",
+      "website": "https://www.blv.nl/service/kantoor-groesbeek/groesbeek"
     },
     {
       "name": "Rikken-PNG-Conceptical",
@@ -681,7 +682,8 @@
     },
     {
       "name": "Rikjo Ebbers",
-      "url": "Rikjo Ebbers.JPG"
+      "url": "Rikjo Ebbers.JPG",
+      "website": "https://www.blv.nl/service/kantoor-groesbeek/groesbeek"
     },
     {
       "name": "Sienn",
@@ -712,6 +714,14 @@
     {
       "name": "NIKKELEN Reclame beeldscherm kantine",
       "url": "NIKKELEN Reclame beeldscherm kantine.jpg"
+    },
+    {
+      "name": "RN7 - De Treffers in beeld",
+      "url": "RN7 - De Treffers in beeld.jpg"
+    },
+    {
+      "name": "ubuntunights",
+      "url": "ubuntunights.jpg"
     }
   ],
   "announcements": [
@@ -730,20 +740,22 @@
   ],
   "wedstrijdsponsor": [
     {
-      "name": "soetrijck",
-      "url": "soetrijck.png"
+      "name": "P_Kaal",
+      "url": "P_Kaal.jpg",
+      "website": "https://www.aannemersbedrijfkaal.nl/"
     }
   ],
   "balsponsor": [
     {
-      "name": "hello-kitchen-logo",
-      "url": "hello-kitchen-logo.png"
+      "name": "Rikjo Ebbers",
+      "url": "Rikjo Ebbers.JPG",
+      "website": "https://www.blv.nl/service/kantoor-groesbeek/groesbeek"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "Eetcafe De oude molen",
-      "url": "Eetcafe De oude molen.jpg"
+      "name": "Pruufut",
+      "url": "Pruufut.png"
     }
   ],
   "overige": [

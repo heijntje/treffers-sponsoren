@@ -29,6 +29,14 @@ const CATEGORY_STYLES = {
     gap: "gap-6",
     cardHeight: "h-48 sm:h-60 md:h-72",
     cardPadding: "p-6 sm:p-10",
+    headerAlign: "text-center",
+  },
+  hoofdsponsor_small: {
+    gridCols: "grid-cols-1 max-w-md mx-auto",
+    gap: "gap-4",
+    cardHeight: "h-24 sm:h-32 md:h-36",
+    cardPadding: "p-3 sm:p-5",
+    headerAlign: "text-center",
   },
   fivestars: {
     gridCols: "grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2",
@@ -60,6 +68,27 @@ const CATEGORY_STYLES = {
     cardHeight: "h-16 sm:h-20 md:h-22",
     cardPadding: "p-3 sm:p-4",
   },
+  wedstrijdsponsor: {
+    gridCols: "grid-cols-1 max-w-xs sm:max-w-sm mx-auto",
+    gap: "gap-4",
+    cardHeight: "h-20 sm:h-24 md:h-28",
+    cardPadding: "p-2 sm:p-3",
+    headerAlign: "text-center",
+  },
+  balsponsor: {
+    gridCols: "grid-cols-1 max-w-xs sm:max-w-sm mx-auto",
+    gap: "gap-4",
+    cardHeight: "h-20 sm:h-24 md:h-28",
+    cardPadding: "p-2 sm:p-3",
+    headerAlign: "text-center",
+  },
+  buffetsponsor: {
+    gridCols: "grid-cols-1 max-w-xs sm:max-w-sm mx-auto",
+    gap: "gap-4",
+    cardHeight: "h-20 sm:h-24 md:h-28",
+    cardPadding: "p-2 sm:p-3",
+    headerAlign: "text-center",
+  },
 };
 
 const DEFAULT_STYLE = {
@@ -75,6 +104,10 @@ const NORMALIZE_MAP = {
   "main": "hoofdsponsor",
   "niveau": "hoofdsponsor",
   "trotse-hoofdsponsor": "hoofdsponsor",
+  "hoofdsponsor-small": "hoofdsponsor",
+  "hoofdsponsor_small": "hoofdsponsor",
+  "hoofd-small": "hoofdsponsor",
+  "hoofdsponsor-compact": "hoofdsponsor",
 
   "5star": "fivestars",
   "5stars": "fivestars",
@@ -103,9 +136,17 @@ const NORMALIZE_MAP = {
   "other": "overige",
 
   "wedstrijdsponsor": "wedstrijdsponsor",
+  "wedstrijd": "wedstrijdsponsor",
+  "match": "wedstrijdsponsor",
+  "matchsponsor": "wedstrijdsponsor",
+
   "balsponsor": "balsponsor",
-  "balsponsor": "balsponsor",
+  "bal": "balsponsor",
+  "ball": "balsponsor",
+  "ballsponsor": "balsponsor",
+
   "buffetsponsor": "buffetsponsor",
+  "buffet": "buffetsponsor",
 };
 
 /**
@@ -114,20 +155,50 @@ const NORMALIZE_MAP = {
  * Automatically posts its height to the parent window for iframe resizing.
  *
  * @param {Object} props - The component props.
- * @param {string} props.categoryParam - The category requested (e.g., '4star', 'all', 'carousel').
+ * @param {string} props.categoryParam - The category requested (e.g., '4star', 'all', 'carousel', 'wedstrijdenbal').
  * @param {boolean} [props.hideHeader=false] - Whether to hide the category headers.
  * @param {string} [props.theme="white"] - Theme styling class or color.
+ * @param {string} [props.size] - Optional size constraint (e.g., 'small' / 'compact').
  * @returns {JSX.Element} The rendered widget.
  */
-const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "white" }) => {
+const SponsorCategoryWidget = ({
+  categoryParam,
+  hideHeader = false,
+  theme = "white",
+  size,
+}) => {
   const [sources, setSources] = useState(null);
   const containerRef = useRef(null);
 
   // Normalize category parameter
-  const rawParam = (categoryParam || "4star").toLowerCase();
+  const rawParam = (categoryParam || "4star").toLowerCase().trim();
   const isCarouselMode = rawParam === "carousel" || rawParam === "slider";
   const isAllMode = rawParam === "all";
   const isStarsMode = rawParam === "stars" || rawParam === "sponsoren" || rawParam === "star";
+
+  const isSmall =
+    size === "small" ||
+    size === "compact" ||
+    size === "sm" ||
+    rawParam.includes("small") ||
+    rawParam.includes("compact");
+
+  const isMatchdayMode =
+    rawParam === "wedstrijdenbal" ||
+    rawParam === "wedstrijd-bal" ||
+    rawParam === "wedstrijd_bal" ||
+    rawParam === "wedstrijdsponsor-balsponsor" ||
+    rawParam === "wedstrijdsponsor_balsponsor" ||
+    rawParam === "wedstrijd,bal" ||
+    rawParam === "bal,wedstrijd" ||
+    rawParam === "wedstrijdsponsor,balsponsor" ||
+    rawParam === "balsponsor,wedstrijdsponsor" ||
+    rawParam === "matchday" ||
+    rawParam === "matchsponsors" ||
+    rawParam === "match" ||
+    rawParam === "gameday" ||
+    (rawParam.includes("wedstrijd") && rawParam.includes("bal"));
+
   const normalizedCategory = NORMALIZE_MAP[rawParam] || "fourstars";
 
   useEffect(() => {
@@ -183,91 +254,108 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
     );
   }
 
+  const renderCard = (item, catKey, styles, idx) => {
+    const isTxt = item.url?.includes(":txt:");
+    const textContent = isTxt ? item.url.split(":txt:")[1] : item.name;
+    const imgSrc = `${process.env.PUBLIC_URL}/${catKey}/${item.url}`;
+    const website = item.website;
+
+    const cardContent = isTxt ? (
+      <div className="relative w-full h-full flex items-center justify-center">
+        <Textfit
+          mode="multi"
+          max={18}
+          min={10}
+          className="font-semibold text-center flex items-center justify-center text-gray-800 group-hover:text-[#e30613] w-full h-full p-1 transition-colors duration-200"
+        >
+          {textContent}
+        </Textfit>
+        {website && (
+          <svg
+            className="absolute top-0 right-0 w-3 h-3 text-gray-300 group-hover:text-[#e30613] transition-colors duration-200"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+            />
+          </svg>
+        )}
+      </div>
+    ) : (
+      <div className="relative w-full h-full flex items-center justify-center">
+        <img
+          src={imgSrc}
+          alt={item.name || "Sponsor"}
+          className="max-w-full max-h-full object-contain transition-transform duration-200 group-hover:scale-[1.04]"
+          onLoad={postHeightToParent}
+        />
+        <span className="sr-only opacity-0 select-none pointer-events-none absolute text-[1px] overflow-hidden w-px h-px">
+          {item.name}
+        </span>
+      </div>
+    );
+
+    const cardClasses = `group relative w-full ${styles.cardHeight} flex items-center justify-center ${styles.cardPadding} rounded-lg bg-white shadow-sm border border-gray-100 transition-all duration-200`;
+
+    if (website) {
+      return (
+        <a
+          key={idx}
+          href={website}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={`Bezoek ${item.name || "sponsor"}`}
+          className={`${cardClasses} hover:shadow-md hover:border-red-300 cursor-pointer`}
+        >
+          {cardContent}
+        </a>
+      );
+    }
+
+    return (
+      <div key={idx} className={cardClasses}>
+        {cardContent}
+      </div>
+    );
+  };
+
   const renderCategoryGrid = (catKey) => {
     const items = sources[catKey] || [];
     const meta = CATEGORY_META[catKey] || { title: catKey };
-    const styles = CATEGORY_STYLES[catKey] || DEFAULT_STYLE;
+    let styles = CATEGORY_STYLES[catKey] || DEFAULT_STYLE;
+
+    if (catKey === "hoofdsponsor" && isSmall) {
+      styles = CATEGORY_STYLES.hoofdsponsor_small;
+    }
 
     if (items.length === 0) return null;
 
+    const titleSizeClass =
+      catKey === "hoofdsponsor" && !isSmall
+        ? "text-2xl sm:text-3xl mb-6"
+        : "text-xl sm:text-2xl mb-3 sm:mb-4";
+
+    const wrapperMarginClass = isSmall ? "mb-2 last:mb-0" : "mb-8 last:mb-0";
+
     return (
-      <div key={catKey} className="mb-12 last:mb-0">
+      <div key={catKey} className={wrapperMarginClass}>
         {!hideHeader && (
-          <h1 className="text-[#e30613] font-bold text-2xl sm:text-3xl mb-6 tracking-tight font-sans">
+          <h1
+            className={`text-[#e30613] font-bold ${titleSizeClass} tracking-tight font-sans ${
+              styles.headerAlign || ""
+            }`}
+          >
             {meta.title}
           </h1>
         )}
 
         <div className={`grid ${styles.gridCols} ${styles.gap} items-center justify-items-center`}>
-          {items.map((item, idx) => {
-            const isTxt = item.url?.includes(":txt:");
-            const textContent = isTxt ? item.url.split(":txt:")[1] : item.name;
-            const imgSrc = `${process.env.PUBLIC_URL}/${catKey}/${item.url}`;
-            const website = item.website;
-
-            const cardContent = isTxt ? (
-              <div className="relative w-full h-full flex items-center justify-center">
-                <Textfit
-                  mode="multi"
-                  max={18}
-                  min={10}
-                  className="font-semibold text-center flex items-center justify-center text-gray-800 group-hover:text-[#e30613] w-full h-full p-1 transition-colors duration-200"
-                >
-                  {textContent}
-                </Textfit>
-                {website && (
-                  <svg
-                    className="absolute top-0 right-0 w-3 h-3 text-gray-300 group-hover:text-[#e30613] transition-colors duration-200"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
-                )}
-              </div>
-            ) : (
-              <div className="relative w-full h-full flex items-center justify-center">
-                <img
-                  src={imgSrc}
-                  alt={item.name || "Sponsor"}
-                  className="max-w-full max-h-full object-contain transition-transform duration-200 group-hover:scale-[1.04]"
-                  onLoad={postHeightToParent}
-                />
-                <span className="sr-only opacity-0 select-none pointer-events-none absolute text-[1px] overflow-hidden w-px h-px">
-                  {item.name}
-                </span>
-              </div>
-            );
-
-            const cardClasses = `group relative w-full ${styles.cardHeight} flex items-center justify-center ${styles.cardPadding} rounded-lg bg-white shadow-sm border border-gray-100 transition-all duration-200`;
-
-            if (website) {
-              return (
-                <a
-                  key={idx}
-                  href={website}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title={`Bezoek ${item.name || "sponsor"}`}
-                  className={`${cardClasses} hover:shadow-md hover:border-red-300 cursor-pointer`}
-                >
-                  {cardContent}
-                </a>
-              );
-            }
-
-            return (
-              <div key={idx} className={cardClasses}>
-                {cardContent}
-              </div>
-            );
-          })}
+          {items.map((item, idx) => renderCard(item, catKey, styles, idx))}
         </div>
       </div>
     );
@@ -294,10 +382,74 @@ const SponsorCategoryWidget = ({ categoryParam, hideHeader = false, theme = "whi
     );
   }
 
+  // Shared responsive matchday widget for Wedstrijdsponsor & Balsponsor (and optional Buffetsponsor)
+  if (isMatchdayMode) {
+    const cardStyles = CATEGORY_STYLES.wedstrijdsponsor;
+    const matchGroups = [];
+
+    if (sources["wedstrijdsponsor"]?.length > 0) {
+      matchGroups.push({
+        key: "wedstrijdsponsor",
+        title: CATEGORY_META.wedstrijdsponsor?.title || "Wedstrijdsponsor",
+        items: sources["wedstrijdsponsor"],
+      });
+    }
+
+    if (sources["balsponsor"]?.length > 0) {
+      matchGroups.push({
+        key: "balsponsor",
+        title: CATEGORY_META.balsponsor?.title || "Balsponsor",
+        items: sources["balsponsor"],
+      });
+    }
+
+    if (
+      (rawParam.includes("buffet") || rawParam.includes("all")) &&
+      sources["buffetsponsor"]?.length > 0
+    ) {
+      matchGroups.push({
+        key: "buffetsponsor",
+        title: CATEGORY_META.buffetsponsor?.title || "Buffetsponsor",
+        items: sources["buffetsponsor"],
+      });
+    }
+
+    const gridColsClass =
+      matchGroups.length === 1
+        ? "grid-cols-1 max-w-xs sm:max-w-sm mx-auto"
+        : matchGroups.length === 2
+        ? "grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto"
+        : "grid-cols-1 sm:grid-cols-3 max-w-4xl mx-auto";
+
+    return (
+      <div
+        ref={containerRef}
+        className={`w-full p-2 sm:p-4 font-sans ${bgColorClass}`}
+      >
+        <div className={`grid ${gridColsClass} gap-6 sm:gap-8 items-start`}>
+          {matchGroups.map((group) => (
+            <div key={group.key} className="flex flex-col items-center w-full">
+              {!hideHeader && (
+                <h1 className="text-[#e30613] font-bold text-xl sm:text-2xl mb-3 sm:mb-4 tracking-tight font-sans text-center">
+                  {group.title}
+                </h1>
+              )}
+              <div className="w-full max-w-xs sm:max-w-sm">
+                {group.items.map((item, idx) =>
+                  renderCard(item, group.key, cardStyles, idx)
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div
       ref={containerRef}
-      className={`w-full min-h-screen p-4 sm:p-8 font-sans ${bgColorClass}`}
+      className={`w-full p-2 sm:p-4 font-sans ${bgColorClass}`}
     >
       {categoriesToRender.map((cat) => renderCategoryGrid(cat))}
     </div>

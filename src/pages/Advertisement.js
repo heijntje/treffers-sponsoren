@@ -19,16 +19,20 @@ import { useState, useEffect } from "react";
 const Advertisement = ({ updateSourceCounts, sources }) => {
   const divStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/background.jpg)`,
-    backgroundSize: "cover", // this will ensure the image covers the whole div
-    height: "100vh", // this will make the div take the full height of the viewport
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "100vh",
     width: "100vw",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   };
 
   const [sourcesURLs, setSourcesURLs] = useState([]);
 
   useEffect(() => {
     const baseURL = `${process.env.PUBLIC_URL}/advertisements/`;
-    if (!sources) return;
+    if (!sources || !sources.advertisements) return;
     const sourcesURLs = sources.advertisements.map((source) => {
       return baseURL + source.url;
     });
@@ -39,6 +43,11 @@ const Advertisement = ({ updateSourceCounts, sources }) => {
   const [randomizedSource, setRandomizedSource] = useState("");
 
   useEffect(() => {
+    if (!sourcesURLs || sourcesURLs.length === 0) {
+      setRandomizedSource("");
+      return;
+    }
+
     const pickRandomSource = (sources) => {
       let shuffled = [...sources].sort(() => 0.5 - Math.random());
       let picked = shuffled[0];
@@ -50,17 +59,35 @@ const Advertisement = ({ updateSourceCounts, sources }) => {
     };
 
     setRandomizedSource(pickRandomSource(sourcesURLs));
-  }, [sourcesURLs]);
+  }, [sourcesURLs, updateSourceCounts]);
+
+  const isVideo =
+    randomizedSource &&
+    /\.(mp4|mov|webm)$/i.test(randomizedSource);
+
+  const mediaStyle = {
+    maxWidth: "100vw",
+    maxHeight: "100vh",
+    width: "100%",
+    height: "100%",
+    objectFit: "contain",
+  };
 
   return (
     <div style={divStyle}>
-      {randomizedSource?.includes("mp4") ? (
-        <video autoPlay loop muted>
-          <source src={randomizedSource} type="video/mp4" />
-        </video>
-      ) : (
-        <img src={randomizedSource} alt="advertisement" />
-      )}
+      {isVideo ? (
+        <video
+          key={randomizedSource}
+          src={randomizedSource}
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={mediaStyle}
+        />
+      ) : randomizedSource ? (
+        <img src={randomizedSource} alt="advertisement" style={mediaStyle} />
+      ) : null}
     </div>
   );
 };
