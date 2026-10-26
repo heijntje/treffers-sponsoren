@@ -736,14 +736,16 @@
   ],
   "wedstrijdsponsor": [
     {
-      "name": "protoga",
-      "url": "protoga.png"
+      "name": "Logo_ProToGa_Beveiliging_nieuw",
+      "url": "Logo_ProToGa_Beveiliging_nieuw.png",
+      "website": "https://protoga.nl/"
     }
   ],
   "balsponsor": [
     {
       "name": "numblees-logo-2",
-      "url": "numblees-logo-2.svg"
+      "url": "numblees-logo-2.svg",
+      "website": "https://numblees.nl/"
     }
   ],
   "buffetsponsor": [
