@@ -730,26 +730,22 @@
       "url": "bundesliga.png"
     },
     {
-      "name": "Rene Meulensteen",
-      "url": "Rene Meulensteen.png"
-    },
-    {
       "name": "rondje_bedrijven",
       "url": "rondje_bedrijven.png"
     }
   ],
   "wedstrijdsponsor": [
     {
-      "name": "P_Kaal",
-      "url": "P_Kaal.jpg",
-      "website": "https://www.aannemersbedrijfkaal.nl/"
+      "name": "Logo_ProToGa_Beveiliging_nieuw",
+      "url": "Logo_ProToGa_Beveiliging_nieuw.png",
+      "website": "https://protoga.nl/"
     }
   ],
   "balsponsor": [
     {
-      "name": "Rikjo Ebbers",
-      "url": "Rikjo Ebbers.JPG",
-      "website": "https://www.blv.nl/service/kantoor-groesbeek/groesbeek"
+      "name": "numblees-logo-2",
+      "url": "numblees-logo-2.svg",
+      "website": "https://numblees.nl/"
     }
   ],
   "buffetsponsor": [
