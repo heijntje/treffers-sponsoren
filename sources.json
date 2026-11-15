@@ -737,13 +737,15 @@
   "wedstrijdsponsor": [
     {
       "name": "logo_queens",
-      "url": "logo_queens.svg"
+      "url": "logo_queens.svg",
+      "website": "https://www.aircoservicequeens.nl/"
     }
   ],
   "balsponsor": [
     {
       "name": "Logo Lisette Sillessen ",
-      "url": "Logo Lisette Sillessen .png"
+      "url": "Logo Lisette Sillessen .png",
+      "website": "https://www.lisettesillessen.nl/"
     }
   ],
   "buffetsponsor": [
