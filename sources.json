@@ -736,22 +736,20 @@
   ],
   "wedstrijdsponsor": [
     {
-      "name": "Logo_ProToGa_Beveiliging_nieuw",
-      "url": "Logo_ProToGa_Beveiliging_nieuw.png",
-      "website": "https://protoga.nl/"
+      "name": "logo_queens",
+      "url": "logo_queens.svg"
     }
   ],
   "balsponsor": [
     {
-      "name": "numblees-logo-2",
-      "url": "numblees-logo-2.svg",
-      "website": "https://numblees.nl/"
+      "name": "Logo Lisette Sillessen ",
+      "url": "Logo Lisette Sillessen .png"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "Pruufut",
-      "url": "Pruufut.png"
+      "name": "bijons-logo",
+      "url": "bijons-logo.svg"
     }
   ],
   "overige": [
