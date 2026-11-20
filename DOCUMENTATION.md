@@ -27,6 +27,20 @@ These scripts are utility tools for maintaining the sponsor data:
 - `match_links.py`: Uses string matching (fuzzy matching/regex) to map scraped URLs to the sponsor names in the JSON files.
 - `apply_links.py`: Applies the matched URLs directly into the JSON data files.
 
+### Website Widget Mode (`SponsorCategoryWidget`)
+In addition to the full-screen digital signage rotator, the app provides a widget mode that can be embedded into external websites via `<iframe>`:
+- **Single Category:** `?category=hoofdsponsor`, `?category=wedstrijdsponsor`, `?category=balsponsor`, etc.
+- **Combined Matchday Mode:** `?category=wedstrijdenbal` or `?category=matchday` (renders match and ball sponsors side-by-side).
+- **Logo-only Mode (`&mode=logo`):** Renders clean, unbordered logos without headers, cards, or unnecessary container padding. Logos remain clickable links (`<a href="..." target="_blank">`) to the sponsor's website if a website URL is configured.
+  - Hoofdsponsor: `?category=hoofdsponsor&mode=logo&theme=transparent`
+  - Wedstrijdsponsor: `?category=wedstrijdsponsor&mode=logo&theme=transparent`
+  - Balsponsor: `?category=balsponsor&mode=logo&theme=transparent`
+  - Combinatie (matchday): `?category=wedstrijdenbal&mode=logo&theme=transparent`
+- **Optional URL Parameters:**
+  - `hideHeader=true`: Hides the category title.
+  - `theme=transparent`: Sets transparent background (default: `white`).
+  - `size=small`: Compact card size for widgets.
+
 ## Running the Application
 
 To run the frontend locally:

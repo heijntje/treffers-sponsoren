@@ -27,6 +27,7 @@ function App() {
   const hideHeader = searchParams.get("hideHeader") === "true";
   const theme = searchParams.get("theme") || "white";
   const size = searchParams.get("size");
+  const mode = searchParams.get("mode") || searchParams.get("view");
 
   if (category) {
     return (
@@ -36,6 +37,7 @@ function App() {
           hideHeader={hideHeader}
           theme={theme}
           size={size}
+          mode={mode}
         />
       </div>
     );

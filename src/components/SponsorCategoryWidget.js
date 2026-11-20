@@ -159,6 +159,7 @@ const NORMALIZE_MAP = {
  * @param {boolean} [props.hideHeader=false] - Whether to hide the category headers.
  * @param {string} [props.theme="white"] - Theme styling class or color.
  * @param {string} [props.size] - Optional size constraint (e.g., 'small' / 'compact').
+ * @param {string} [props.mode] - Optional mode ('logo', 'raw', 'minimal').
  * @returns {JSX.Element} The rendered widget.
  */
 const SponsorCategoryWidget = ({
@@ -166,12 +167,21 @@ const SponsorCategoryWidget = ({
   hideHeader = false,
   theme = "white",
   size,
+  mode,
 }) => {
   const [sources, setSources] = useState(null);
   const containerRef = useRef(null);
 
   // Normalize category parameter
   const rawParam = (categoryParam || "4star").toLowerCase().trim();
+  const rawMode = (mode || "").toLowerCase().trim();
+  const isLogoOnlyMode =
+    rawMode === "logo" ||
+    rawMode === "logos" ||
+    rawMode === "raw" ||
+    rawMode === "clean" ||
+    rawMode === "plain" ||
+    rawMode === "minimal";
   const isCarouselMode = rawParam === "carousel" || rawParam === "slider";
   const isAllMode = rawParam === "all";
   const isStarsMode = rawParam === "stars" || rawParam === "sponsoren" || rawParam === "star";
@@ -197,9 +207,18 @@ const SponsorCategoryWidget = ({
     rawParam === "matchsponsors" ||
     rawParam === "match" ||
     rawParam === "gameday" ||
-    (rawParam.includes("wedstrijd") && rawParam.includes("bal"));
+    rawParam === "wedstrijdpakket" ||
+    (rawParam.includes("wedstrijd") && rawParam.includes("bal")) ||
+    (rawParam.includes("hoofd") && rawParam.includes("wedstrijd"));
 
   const normalizedCategory = NORMALIZE_MAP[rawParam] || "fourstars";
+
+  useEffect(() => {
+    if (theme === "transparent" || isLogoOnlyMode) {
+      document.documentElement.style.backgroundColor = "transparent";
+      document.body.style.backgroundColor = "transparent";
+    }
+  }, [theme, isLogoOnlyMode]);
 
   useEffect(() => {
     fetch(process.env.PUBLIC_URL + "/sources.json?v=" + Date.now(), {
@@ -368,6 +387,119 @@ const SponsorCategoryWidget = ({
       : [normalizedCategory];
 
   const bgColorClass = theme === "transparent" ? "bg-transparent" : "bg-white";
+
+  // Dedicated logo-only mode: render only clean logos/links without headers, cards, borders, or extra margins
+  if (isLogoOnlyMode) {
+    const renderPureLogo = (item, catKey, idx) => {
+      const isTxt = item.url?.includes(":txt:");
+      const textContent = isTxt ? item.url.split(":txt:")[1] : item.name;
+      const imgSrc = `${process.env.PUBLIC_URL}/${catKey}/${item.url}`;
+      const website = item.website;
+
+      const inner = isTxt ? (
+        <span className="font-bold text-center text-gray-800 hover:text-[#e30613] text-sm sm:text-base leading-snug px-2">
+          {textContent}
+        </span>
+      ) : (
+        <img
+          src={imgSrc}
+          alt={item.name || "Sponsor"}
+          className="w-full h-full max-w-full max-h-full object-contain object-center transition-transform duration-200 hover:scale-105"
+          onLoad={postHeightToParent}
+        />
+      );
+
+      const containerStyle =
+        "w-full h-full flex items-center justify-center p-1 overflow-hidden";
+
+      if (website) {
+        return (
+          <a
+            key={idx}
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={`Bezoek ${item.name || "sponsor"}`}
+            className={`${containerStyle} cursor-pointer group`}
+          >
+            {inner}
+          </a>
+        );
+      }
+
+      return (
+        <div key={idx} className={containerStyle}>
+          {inner}
+        </div>
+      );
+    };
+
+    if (isMatchdayMode) {
+      const matchItems = [];
+      if (sources["hoofdsponsor"]?.length > 0 && rawParam.includes("hoofd")) {
+        sources["hoofdsponsor"].forEach((item) =>
+          matchItems.push({ item, catKey: "hoofdsponsor" })
+        );
+      }
+      if (sources["wedstrijdsponsor"]?.length > 0) {
+        sources["wedstrijdsponsor"].forEach((item) =>
+          matchItems.push({ item, catKey: "wedstrijdsponsor" })
+        );
+      }
+      if (sources["balsponsor"]?.length > 0) {
+        sources["balsponsor"].forEach((item) =>
+          matchItems.push({ item, catKey: "balsponsor" })
+        );
+      }
+      if (
+        (rawParam.includes("buffet") || rawParam.includes("all")) &&
+        sources["buffetsponsor"]?.length > 0
+      ) {
+        sources["buffetsponsor"].forEach((item) =>
+          matchItems.push({ item, catKey: "buffetsponsor" })
+        );
+      }
+
+      const gridCols =
+        matchItems.length === 1
+          ? "grid-cols-1"
+          : matchItems.length === 2
+          ? "grid-cols-2"
+          : "grid-cols-3";
+
+      return (
+        <div
+          ref={containerRef}
+          className={`w-screen h-screen overflow-hidden flex items-center justify-center ${bgColorClass}`}
+        >
+          <div className={`grid ${gridCols} gap-4 w-full h-full items-center justify-items-center`}>
+            {matchItems.map(({ item, catKey }, idx) =>
+              renderPureLogo(item, catKey, idx)
+            )}
+          </div>
+        </div>
+      );
+    }
+
+    // Single or mapped category in logo mode
+    const activeItems = (sources[normalizedCategory] || []).map((item) => ({
+      item,
+      catKey: normalizedCategory,
+    }));
+
+    return (
+      <div
+        ref={containerRef}
+        className={`w-screen h-screen overflow-hidden flex items-center justify-center ${bgColorClass}`}
+      >
+        <div className="w-full h-full flex items-center justify-center">
+          {activeItems.map(({ item, catKey }, idx) =>
+            renderPureLogo(item, catKey, idx)
+          )}
+        </div>
+      </div>
+    );
+  }
 
   if (isCarouselMode) {
     return (

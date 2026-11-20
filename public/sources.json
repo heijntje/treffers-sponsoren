@@ -730,28 +730,28 @@
       "url": "bundesliga.png"
     },
     {
-      "name": "rondje_bedrijven",
-      "url": "rondje_bedrijven.png"
+      "name": "heerenveen",
+      "url": "heerenveen.png"
     }
   ],
   "wedstrijdsponsor": [
     {
-      "name": "Logo_ProToGa_Beveiliging_nieuw",
-      "url": "Logo_ProToGa_Beveiliging_nieuw.png",
-      "website": "https://protoga.nl/"
+      "name": "logo_queens",
+      "url": "logo_queens.svg",
+      "website": "https://www.aircoservicequeens.nl/"
     }
   ],
   "balsponsor": [
     {
-      "name": "numblees-logo-2",
-      "url": "numblees-logo-2.svg",
-      "website": "https://numblees.nl/"
+      "name": "Logo Lisette Sillessen ",
+      "url": "Logo Lisette Sillessen .png",
+      "website": "https://www.lisettesillessen.nl/"
     }
   ],
   "buffetsponsor": [
     {
-      "name": "Pruufut",
-      "url": "Pruufut.png"
+      "name": "bijons-logo",
+      "url": "bijons-logo.svg"
     }
   ],
   "overige": [
