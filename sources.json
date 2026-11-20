@@ -222,7 +222,8 @@
     },
     {
       "name": "JanKooij",
-      "url": "JanKooij.png"
+      "url": "JanKooij.png",
+      "website": "https://www.jankooij.nl/"
     },
     {
       "name": "Jonkershof BV",
@@ -301,7 +302,8 @@
     },
     {
       "name": "MGMook",
-      "url": "MGMook.jpg"
+      "url": "MGMook.jpg",
+      "website": "https://metaalgroepmook.nl/"
     },
     {
       "name": "MonikaSasInterieur",
@@ -377,7 +379,8 @@
     },
     {
       "name": "RienWeijers",
-      "url": "RienWeijers.png"
+      "url": "RienWeijers.png",
+      "website": "https://www.rienweijersdakwerken.nl/"
     },
     {
       "name": "Rikjo Ebbers",
@@ -386,7 +389,8 @@
     },
     {
       "name": "Rikken-PNG-Conceptical",
-      "url": "Rikken-PNG-Conceptical.png"
+      "url": "Rikken-PNG-Conceptical.png",
+      "website": "https://www.rikkenbouw.nl/"
     },
     {
       "name": "RN7",
@@ -453,7 +457,8 @@
     },
     {
       "name": "Toonen",
-      "url": "Toonen.jpg"
+      "url": "Toonen.jpg",
+      "website": "https://www.toonenreizen.nl/"
     },
     {
       "name": "TribEvents",
@@ -521,7 +526,8 @@
     },
     {
       "name": "WSP",
-      "url": "WSP.png"
+      "url": "WSP.png",
+      "website": "https://wspfood.nl/"
     },
     {
       "name": "wve",
@@ -594,7 +600,8 @@
     },
     {
       "name": "MGMook",
-      "url": "MGMook.jpg"
+      "url": "MGMook.jpg",
+      "website": "https://metaalgroepmook.nl/"
     },
     {
       "name": "OostendorpAuto",
@@ -607,11 +614,13 @@
     },
     {
       "name": "RienWeijers",
-      "url": "RienWeijers.png"
+      "url": "RienWeijers.png",
+      "website": "https://www.rienweijersdakwerken.nl/"
     },
     {
       "name": "Rikken-PNG-Conceptical",
-      "url": "Rikken-PNG-Conceptical.png"
+      "url": "Rikken-PNG-Conceptical.png",
+      "website": "https://www.rikkenbouw.nl/"
     },
     {
       "name": "RN7",
@@ -625,7 +634,8 @@
     },
     {
       "name": "WSP",
-      "url": "WSP.png"
+      "url": "WSP.png",
+      "website": "https://wspfood.nl/"
     }
   ],
   "threestars": [
@@ -660,7 +670,8 @@
     },
     {
       "name": "JanKooij",
-      "url": "JanKooij.png"
+      "url": "JanKooij.png",
+      "website": "https://www.jankooij.nl/"
     },
     {
       "name": "Kenonz",
@@ -697,7 +708,8 @@
     },
     {
       "name": "Toonen",
-      "url": "Toonen.jpg"
+      "url": "Toonen.jpg",
+      "website": "https://www.toonenreizen.nl/"
     },
     {
       "name": "VloerenbedrijfLelie",
@@ -752,6 +764,78 @@
     {
       "name": "bijons-logo",
       "url": "bijons-logo.svg"
+    }
+  ],
+  "kledingsponsoren": [
+    {
+      "name": "Cornelion",
+      "url": "Cornelion.png",
+      "website": "https://www.cornelion.com"
+    },
+    {
+      "name": "dewaalautogroep",
+      "url": "dewaalautogroep.png",
+      "website": "https://www.dewaalautogroep.nl/"
+    },
+    {
+      "name": "Drips",
+      "url": "Drips.png",
+      "website": "https://www.dripsmedia.nl/"
+    },
+    {
+      "name": "EskesPartners",
+      "url": "EskesPartners.png",
+      "website": "https://eskespartners.nl/"
+    },
+    {
+      "name": "Fakro",
+      "url": "Fakro.png",
+      "website": "https://www.fakro.nl/"
+    },
+    {
+      "name": "flexteam",
+      "url": "flexteam.png",
+      "website": "https://flexteamnederland.nl/"
+    },
+    {
+      "name": "JanKooij",
+      "url": "JanKooij.png",
+      "website": "https://www.jankooij.nl/"
+    },
+    {
+      "name": "MGMook",
+      "url": "MGMook.jpg",
+      "website": "https://metaalgroepmook.nl/"
+    },
+    {
+      "name": "P_Kaal",
+      "url": "P_Kaal.jpg",
+      "website": "https://www.aannemersbedrijfkaal.nl/"
+    },
+    {
+      "name": "RienWeijers",
+      "url": "RienWeijers.png",
+      "website": "https://www.rienweijersdakwerken.nl/"
+    },
+    {
+      "name": "Rikken-PNG-Conceptical",
+      "url": "Rikken-PNG-Conceptical.png",
+      "website": "https://www.rikkenbouw.nl/"
+    },
+    {
+      "name": "Toonen",
+      "url": "Toonen.jpg",
+      "website": "https://www.toonenreizen.nl/"
+    },
+    {
+      "name": "tZwaantje",
+      "url": "tZwaantje.png",
+      "website": "https://www.t-zwaantje.nl/"
+    },
+    {
+      "name": "WSP",
+      "url": "WSP.png",
+      "website": "https://wspfood.nl/"
     }
   ],
   "overige": [

@@ -77,6 +77,7 @@ directories = [
     "wedstrijdsponsor",
     "balsponsor",
     "buffetsponsor",
+    "kledingsponsoren",
     "overige",
 ]
 
